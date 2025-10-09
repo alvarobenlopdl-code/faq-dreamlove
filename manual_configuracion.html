@@ -1,0 +1,1275 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manual Shopify · Dreamlove</title>
+  <meta name="description" content="Guía detallada para crear tu tienda en Shopify e integrarla con Dreamlove: dominios, pagos, impuestos, envíos, productos, tema, pedidos automáticos." />
+  <link rel="icon" href="img/icono.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="sr-only" href="#contenido">Saltar al contenido</a>
+
+  <div class="topbar" role="banner">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <a href="faq.html" aria-label="Inicio" class="brand-mark">
+          <img src="img/dreamlove_logomenu.png" alt="Dreamlove · Centro de ayuda">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="primary" aria-label="Navegación principal">
+    <div class="container nav-inner">
+      <a href="faq.html">Preguntas frecuentes</a>
+      <a href="precios.html">Planes y precios</a>
+      <a href="plantillas.html">Plantillas Shopify</a>
+      <a href="sincronizacion.html">Sincronización</a>
+      <a href="shopify.html" aria-current="page">Manual Shopify</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <main id="contenido" class="container">
+    <section class="card" aria-labelledby="shopify-title">
+      <div class="hd">
+        <h1 id="shopify-title" class="section-title">Manual Shopify × Dreamlove</h1>
+        <p class="pill">Guía detallada paso a paso</p>
+       
+      </div>
+
+      <div class="bd">
+        <!-- Índice rápido -->
+        <h2 class="mini-title">Índice</h2>
+        <hr class="separator" aria-hidden="true">
+        <nav class="toc" aria-label="Índice del manual">
+          <a href="#crear-cuenta">1. Crear cuenta y elegir plan</a>
+          <a href="#detalles-tienda">2. General</a>
+          <a href="#plan">3. Plan</a>
+          <a href="#facturacion">4. Facturación</a>
+          <a href="#usuarios-permisos">5. Usuarios y permisos</a>
+          <a href="#pagos">6. Pagos</a>
+          <a href="#pantalla-pago">7. Pantalla de pago</a>
+          <a href="#cuentas-clientes">8. Cuentas de clientes</a>
+          <a href="#envio-entrega">9. Envío y entrega</a>
+          <a href="#impuestos-aranceles">10. Impuestos y aranceles</a>
+          <a href="#sucursales">11. Sucursales</a>
+          <a href="#aplicaciones-canales">12. Aplicaciones y canales de ventas</a>
+          <a href="#dominios">13. Dominios</a>
+          <a href="#eventos-clientes">14. Eventos de clientes</a>
+          <a href="#notificaciones">15. Notificaciones</a>
+          <a href="#metacampos-metaobjetos">16. Metacampos y metaobjetos</a>
+          <a href="#idiomas">17. Idiomas</a>
+          <a href="#privacidad-cliente">18. Privacidad del cliente</a>
+          <a href="#politicas">19. Políticas</a>
+          <a href="#contacto-soporte">20. Contacto y Soporte Técnico</a>
+        </nav>
+
+        <ol class="steps" id="guia">
+          <!-- 1. Crear cuenta -->
+          <li class="step" id="crear-cuenta">
+            <h4>Crear cuenta y elegir plan</h4>
+            <p>Regístrate en <a href="https://www.shopify.com/es" target="_blank" rel="noopener">shopify.com</a>. Tras el periodo de prueba, deberás elegir un <strong>plan</strong> (Basic, Shopify, Advanced o Plus) desde <em>Configuración → Plan</em>. Consulta los precios actualizados en <a href="https://www.shopify.com/es/precios" target="_blank" rel="noopener">shopify.com/es/precios</a>.</p>
+            <figure class="guide-figure">
+              <img class="shot" src="img/precios-shopify.JPG" alt="Selección del plan de Shopify en el panel de configuración">
+              <figcaption class="meta">Selección de plan en Shopify.</figcaption>
+            </figure>
+          </li>
+
+          <!-- 2. Detalles de tienda -->
+<li class="step" id="detalles-tienda">
+  <h4>Detalles de la tienda</h4>
+  <p>En <em>Configuración → Información/Detalles de la tienda</em> revisa y completa:</p>
+
+  <ul class="list">
+    <li><strong>Nombre de la tienda y datos de contacto</strong> (correo de cuenta, teléfono y dirección comercial).</li>
+    <li><strong>Valores predeterminados de la tienda</strong>: zona horaria, moneda base, formato de moneda, sistema de unidades y unidad de peso.</li>
+    <li><strong>Identificador de pedido</strong> (prefijo/sufijo si lo usas).</li>
+    <li><strong>Correo del remitente</strong> (desde <em>Configuración → Notificaciones</em>): configura y <strong>autentica tu dominio</strong> (SPF/DKIM/DMARC) para que los emails de pedidos se entreguen correctamente.</li>
+    <li><strong>Idioma y formato regional</strong> del panel de control (afecta a números, fecha y hora en el admin).</li>
+    <li><strong>Moneda que ven los clientes</strong> y, si vendes en varios países, activa <em>monedas locales</em> en <em>Configuración → Mercados</em>.<br>
+    Recomendamos mantener como <strong>predeterminada la moneda europea (EUR)</strong>, que será la utilizada en la importación del catálogo. 
+    Posteriormente, puedes añadir <strong>mercados adicionales</strong> y habilitar <em>monedas locales</em> desde <em>Configuración → Mercados</em>. </li>
+  </ul>
+
+  <figure class="guide-figure">
+              <img class="shot" src="img/general-shopify.JPG" alt="Selección del plan de Shopify en el panel de configuración">
+              <figcaption class="meta">Configuración -> General</figcaption>
+            </figure>
+  <p class="meta">
+    Ayuda oficial:
+    <a href="https://help.shopify.com/es/manual/your-account/manage-orgs-and-stores/manage-store-details" target="_blank" rel="noopener">Gestionar “Detalles de la tienda”</a> ·
+    <a href="https://help.shopify.com/es/manual/intro-to-shopify/initial-setup/setup-business-settings" target="_blank" rel="noopener">Valores predeterminados (zona horaria, etc.)</a> ·
+    <a href="https://help.shopify.com/es/manual/intro-to-shopify/initial-setup/setup-your-email" target="_blank" rel="noopener">Configurar correo del remitente</a> ·
+    <a href="https://help.shopify.com/es/manual/promoting-marketing/create-marketing/shopify-email/setup" target="_blank" rel="noopener">Autenticar dominio (SPF/DKIM)</a> ·
+    <a href="https://help.shopify.com/es/manual/your-account/languages" target="_blank" rel="noopener">Idioma y región del admin</a> ·
+    <a href="https://help.shopify.com/es/manual/payments/shopify-payments/store-currency/changing-your-store-currency" target="_blank" rel="noopener">Cambiar moneda de la tienda</a> ·
+    <a href="https://help.shopify.com/es/manual/international/pricing/set-up-local-currencies" target="_blank" rel="noopener">Monedas locales con Markets</a>.
+  </p>
+</li>
+
+          <!-- 3. Plan -->
+<li class="step" id="plan">
+  <h4>Plan (Configuración → Plan)</h4>
+  <p>Tras registrarte y finalizar la prueba, elige un <strong>plan</strong> (Basic, Shopify, Advanced o Plus) desde <em>Configuración → Plan</em>. En cualquier momento puedes cambiar a otro plan disponible. Consulta precios y condiciones vigentes en la página oficial de Shopify. <a href="https://www.shopify.com/es/precios" target="_blank" rel="noopener">Ver precios</a>. <a href="https://help.shopify.com/es/manual/your-account/manage-orgs-and-stores/manage-pricing-plan/change-plan" target="_blank" rel="noopener">Cambiar de plan</a>.</p>
+
+  <ul class="list">
+    <li><strong>Elegir plan y ciclo de facturación</strong>: mensual o anual. Los planes mensuales te permiten máxima flexibilidad; los anuales suelen tener descuento. <a href="https://www.shopify.com/es/precios" target="_blank" rel="noopener">Más información</a>.</li>
+    <li><strong>Método de pago y facturación</strong>: añade tu método de pago y revisa el <em>ciclo de facturación</em> y los posibles <em>umbrales de facturación</em> (cuándo se generan las facturas). <a href="https://help.shopify.com/es/manual/your-account/manage-billing/managing-your-bills/viewing-your-bills/billing-cycles-thresholds" target="_blank" rel="noopener">Ciclos y umbrales</a>.</li>
+    <li><strong>Cambios de plan</strong>: al actualizar o bajar de plan, Shopify aplica prorrateos y ajustes en la siguiente factura. Revisa las implicaciones antes de confirmar. <a href="https://help.shopify.com/es/manual/your-account/manage-billing/managing-your-bills/billing-plan-changes" target="_blank" rel="noopener">Cambios de plan y facturación</a>.</li>
+    <li><strong>Comisiones en pagos</strong>: si usas <em>Shopify Payments</em>, las tarifas por tarjeta <em>dependen de tu plan</em> y no hay cargos por transacción de terceros para pedidos procesados con Shopify Payments. <a href="https://help.shopify.com/es/manual/payments/shopify-payments/onboarding/cost-of-shopify-payments" target="_blank" rel="noopener">Coste Shopify Payments</a> · <a href="https://help.shopify.com/es/manual/international/pricing/fees" target="_blank" rel="noopener">Cargos y costos</a>.</li>
+    <li><strong>Pausar o desactivar la tienda</strong>: si necesitas parar temporalmente, valora el plan de pausa; también puedes desactivar la tienda desde el admin. <a href="https://help.shopify.com/es/manual/your-account/pause-deactivate-store" target="_blank" rel="noopener">Pausar o desactivar</a>.</li>
+  </ul>
+
+  <figure class="guide-figure" style="margin-top:.8rem">
+    <img class="shot" src="img/plan-shopify.JPG" alt="Selección del plan de Shopify en el panel de configuración">
+    <figcaption class="meta">Selección de plan en Shopify (Configuración → Plan).</figcaption>
+  </figure>
+</li>
+
+  <!-- Facturación -->
+<li class="step" id="facturacion">
+  <h4>Facturación (Configuración → Facturación/Billing)</h4>
+
+  <p>En <em>Configuración → Facturación</em> puedes gestionar tu información de facturación y forma de pago, ver <strong>facturas próximas y pasadas</strong>, y consultar los <strong>tipos de cargos</strong> (suscripción, apps, etiquetas de envío, impuestos, etc.). Desde aquí también puedes pagar en tu <strong>moneda local</strong> cuando esté disponible. 
+    <a href="https://help.shopify.com/es/manual/your-account/manage-billing" target="_blank" rel="noopener">Gestionar la facturación</a>.
+  </p>
+
+  <h5>Tipos de cargos que verás en las facturas</h5>
+  <ul class="list">
+    <li><strong>Suscripción del plan</strong> (Basic/Shopify/Advanced/Plus).</li>
+    <li><strong>Cargos de apps</strong> (ciclo de 30 días, independiente del plan).</li>
+    <li><strong>Otros cargos</strong>: etiquetas de envío, comisiones y tasas e impuestos aplicables.</li>
+  </ul>
+  <p class="meta">Cómo ver facturas próximas y pasadas, y qué incluyen: 
+    <a href="https://help.shopify.com/en/manual/your-account/manage-billing/managing-your-bills/viewing-your-bills" target="_blank" rel="noopener">Viewing your Shopify bills</a>.
+  </p>
+
+  <h5>Ciclos de facturación y umbrales</h5>
+  <ul class="list">
+    <li><strong>Plan de suscripción</strong>: ciclo de <em>30 días</em> o <em>anual</em>.</li>
+    <li><strong>Apps</strong>: ciclo de <em>30 días</em> por app.</li>
+    <li><strong>Zona horaria</strong> de emisión: <em>UTC</em>.</li>
+    <li><strong>Umbral de facturación</strong>: si tus cargos acumulados superan el umbral, Shopify emite una factura <em>antes</em> del final del ciclo (útil para etiquetas de envío, apps, etc.).</li>
+  </ul>
+  <p class="meta">
+    Detalles oficiales: 
+    <a href="https://help.shopify.com/es/manual/your-account/manage-billing/managing-your-bills/viewing-your-bills/billing-cycles-thresholds" target="_blank" rel="noopener">Ciclos y umbrales</a> · 
+    <a href="https://help.shopify.com/en/manual/your-account/manage-billing/managing-your-bills/viewing-your-bills/billing-cycles-thresholds" target="_blank" rel="noopener">Billing cycles (EN)</a>.
+  </p>
+
+  <h5>Formas de pago y datos de facturación</h5>
+  <ul class="list">
+    <li><strong>Actualizar la forma de pago</strong> (tarjeta), añadir <strong>método de respaldo</strong> y cambiar <strong>dirección de facturación</strong>.</li>
+    <li><strong>ACH/banco</strong> (EE. UU.): puedes agregar y verificar cuenta bancaria si corresponde.</li>
+    <li><strong>Moneda local</strong>: cuando esté disponible, puedes pagar facturas en tu moneda local.</li>
+  </ul>
+  <p class="meta">
+    Guías: 
+    <a href="https://help.shopify.com/es/manual/your-account/manage-billing/paying-your-bills/managing-payments" target="_blank" rel="noopener">Gestionar pagos de facturas</a> · 
+    <a href="https://help.shopify.com/es/manual/your-account/manage-billing/paying-your-bills/managing-payments/managing-payment-methods" target="_blank" rel="noopener">Gestionar formas de pago</a>.
+  </p>
+
+  <h5>Ver y exportar facturas (PDF/CSV)</h5>
+  <p>Desde la página de facturación puedes <strong>consultar el desglose</strong> (suscripción, apps, otros cargos e impuestos) y <strong>exportar</strong> la factura en PDF o CSV para tu contabilidad.</p>
+  <p class="meta">
+    Más info: 
+    <a href="https://help.shopify.com/en/manual/your-account/manage-billing/your-invoice/invoice-overview" target="_blank" rel="noopener">Bill overview y exportación</a>.
+  </p>
+
+  <h5>Impuestos en facturas (IVA/UE y Reino Unido)</h5>
+  <p>Si operas en la UE o Reino Unido, Shopify ofrece herramientas para <strong>generar facturas con IVA</strong> y cumplir requisitos de facturación (incluida la visualización/descarga desde la confirmación del pedido). Revisa también <em>Shopify Tax</em> para validación de NIF-IVA y exención de inversión del sujeto pasivo cuando proceda.</p>
+  <p class="meta">
+    Referencias: 
+    <a href="https://help.shopify.com/es/manual/taxes/shopify-tax/vat-invoices" target="_blank" rel="noopener">Facturas con IVA (ES)</a> · 
+    <a href="https://help.shopify.com/en/manual/taxes/shopify-tax/vat-invoices" target="_blank" rel="noopener">VAT invoices (EN)</a> · 
+    <a href="https://help.shopify.com/en/manual/taxes/shopify-tax" target="_blank" rel="noopener">Shopify Tax</a>. 
+  </p>
+
+  <h5>Cambios de plan y prorrateos</h5>
+  <p>Si cambias de plan (subes o bajas), Shopify puede aplicar <strong>ajustes/prorrateos</strong> en la siguiente factura. Revisa las implicaciones antes de confirmar el cambio.</p>
+  <p class="meta">
+    Más info: 
+    <a href="https://help.shopify.com/en/manual/your-account/manage-billing/managing-your-bills" target="_blank" rel="noopener">Managing your Shopify bills</a> (sección “plan changes”). 
+  </p>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/facturacion-shopify.JPG" alt="Página de Facturación de Shopify: métodos de pago, facturas próximas y pasadas, exportación">
+    <figcaption class="meta">Configuración → Facturación: métodos de pago, facturas y exportación.</figcaption>
+  </figure>
+</li>
+
+<!-- Usuarios y permisos -->
+<li class="step" id="#usuarios-permisos">
+  <h4>Usuarios y permisos (Configuración → Usuarios)</h4>
+
+  <p>Desde <em>Configuración → Usuarios</em> puedes <strong>invitar usuarios</strong> (empleados) a tu tienda u organización, asignarles <strong>roles</strong> y limitar su acceso con <strong>permisos granulares</strong>. Esta es la forma recomendada de dar acceso seguro a tu equipo. 
+    <a href="https://help.shopify.com/es/manual/your-account/users" target="_blank" rel="noopener">Gestionar usuarios</a>.
+  </p>
+
+  <h5>1) Invitar usuarios</h5>
+  <ol>
+    <li>Ve a <em>Configuración → Usuarios</em> y pulsa <strong>Invitar usuario</strong>.</li>
+    <li>Introduce nombre y correo, y asigna uno o varios <strong>roles</strong> (ver más abajo).</li>
+    <li>Revisa los permisos que quedarán activos y envía la invitación.</li>
+  </ol>
+  <p class="meta">
+    Guías: <a href="https://help.shopify.com/es/manual/your-account/users/invite-users" target="_blank" rel="noopener">Invitar usuarios</a>. 
+  </p>
+
+  <h5>2) Roles y permisos</h5>
+  <ul class="list">
+    <li>Un <strong>rol</strong> agrupa permisos según su <em>categoría</em> (tienda, organización, POS). Puedes asignar varios roles a un mismo usuario; los permisos se acumulan. 
+      <a href="https://help.shopify.com/es/manual/your-account/users/roles" target="_blank" rel="noopener">Roles</a> · 
+      <a href="https://help.shopify.com/es/manual/your-account/users/roles/role-categories" target="_blank" rel="noopener">Categorías de rol</a>. 
+    </li>
+    <li>Los <strong>permisos</strong> determinan qué puede ver/editar/borrar el usuario (productos, pedidos, configuración, apps…). 
+      <a href="https://help.shopify.com/es/manual/your-account/users/roles/permissions" target="_blank" rel="noopener">Permisos</a> · 
+      <a href="https://help.shopify.com/es/manual/your-account/users/roles/permissions/store-permissions" target="_blank" rel="noopener">Permisos de la tienda</a>. 
+    </li>
+    <li>(Tiendas antiguas) Si ves “Usuarios y permisos” heredado, consulta la tabla completa de permisos por área. 
+      <a href="https://help.shopify.com/es/manual/your-account/staff-accounts/staff-permissions" target="_blank" rel="noopener">Permisos (modelo antiguo)</a> · 
+      <a href="https://help.shopify.com/es/manual/your-account/staff-accounts/staff-permissions/staff-permissions-descriptions" target="_blank" rel="noopener">Descripciones</a>.
+    </li>
+    <li>(POS) Gestión de empleados de punto de venta y roles POS. 
+      <a href="https://help.shopify.com/es/manual/your-account/users/user-management-roles" target="_blank" rel="noopener">Requisitos de roles/permisos</a>.
+  </ul>
+
+  <h5>3) Seguridad: Autenticación en dos pasos (2FA)</h5>
+  <ul class="list">
+    <li>Recomendado para todos los usuarios; en Plus puede <strong>exigirse</strong> para toda la organización (Usuarios → Seguridad). 
+      <a href="https://help.shopify.com/es/manual/your-account/users/security/two-step-authentication" target="_blank" rel="noopener">2FA para usuarios</a> · 
+      <a href="https://help.shopify.com/es/manual/your-account/users/security/advanced-security-features/enforce-two-step-authentication" target="_blank" rel="noopener">Exigir 2FA (Plus)</a>.
+    </li>
+    <li>Cómo activarla con app autenticadora (QR) paso a paso. 
+      <a href="https://help.shopify.com/es/manual/your-account/logging-in/two-step-authentication/authenticator-app" target="_blank" rel="noopener">Guía Authenticator</a>.
+    </li>
+  </ul>
+
+  <h5>4) Colaboradores (agencias/partners)</h5>
+  <p>Si necesitas que una agencia trabaje en tu tienda, usa una <strong>cuenta de colaborador</strong> (no ocupa plaza de staff) y controla el acceso por permisos. El partner te enviará una solicitud que puedes aprobar desde tu admin. 
+    <a href="https://help.shopify.com/es/partners/manage-clients-stores/request-access" target="_blank" rel="noopener">Solicitar acceso (Partners)</a> · 
+    <a href="https://shopify.dev/docs/storefronts/themes/tools/collaborator-accounts" target="_blank" rel="noopener">Docs de colaborador</a>.
+  </p>
+
+  <h5>5) Transferir propiedad</h5>
+  <p>Solo el <strong>propietario de la tienda</strong> puede transferir la propiedad a otro usuario desde <em>Configuración → Usuarios</em>. Si trabajas con una organización (Plus), existe también la transferencia de propiedad de la organización. 
+    <a href="https://help.shopify.com/es/manual/your-account/manage-orgs-and-stores/change-transfer-ownership" target="_blank" rel="noopener">Cambiar/transferir propiedad de la tienda</a> · 
+    <a href="https://help.shopify.com/es/manual/organization-settings/users/ownership-transfer" target="_blank" rel="noopener">Propiedad de la organización</a>.
+  </p>
+
+  <h5>6) Auditoría y actividad</h5>
+  <ul class="list">
+    <li><strong>Acceso reciente</strong> y <strong>historial de inicio de sesión</strong> por usuario (IP, ubicación, navegador). 
+      <a href="https://help.shopify.com/es/manual/your-account/users/security/user-management-activity-log" target="_blank" rel="noopener">Actividad de usuario</a>.
+    </li>
+    <li><strong>Registro de actividad de la tienda</strong> (cambios recientes de usuarios/apps/canales). 
+      <a href="https://help.shopify.com/en/manual/shopify-admin/activity-logs" target="_blank" rel="noopener">Activity logs</a>.
+    </li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/usuarios-permisos-shopify.JPG" alt="Pantalla de Usuarios y permisos en Shopify: invitaciones, roles y seguridad">
+    <figcaption class="meta">Configuracion -> Usuarios y permisos: invitaciones, roles, 2FA y auditoría.</figcaption>
+  </figure>
+</li>
+
+<!-- Pagos -->
+<li class="step" id="pagos">
+  <h4>Pagos (Configuración → Pagos)</h4>
+  <p>Desde <em>Configuración → Pagos</em> defines cómo cobran tus clientes: <strong>Shopify Payments</strong> (si está disponible), <strong>proveedores externos</strong> (pasarelas) y <strong>métodos manuales</strong> (transferencia, contra reembolso, etc.). <a href="https://help.shopify.com/es/manual/payments/shopify-payments" target="_blank" rel="noopener">Shopify Payments (visión general)</a>.</p>
+
+  <h5>1) Shopify Payments (recomendado cuando esté disponible)</h5>
+  <ul class="list">
+    <li><strong>Activación</strong>: pulsa <em>Activar Shopify Payments</em> y completa la verificación KYC (datos de negocio, titular y cuenta bancaria). Shopify exige <strong>2FA</strong> para recibir pagos. <a href="https://help.shopify.com/es/manual/payments/shopify-payments/onboarding/account-setup" target="_blank" rel="noopener">Configurar/activar cuenta</a>.</li>
+    <li><strong>Configuración</strong>: monedas, países, prevención de fraude y pagos acelerados (Shop Pay, Apple Pay, Google Pay) desde la misma pantalla. <a href="https://help.shopify.com/es/manual/payments/shopify-payments/configuring-shopify-payments" target="_blank" rel="noopener">Ajustes de Shopify Payments</a> · <a href="https://help.shopify.com/es/manual/payments" target="_blank" rel="noopener">Pagos y botones acelerados</a>.</li>
+    <li><strong>Modo de prueba</strong>: permite simular cobros en un entorno seguro (no usar en producción). <a href="https://help.shopify.com/es/manual/checkout-settings/test-orders/payments-test-mode" target="_blank" rel="noopener">Modo de prueba</a>.</li>
+  </ul>
+
+  <h5>2) Proveedores externos de pago (tarjeta y locales)</h5>
+  <ul class="list">
+    <li>Si Shopify Payments no está disponible o prefieres otro gateway, elige entre <strong>más de 100 pasarelas</strong> compatibles desde esta misma página. <a href="https://help.shopify.com/es/manual/payments/third-party-providers/configuring-providers" target="_blank" rel="noopener">Configurar proveedor externo</a> · <a href="https://www.shopify.com/es/aceptar-pagos-en-linea" target="_blank" rel="noopener">Listado por país</a>.</li>
+    <li><strong>PayPal</strong>: conecta tu cuenta (sección “Formas de pago adicionales → PayPal”). <a href="https://help.shopify.com/es/manual/payments/paypal/set-up-paypal" target="_blank" rel="noopener">Configurar PayPal</a>.</li>
+  </ul>
+
+  <h5>3) Métodos de pago manual (transferencia, contra reembolso)</h5>
+  <p>Crea métodos personalizados (por ejemplo, <em>Transferencia bancaria</em> o <em>Pago al recibir</em>). Deberás <strong>marcar el pedido como pagado</strong> cuando recibas el importe. <a href="https://help.shopify.com/es/manual/payments/manual-payments" target="_blank" rel="noopener">Pagos manuales</a>.</p>
+
+  <h5>4) Autorización y captura del pago</h5>
+  <p>Define si la <strong>captura</strong> es <em>automática</em> (se cobra al momento) o <em>manual</em> (queda “Autorizado” hasta que lo captures). Útil si verificas stock o fraude antes de cobrar. <a href="https://help.shopify.com/es/manual/fulfillment/managing-orders/payments/capturing-payments" target="_blank" rel="noopener">Capturar pagos</a>.</p>
+
+  <h5>5) Pagos, reembolsos y abonos</h5>
+  <ul class="list">
+    <li><strong>Reembolsos</strong>: emítelos desde el pedido; el importe se deduce del siguiente pago (puede crear saldo negativo). <a href="https://help.shopify.com/es/manual/payments/shopify-payments/payouts/refunds" target="_blank" rel="noopener">Reembolsos en Shopify Payments</a>.</li>
+    <li><strong>Pagos faltantes o menores</strong>: consulta estados, plazos y causas habituales. <a href="https://help.shopify.com/es/manual/payments/shopify-payments/payouts/lower-or-missing-payouts" target="_blank" rel="noopener">Pagos menores o faltantes</a>.</li>
+  </ul>
+
+  <h5>6) Internacional y medios locales</h5>
+  <p>Si vendes en varios países, en <em>Markets</em> verás <strong>formas de pago locales</strong> elegibles por mercado y un enlace directo a esta configuración para activarlas. <a href="https://help.shopify.com/es/manual/international/payments" target="_blank" rel="noopener">Pagos por mercados</a>.</p>
+
+  <figure class="guide-figure" style="margin-top:.8rem">
+    <img class="shot" src="img/pagos-shopify.JPG" alt="Configuración de Pagos en Shopify: Shopify Payments, proveedores externos, pagos manuales">
+    <figcaption class="meta">Configuración -> Pagos: activación de Shopify Payments, proveedores externos y métodos manuales.</figcaption>
+  </figure>
+</li>
+
+<!-- Pantalla de pago -->
+<li class="step" id="pantalla-pago">
+  <h4>Pantalla de pago (Configuración → Pantalla de pago)</h4>
+  <p>
+    Desde <em>Configuración → Pantalla de pago</em> defines la experiencia de checkout: cuentas de cliente, método de contacto, campos obligatorios/opcionales, propinas, textos y personalización visual. 
+    <a href="https://help.shopify.com/es/manual/checkout-settings" target="_blank" rel="noopener">Guía oficial de Pantalla de pago</a>.
+  </p>
+
+  <h5>1) Cuentas de cliente y método de contacto</h5>
+  <ul class="list">
+    <li><strong>Cuentas de cliente</strong>: permite <em>checkout como invitado</em>, <em>opcional</em> o <em>requerido</em>. Ajusta la “Experiencia de la cuenta” para decidir si el cliente debe iniciar sesión o puede pagar como invitado.</li>
+    <li><strong>Método de contacto</strong>: elige si pides <em>email</em>, <em>teléfono</em> o ambos, y si incluyes la casilla de <em>consentimiento de marketing</em>.</li>
+  </ul>
+  <p class="meta">
+    Más info: <a href="https://help.shopify.com/es/manual/checkout-settings" target="_blank" rel="noopener">Pantalla de pago</a>.
+  </p>
+
+  <h5>2) Campos del formulario de pago</h5>
+  <p>
+    Puedes marcar campos como <strong>obligatorios</strong>, <strong>opcionales</strong> u <strong>ocultos</strong> (por ejemplo, segundo apellido, empresa o teléfono) para simplificar el proceso y mejorar la conversión.
+    <a href="https://help.shopify.com/es/manual/checkout-settings/checkout-form-options" target="_blank" rel="noopener">Editar opciones del formulario</a>.
+  </p>
+
+  <h5>3) Propinas (tips)</h5>
+  <p>
+    Activa la opción de <strong>propinas</strong> en el checkout y personaliza los textos desde el contenido por defecto del tema (sección “Checkout & system”).
+    <a href="https://help.shopify.com/en/manual/checkout-settings/tips" target="_blank" rel="noopener">Configurar propinas</a>.
+  </p>
+
+  <h5>4) Apariencia y personalización</h5>
+  <ul class="list">
+    <li><strong>Editor de checkout y cuentas</strong>: personaliza estilo (logo, colores, tipografías) y estructura del checkout con el editor. En planes básicos tienes el editor y apps para “Thank you”/“Order status”; en <strong>Shopify Plus</strong> se amplía a páginas de <em>Información</em>, <em>Envío</em> y <em>Pago</em>, además del <strong>Checkout Branding API</strong>.
+      <br>• <a href="https://help.shopify.com/en/manual/checkout-settings/customize-checkout-configurations" target="_blank" rel="noopener">Personalizar checkout con el editor</a> · 
+      <a href="https://help.shopify.com/en/manual/checkout-settings/checkout-blocks/branding-editor" target="_blank" rel="noopener">Branding editor (Plus)</a> · 
+      <a href="https://shopify.dev/docs/apps/build/checkout/styling" target="_blank" rel="noopener">Checkout Branding API (Plus)</a>.
+    </li>
+    <li><strong>Formas de pago visibles</strong>: oculta/ordena/renombra métodos con apps compatibles si necesitas priorizar ciertas opciones.
+      <a href="https://help.shopify.com/es/manual/checkout-settings/checkout-customization" target="_blank" rel="noopener">Personalizar opciones de pago</a>.
+    </li>
+  </ul>
+
+  <h5>5) Idioma y textos del checkout</h5>
+  <p>
+    Cambia los <strong>textos del checkout</strong> desde <em>Configuración → Pantalla de pago → Idioma del checkout (Administrar)</em>.
+    Para traducir el resto de la tienda usa “Translate & Adapt” o la traducción del tema.
+    <a href="https://help.shopify.com/en/manual/checkout-settings/checkout-language" target="_blank" rel="noopener">Traducir el checkout</a> · 
+    <a href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes/language/translate-theme" target="_blank" rel="noopener">Traducir el tema</a>.
+  </p>
+
+  <h5>6) Recuperación de checkouts abandonados</h5>
+  <p>
+    Crea una automatización en <em>Marketing → Automatizaciones</em> para enviar emails de <strong>carrito/checkout abandonado</strong> con enlace de retorno; puedes incluir descuentos para incentivar la finalización.
+    <a href="https://help.shopify.com/es/manual/promoting-marketing/create-marketing/migrate-abandoned-checkout" target="_blank" rel="noopener">Automatización de checkout abandonado</a> · 
+    <a href="https://help.shopify.com/en/manual/promoting-marketing/create-marketing/abandoned-checkouts" target="_blank" rel="noopener">Informe y eficacia</a> · 
+    <a href="https://help.shopify.com/es/manual/discounts/discounts-for-abandoned-checkout-recovery-emails" target="_blank" rel="noopener">Descuento automático en emails</a>.
+  </p>
+
+  <figure class="guide-figure" style="margin-top:.6rem">
+    <img class="shot" src="img/pantalla-pagos-shopify.JPG" alt="Editor y configuración de la Pantalla de pago en Shopify">
+    <figcaption class="meta">Configuración -> Pantalla de pago: cuentas, campos, propinas, estilo y automatizaciones.</figcaption>
+  </figure>
+</li>
+
+
+<!-- Cuentas de clientes -->
+<li class="step" id="cuentas-clientes">
+  <h4>Cuentas de clientes (Configuración → Cuentas de clientes)</h4>
+
+  <p>
+    Las cuentas permiten a tus clientes iniciar sesión para ver pedidos, gestionar direcciones y agilizar el checkout (autorrelleno). Shopify ofrece dos experiencias:
+    <strong>“Cuentas de clientes” (nuevas)</strong> y <strong>“Cuentas antiguas (legacy)”</strong>. En las nuevas, el acceso es
+    <em>sin contraseña</em> mediante un <strong>código de 6 dígitos</strong> enviado por email, y también pueden iniciar sesión con <strong>Shop</strong> (Shop Pay). 
+    <a href="https://help.shopify.com/en/manual/customers/customer-accounts" target="_blank" rel="noopener">Visión general</a> · 
+    <a href="https://help.shopify.com/en/manual/customers/customer-accounts/new-customer-accounts" target="_blank" rel="noopener">Nuevas cuentas de cliente</a>.
+  </p>
+
+  <h5>1) Elegir el tipo de cuenta y activarlas</h5>
+  <ul class="list">
+    <li>Entra en <em>Configuración → Cuentas de clientes</em> y selecciona <strong>Customer accounts</strong> (nuevas) o <strong>Legacy</strong> (antiguas). Las nuevas usan código por email (sin contraseña) y son la experiencia recomendada a futuro.</li>
+    <li>Habilita que se muestre el enlace “Iniciar sesión” en tu tienda y checkout si quieres ofrecer acceso opcional.</li>
+  </ul>
+  <p class="meta">
+    Más info sobre nuevas cuentas y experiencia de inicio de sesión sin contraseña: 
+    <a href="https://help.shopify.com/en/manual/customers/customer-accounts/new-customer-accounts" target="_blank" rel="noopener">Customer accounts (new)</a> · 
+    <a href="https://help.shopify.com/en/manual/customers/customer-accounts/new-customer-accounts/customer-experience" target="_blank" rel="noopener">Customer experience</a>.
+  </p>
+
+  <h5>2) ¿Requeridas u opcionales en el checkout?</h5>
+  <p>
+    Si quieres <strong>exigir iniciar sesión antes de pagar</strong>, ve a <em>Configuración → Checkout</em> y activa la opción correspondiente (requiere cuenta antes del pago). Si prefieres menos fricción, déjalas como <strong>opcionales</strong> para permitir checkout como invitado.
+  </p>
+  <p class="meta">
+    Ajustes de checkout y opciones del formulario: 
+    <a href="https://help.shopify.com/en/manual/checkout-settings" target="_blank" rel="noopener">Checkout settings</a> · 
+    <a href="https://help.shopify.com/en/manual/checkout-settings/checkout-form-options" target="_blank" rel="noopener">Checkout form options</a>.
+  </p>
+
+  <h5>3) Inicio de sesión con Shop y Shop Pay</h5>
+  <ul class="list">
+    <li>Con las nuevas cuentas, si ofreces <strong>Shop Pay</strong>, el botón <em>Sign in with Shop</em> se activa automáticamente; los datos guardados aceleran el pago en un toque.</li>
+  </ul>
+  <p class="meta">
+    Detalles de la experiencia y Shop Pay: 
+    <a href="https://help.shopify.com/en/manual/customers/customer-accounts/new-customer-accounts/customer-experience" target="_blank" rel="noopener">Customer accounts — Experience</a> · 
+    <a href="https://help.shopify.com/en/manual/payments/shop-pay" target="_blank" rel="noopener">Shop Pay</a>.
+  </p>
+
+  <h5>4) Personalizar la página de cuenta</h5>
+  <p>
+    Personaliza el aspecto de <em>checkout y cuentas</em> (logo, colores, bloques/apps) con el <strong>Checkout & Accounts editor</strong>.
+  </p>
+  <p class="meta">
+    Cómo personalizar checkout y cuentas: 
+    <a href="https://help.shopify.com/en/manual/checkout-settings/customize-checkout-configurations" target="_blank" rel="noopener">Branding y configuración</a> · 
+    <a href="https://help.shopify.com/en/manual/checkout-settings/customize-checkout-configurations/checkout-editor" target="_blank" rel="noopener">Checkout & Accounts editor</a>. 
+  </p>
+
+  <h5>5) Recuperación/soporte al cliente</h5>
+  <ul class="list">
+    <li><strong>Legacy</strong>: si usas cuentas antiguas, los clientes pueden restablecer contraseña; revisa también tus plantillas de email en <em>Configuración → Notificaciones</em>.</li>
+    <li><strong>Nuevas cuentas</strong>: el acceso es por código de un solo uso enviado por email (no hay contraseña que restablecer).</li>
+  </ul>
+  <p class="meta">
+    Restablecer contraseñas (modelo legacy): 
+    <a href="https://help.shopify.com/es/manual/your-account/logging-in/reset-password" target="_blank" rel="noopener">Restablecer contraseña</a>. 
+  </p>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/cuentas-clientes-shopify.JPG" alt="Pantalla de Cuentas de clientes en Shopify: activar nuevas cuentas, enlace de acceso y opciones de checkout">
+    <figcaption class="meta">Configuración -> Cuentas de clientes: activación, opciones en checkout y personalización de la página de cuenta.</figcaption>
+  </figure>
+</li>
+
+
+<!-- Envío y entrega -->
+<li class="step" id="envio-entrega">
+  <h4>Envío y entrega (Configuración → Envío y entrega)</h4>
+  <p>
+    Desde <em>Configuración → Envío y entrega</em> defines perfiles de envío, zonas y tarifas; además, configuras <strong>paquetes</strong>, <strong>retiro en tienda</strong> y <strong>entrega local</strong>. Es el punto central para que tus clientes vean opciones y costes correctos en el checkout.
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup" target="_blank" rel="noopener">Cómo funciona el envío en Shopify</a>.
+  </p>
+
+  <h5>1) Perfiles de envío</h5>
+  <ul class="list">
+    <li>Usa el <strong>Perfil general</strong> para la mayoría de productos, o crea <strong>perfiles personalizados</strong> (p. ej., artículos voluminosos/frágiles con tarifas distintas).</li>
+    <li>En cada perfil, define <em>zonas</em> y <em>tarifas</em> por sucursal (ubicación) que prepara pedidos.</li>
+  </ul>
+  <p class="meta">
+    Guía: <a href="https://help.shopify.com/es/manual/fulfillment/setup/shipping-profiles" target="_blank" rel="noopener">Perfiles de envío</a> · 
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/shipping-profiles/setting-up-shipping-profiles" target="_blank" rel="noopener">Configurar/gestionar perfiles</a>.
+  </p>
+
+  <h5>2) Zonas de envío y Shopify Markets</h5>
+  <ul class="list">
+    <li>Crea <strong>zonas</strong> (grupos de países/regiones) y asígnales tarifas. Un país/región solo puede pertenecer a una zona por grupo de sucursales.</li>
+    <li>Para poder añadir un país a una zona, debe estar en un <strong>Mercado activo</strong> (Markets).</li>
+  </ul>
+  <p class="meta">
+    Guía: <a href="https://help.shopify.com/es/manual/fulfillment/setup/shipping-rates/shipping-zones" target="_blank" rel="noopener">Zonas de envío</a> · 
+    <a href="https://help.shopify.com/es/manual/international/shipping/shipping-zones" target="_blank" rel="noopener">Zonas y Markets</a>. 
+  </p>
+
+  <h5>3) Tarifas de envío (qué puedes ofrecer)</h5>
+  <ul class="list">
+    <li><strong>Tarifa plana</strong> (única o por tramos), <strong>gratuito</strong> (p. ej., a partir de cierto importe), o <strong>condicionadas</strong> por <em>precio/peso</em>.</li>
+    <li><strong>Tarifas calculadas por transportista</strong> (CCS): muestra el coste en tiempo real desde tu cuenta UPS/FedEx/DHL, etc. Requiere activar CCS y conectar la cuenta del transportista.</li>
+  </ul>
+  <p class="meta">
+    Guías: <a href="https://help.shopify.com/es/manual/fulfillment/setup/shipping-rates/third-party-carrier-calculated-shipping" target="_blank" rel="noopener">Activar tarifas calculadas (CCS)</a> · 
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/shipping-rates/carrier-calculated-shipping-rates" target="_blank" rel="noopener">Crear tarifas con transportistas</a>. 
+  </p>
+
+  <h5>4) Paquetes, pesos y dimensiones</h5>
+  <ul class="list">
+    <li>Guarda <strong>tipos de paquete</strong> y define un <strong>paquete predeterminado</strong> (se usa para calcular tarifas por peso o por transportista).</li>
+    <li>Minimiza tamaño/peso para evitar sobrecostes (dimensional weight).</li>
+  </ul>
+  <p class="meta">
+    Guías: <a href="https://help.shopify.com/es/manual/fulfillment/setup/packaging/packages-and-weights" target="_blank" rel="noopener">Embalaje y pesos</a> · 
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/packaging/setting-up-packages" target="_blank" rel="noopener">Configurar paquetes</a>.
+  </p>
+
+  <h5>5) Shopify Shipping (etiquetas)</h5>
+  <ul class="list">
+    <li>Compra/imprime <strong>etiquetas</strong> con tarifas con descuento (si está disponible en tu país). Adminístralas desde la página <em>Etiquetas de envío</em> (reimpresión, anulación, manifiestos y recogidas).</li>
+  </ul>
+  <p class="meta">
+    Guías: <a href="https://help.shopify.com/es/manual/fulfillment/fulfilling-orders/shipping-labels" target="_blank" rel="noopener">Shopify Shipping</a> · 
+    <a href="https://help.shopify.com/es/manual/fulfillment/fulfilling-orders/shipping-labels/managing-labels" target="_blank" rel="noopener">Gestionar etiquetas</a> ·
+    <a href="https://help.shopify.com/es/manual/fulfillment/fulfilling-orders/shipping-labels/setup" target="_blank" rel="noopener">Configurar Shopify Shipping</a>. 
+  </p>
+
+  <h5>6) Retiro en tienda y Entrega local</h5>
+  <ul class="list">
+    <li><strong>Retiro en tienda</strong>: añade la opción para que el cliente recoja su pedido en una sucursal.</li>
+    <li><strong>Entrega local</strong>: ofrece reparto en un radio o por <em>códigos postales</em> desde cada sucursal elegible.</li>
+  </ul>
+  <p class="meta">
+    Guías: <a href="https://help.shopify.com/es/manual/fulfillment/setup/delivery-methods/pickup-in-store" target="_blank" rel="noopener">Configurar retiro en tienda</a> · 
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/delivery-methods/local-delivery" target="_blank" rel="noopener">Configurar entrega local</a> · 
+    <a href="https://help.shopify.com/es/manual/fulfillment/fulfilling-orders/local-delivery-fulfillment" target="_blank" rel="noopener">Preparar pedidos de entrega local</a>.
+  </p>
+
+  <h5>7) Envíos internacionales: aranceles e impuestos de importación</h5>
+  <ul class="list">
+    <li>Puedes <strong>cobrar aranceles/impuestos</strong> en el checkout (DDP) si cumples requisitos; revisa compatibilidades con personalizaciones del checkout e impuestos.</li>
+    <li>Si cobras en checkout, usa <strong>etiquetas DDP</strong> del transportista compatible al preparar el envío.</li>
+  </ul>
+  <p class="meta">
+    Guías: <a href="https://help.shopify.com/es/manual/international/duties-and-import-taxes" target="_blank" rel="noopener">Aranceles e impuestos de importación</a> · 
+    <a href="https://help.shopify.com/es/manual/international/duties-and-import-taxes/charging-duties" target="_blank" rel="noopener">Cobrar aranceles en checkout (requisitos)</a> · 
+    <a href="https://help.shopify.com/es/manual/international/duties-and-import-taxes/considerations" target="_blank" rel="noopener">Consideraciones y compatibilidad</a>.
+  </p>
+
+  <h5>8) Flujo de preparación y seguimiento</h5>
+  <ul class="list">
+    <li>Prepara el pedido, compra la etiqueta y <strong>añade tracking</strong>. El estado se actualiza y el cliente recibe notificaciones según tu configuración.</li>
+  </ul>
+  <p class="meta">
+    Guía: <a href="https://help.shopify.com/es/manual/fulfillment/fulfilling-orders/shipping-labels" target="_blank" rel="noopener">Preparar pedidos y etiquetas</a>.
+  </p>
+
+  <figure class="guide-figure" style="margin-top:.6rem">
+    <img class="shot" src="img/envio-entrega-shopify.JPG" alt="Pantalla de Envío y entrega en Shopify: perfiles, zonas, tarifas, paquetes, retiro y entrega local">
+    <figcaption class="meta">Configuración -> Envío y entrega: perfiles, zonas, tarifas, paquetes, retiro y entrega local.</figcaption>
+  </figure>
+</li>
+
+
+<!-- Impuestos y aranceles -->
+<li class="step" id="impuestos-aranceles">
+  <h4>Impuestos y aranceles (Configuración → Impuestos y aranceles)</h4>
+
+  <p>
+    En <em>Configuración → Impuestos y aranceles</em> defines tus <strong>regiones fiscales</strong>, registraciones (NIF-IVA, etc.), reglas de cálculo y, si vendes internacionalmente, la <strong>recaudación de aranceles e impuestos de importación</strong> en el checkout. Shopify facilita el cálculo, pero no presenta ni paga impuestos por ti salvo que actives flujos específicos de Shopify Tax. 
+    <a href="https://help.shopify.com/es/manual/taxes" target="_blank" rel="noopener">Guía de impuestos</a>.
+  </p>
+
+  <h5>1) Configurar regiones fiscales y registros</h5>
+  <ul class="list">
+    <li>Entra en <em>Impuestos y aranceles</em> y añade tus <strong>países/regiones</strong> de cobro. Después, agrega tus <strong>números fiscales</strong> (cuando aplique). Podrás editar registros, exenciones y anulaciones desde la misma página. 
+      <a href="https://help.shopify.com/es/manual/taxes/registration/setup" target="_blank" rel="noopener">Configurar impuestos</a> · 
+      <a href="https://help.shopify.com/es/manual/taxes/registration/manage" target="_blank" rel="noopener">Gestionar registros</a>.
+    </li>
+    <li><strong>UE (IVA)</strong>: revisa si te aplica OSS/IOSS y el umbral de 10 000 € para microempresas. 
+      <a href="https://help.shopify.com/es/manual/taxes/eu/eu-tax-reference" target="_blank" rel="noopener">Referencia fiscal UE</a>.
+    </li>
+  </ul>
+
+  <h5>2) Precios con impuestos incluidos/excluidos</h5>
+  <ul class="list">
+    <li>Activa “<strong>Incluir impuesto en el precio del producto</strong>” si trabajas con PVP IVA incluido (típico en la UE). 
+      <a href="https://help.shopify.com/es/manual/taxes/include-exclude-taxes" target="_blank" rel="noopener">Incluir/excluir impuestos en precios</a>.
+    </li>
+    <li>Para que el precio mostrado <em>se adapte al país</em> (incluido o excluido según corresponda), activa los <strong>precios dinámicos con impuestos incluidos</strong> junto con Markets. 
+      <a href="https://help.shopify.com/es/manual/international/pricing/dynamic-tax-inclusive-pricing" target="_blank" rel="noopener">Precios dinámicos con impuestos</a>.
+    </li>
+  </ul>
+
+  <h5>3) Exactitud de cálculo: categorías/códigos de producto</h5>
+  <p>
+    Asigna <strong>categorías de producto</strong> (o códigos fiscales) para mejorar la exactitud de los cálculos sin mantener anulaciones manuales. Si tienes anulaciones que chocan con la categoría, prevalece la anulación. 
+    <a href="https://help.shopify.com/es/manual/taxes/shopify-tax/product-categories-tax" target="_blank" rel="noopener">Categorías de producto</a>.
+  </p>
+
+  <h5>4) Aranceles e impuestos de importación (ventas internacionales)</h5>
+  <ul class="list">
+    <li>Activa la <strong>recaudación en el checkout</strong> desde <em>Impuestos y aranceles → Aranceles e impuestos de importación</em>. Revisa compatibilidades antes de activarlo. 
+      <a href="https://help.shopify.com/es/manual/international/duties-and-import-taxes" target="_blank" rel="noopener">Guía de aranceles e impuestos de importación</a> · 
+      <a href="https://help.shopify.com/es/manual/international/duties-and-import-taxes/charging-duties" target="_blank" rel="noopener">Activar cobro en checkout</a>.
+    </li>
+    <li>Necesitas completar por producto el <strong>código HS</strong> y <strong>país de origen</strong> para cálculos correctos (sin ellos, Shopify infiere por descripción/categoría). 
+      <a href="https://help.shopify.com/es/manual/international/duties-and-import-taxes" target="_blank" rel="noopener">Requisitos de datos</a>.
+    </li>
+    <li><strong>Importante:</strong> cobrar aranceles/impuestos de importación en el checkout puede <strong>anular</strong> anulaciones y tasas fiscales manuales mientras esté activo; revisa personalizaciones de checkout y configuración fiscal. 
+      <a href="https://help.shopify.com/es/manual/international/duties-and-import-taxes/considerations" target="_blank" rel="noopener">Consideraciones y compatibilidad</a>.
+    </li>
+  </ul>
+
+  <div class="callout" role="note" aria-label="Nota legal" style="margin-top:.6rem">
+    <strong>Nota:</strong> Shopify te ayuda a calcular impuestos, pero <strong>no sustituye el asesoramiento fiscal</strong> ni presenta declaraciones por ti (salvo flujos específicos de Shopify Tax). Consulta a tu asesor o autoridad fiscal local. 
+    <a href="https://help.shopify.com/es/manual/taxes/eu/eu-tax-migrate" target="_blank" rel="noopener">Alcance de soporte</a>. 
+  </div>
+
+  <figure class="guide-figure" style="margin-top:.6rem">
+    <img class="shot" src="img/impuestos-arranceles-shopify.JPG" alt="Impuestos y aranceles en Shopify: regiones fiscales, precios con impuestos, categorías de producto y aranceles en checkout">
+    <figcaption class="meta">Configuración -> Impuestos y aranceles: regiones, registros, precios con impuesto, categorías de producto y cobro de aranceles.</figcaption>
+  </figure>
+</li>
+
+
+<!-- Sucursales -->
+<li class="step" id="sucursales">
+  <h4>Sucursales (Configuración → Sucursales)</h4>
+
+  <p>
+    Una <strong>sucursal</strong> es cualquier lugar físico o app donde vendes, guardas inventario o preparas/envías pedidos. Puedes tener varias y la cantidad máxima depende de tu plan. 
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/locations-management" target="_blank" rel="noopener">Qué es una sucursal y límites por plan</a>.
+  </p>
+
+  <h5>1) Crear y configurar una sucursal</h5>
+  <ol>
+    <li>Ve a <em>Configuración → Sucursales</em> y pulsa <strong>Añadir sucursal</strong>.</li>
+    <li>Completa <em>Nombre</em> y <em>Dirección</em>. Decide si “<em>el inventario de esta sucursal está disponible para pedidos online</em>”.</li>
+    <li>(Opcional) Hazla <strong>predeterminada</strong> si será tu origen principal de preparación de pedidos.</li>
+  </ol>
+  <p class="meta">
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/locations/setting-up-locations?language=es" target="_blank" rel="noopener">Configurar/gestionar sucursales</a> · 
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/locations-management" target="_blank" rel="noopener">Hacer que solo una prepare online</a>.
+  </p>
+
+  <h5>2) Inventario por sucursal</h5>
+  <ul class="list">
+    <li>Asigna existencias por producto y sucursal (desde el producto o con el editor masivo).</li>
+    <li>La gestión múltiple permite combinar stock propio con apps de logística/dropshipping.</li>
+  </ul>
+  <p class="meta">
+    <a href="https://help.shopify.com/es/manual/locations/assigning-inventory-to-locations" target="_blank" rel="noopener">Asignar inventario a sucursales</a> · 
+    <a href="https://help.shopify.com/es/manual/products/inventory" target="_blank" rel="noopener">Gestión de inventario</a>.
+  </p>
+
+  <h5>3) Enrutamiento/prioridad de preparación</h5>
+  <p>
+    Define reglas de <strong>enrutamiento de pedidos</strong> para decidir desde qué sucursal se envía (prioridades, proximidad, stock, etc.). Como desempate, añade “<em>Enviar desde la sucursal más cercana</em>”.
+  </p>
+  <p class="meta">
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/order-routing/setting-up-order-routing" target="_blank" rel="noopener">Configurar enrutamiento</a>.
+  </p>
+
+  <h5>4) Retiro en tienda y entrega local (por sucursal)</h5>
+  <ul class="list">
+    <li>Activa <strong>Retiro en tienda</strong> por cada sucursal que ofrezca recogida.</li>
+    <li>Configura <strong>Entrega local</strong> con radio de distancia o códigos postales por sucursal.</li>
+  </ul>
+  <p class="meta">
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/delivery-methods/pickup-in-store" target="_blank" rel="noopener">Configurar retiro en tienda</a> · 
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/delivery-methods/local-delivery" target="_blank" rel="noopener">Configurar entrega local</a>.
+  </p>
+
+  <h5>5) POS y sucursal del dispositivo</h5>
+  <p>
+    En tiendas con POS, asigna cada <strong>dispositivo</strong> a su sucursal y gestiona la <strong>suscripción POS</strong> por sucursal.
+  </p>
+  <p class="meta">
+    <a href="https://help.shopify.com/es/manual/sell-in-person/getting-started/shopify-pos-from-admin/add-locations" target="_blank" rel="noopener">Sucursales en POS</a>.
+
+  <h5>6) Perfiles de envío y grupos de sucursales</h5>
+  <p>
+    En <em>Perfiles de envío</em>, las sucursales se agrupan para calcular tarifas. Las sucursales inactivas aparecen como <em>Inactivas</em> y no se usan en el checkout hasta activarlas.
+  </p>
+  <p class="meta">
+    <a href="https://help.shopify.com/en/manual/fulfillment/setup/shipping-profiles/managing-fulfillment-locations" target="_blank" rel="noopener">Sucursales en perfiles de envío</a>.
+  </p>
+
+  <h5>7) Desactivar o eliminar una sucursal</h5>
+  <ul class="list">
+    <li>Antes de desactivarla, <strong>completa y/o reasigna</strong> todos los pedidos y transferencias asociados.</li>
+    <li>No puedes desactivar la <strong>predeterminada</strong> (cámbiala primero) ni una sucursal de <strong>app de terceros/privada</strong> (elimina la app).</li>
+  </ul>
+  <p class="meta">
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/locations/setting-up-locations?language=es" target="_blank" rel="noopener">Requisitos para desactivar</a> · 
+    <a href="https://help.shopify.com/en/manual/locations?es_p=645312" target="_blank" rel="noopener">Restricciones (predeterminada/apps)</a>.
+  </p>
+
+  <figure class="guide-figure" style="margin-top:.6rem">
+    <img class="shot" src="img/sucursales-shopify.JPG" alt="Pantalla de Sucursales en Shopify: añadir, inventario por sucursal, prioridad de preparación y retiro en tienda">
+    <figcaption class="meta">Configuración -> Sucursales: alta/gestión, inventario por ubicación, reglas de enrutamiento y opciones locales.</figcaption>
+  </figure>
+</li>
+
+
+<!-- Aplicaciones y canales de ventas -->
+<li class="step" id="aplicaciones-canales">
+  <h4>Aplicaciones y canales de ventas (Configuración → Aplicaciones y canales de ventas)</h4>
+
+  <p>
+    Desde esta sección instalas y gestionas <strong>aplicaciones</strong> que añaden funciones a tu tienda
+    (marketing, envíos, analítica…), y <strong>canales de ventas</strong> como Shop, Google & YouTube,
+    Facebook & Instagram o marketplaces. Todo queda centralizado en el Admin.
+  </p>
+
+  <h5>1) Instalar aplicaciones</h5>
+  <ul class="list">
+    <li><strong>Shopify App Store</strong>: busca la app y pulsa <em>Instalar</em>; autoriza permisos en el Admin.</li>
+    <li><strong>Enlace de terceros</strong>: instala apps privadas/personalizadas con su URL de instalación.</li>
+    <li>Tras instalar, la verás en <em>Configuración → Aplicaciones y canales de ventas</em> (abre su ficha para preferencias, permisos y facturación de la app).</li>
+  </ul>
+
+  <h5>2) Gestionar apps, permisos y facturación</h5>
+  <ul class="list">
+    <li>Desde la ficha de cada app puedes <strong>abrirla</strong>, revisar <strong>permisos</strong> y <strong>política de privacidad</strong>, ajustar sus <strong>preferencias</strong> y consultar su <strong>facturación</strong> o plan.</li>
+    <li>Si la app añade bloques al panel, podrás activarlos desde el propio Admin o desde el editor del tema (ver punto 4).</li>
+  </ul>
+
+  <h5>3) Desinstalar aplicaciones</h5>
+  <ul class="list">
+    <li>En <em>Configuración → Aplicaciones y canales de ventas</em>, abre el menú de la app → <strong>Desinstalar</strong>.</li>
+    <li>Si la app tenía <em>inventario en una sucursal de app</em>, sigue el flujo guiado para retirar/trasladar existencias antes de eliminarla.</li>
+  </ul>
+
+  <h5>4) Bloques de app en el tema (App blocks / App embeds)</h5>
+  <ul class="list">
+    <li>Con temas Online Store 2.0 puedes añadir <strong>bloques de app</strong> o <strong>app embeds</strong> desde <em>Tienda online → Personalizar</em> (categoría “Apps”).</li>
+    <li>Úsalos para insertar widgets (reseñas, badges, formularios, etc.) sin editar código del tema.</li>
+  </ul>
+
+  <h5>5) Añadir canales de ventas</h5>
+  <ol>
+    <li>Ve a <em>Configuración → Aplicaciones y canales de ventas</em> y pulsa <strong>Visitar Shopify App Store</strong>.</li>
+    <li>Busca el canal (p. ej., <em>Shop</em>, <em>Google & YouTube</em>, <em>Facebook & Instagram</em>) y pulsa <strong>Añadir canal</strong>.</li>
+    <li>Cada canal incorpora su panel con métricas y ajustes propios.</li>
+  </ol>
+
+  <h5>6) Disponibilidad de productos y colecciones</h5>
+  <ul class="list">
+    <li>Al añadir un canal, por defecto tus productos quedan <strong>disponibles</strong> para ese canal; puedes
+      excluir artículos desde la ficha de producto (<em>Canales de venta → Gestionar</em>).</li>
+    <li>La disponibilidad de <strong>colecciones</strong> se gestiona desde <em>Productos → Colecciones</em> (no
+      cambia la disponibilidad individual de cada producto).</li>
+  </ul>
+
+  <h5>7) Ejemplos rápidos</h5>
+  <ul class="list">
+    <li><strong>Shop (canal nativo)</strong>: configura el canal y personaliza tu tienda en la app Shop;
+      para aparecer, los productos deben tener <em>imagen, precio y categoría</em>.</li>
+    <li><strong>Google & YouTube</strong>: sincroniza catálogo, publica gratis en Shopping y crea campañas.</li>
+    <li><strong>Facebook & Instagram</strong>: sincroniza catálogo y habilita compras sociales.</li>
+    <li><strong>Marketplaces (Marketplace Connect)</strong>: conecta Amazon/eBay y gestiona publicaciones desde la app.</li>
+  </ul>
+
+  <div class="callout" role="note" aria-label="Buenas prácticas" style="margin-top:.6rem">
+    <strong>Consejos:</strong>
+    <ul>
+      <li>Instala solo lo necesario; cada app añade scripts y puede impactar el rendimiento.</li>
+      <li>Revisa <strong>permisos</strong>, <strong>cobros</strong> y <strong>política</strong> de cada app antes de instalar.</li>
+      <li>Audita periódicamente apps y canales; desinstala las que no uses.</li>
+    </ul>
+  </div>
+
+  <figure class="guide-figure" style="margin-top:.6rem">
+    <img class="shot" src="img/apps-canales-venta-shopify.JPG" alt="Página de Aplicaciones y canales de ventas en Shopify: instalar apps, activar bloques y añadir canales">
+    <figcaption class="meta">Configuración -> Aplicaciones y canales: instalación, gestión y disponibilidad por canal.</figcaption>
+  </figure>
+</li>
+
+
+
+      <!--Dominios-->
+<li class="step" id="dominios">
+  <h4>Dominios (Configuración → Dominios)</h4>
+  <p>Desde <em>Configuración → Dominios</em> puedes usar un dominio personalizado para tu tienda, gestionarlo y definir cuál será el <strong>dominio principal</strong> que verán tus clientes.</p>
+
+  <ul class="list">
+    <li><strong>Comprar dominio en Shopify</strong>: proceso guiado y gestión desde el propio panel.
+      <a href="https://help.shopify.com/es/manual/domains/add-a-domain/buying-domains" target="_blank" rel="noopener">Cómo comprar un dominio en Shopify</a>.
+    </li>
+
+    <li><strong>Conectar dominio externo</strong> (GoDaddy, IONOS, Cloudflare, etc.):
+      <ul>
+        <li>Conexión automática (GoDaddy/IONOS/Cloudflare): 
+          <a href="https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains/connect-domain-automatic" target="_blank" rel="noopener">Conectar automáticamente</a>.
+        </li>
+        <li>Conexión manual (editar DNS en tu proveedor):
+          <a href="https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains/connect-domain-manual" target="_blank" rel="noopener">Conectar manualmente</a>.
+        </li>
+        <li>Guía general y compatibilidades:
+          <a href="https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains" target="_blank" rel="noopener">Conectar un dominio externo</a>.
+        </li>
+      </ul>
+    </li>
+
+    <li><strong>Transferir dominio a Shopify</strong> (mover la gestión del dominio a Shopify):
+      <a href="https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains/transferring-domains" target="_blank" rel="noopener">Transferir dominio a Shopify</a>.
+    </li>
+
+    <li><strong>Elegir dominio principal</strong> (el que verá el cliente):
+      <a href="https://help.shopify.com/es/manual/domains/domain-type/change-primary-domain" target="_blank" rel="noopener">Cambiar dominio principal</a>.
+    </li>
+
+    <li><strong>SSL/TLS automático</strong> (seguridad HTTPS):
+      certificados <em>gratuitos</em> para dominios agregados a Shopify; la emisión puede tardar hasta <strong>48 h</strong>.
+      <a href="https://help.shopify.com/es/manual/domains/managing-domains/secure-connections" target="_blank" rel="noopener">Conexiones seguras (TLS/SSL)</a>.
+      <a href="https://help.shopify.com/es/manual/domains/troubleshoot-issues-with-domains" target="_blank" rel="noopener">Solución de problemas</a>.
+    </li>
+
+    <li><strong>Gestión continua</strong>: subdominios, renovación automática, edición de DNS, alias/redirecciones.
+      <a href="https://help.shopify.com/es/manual/domains/managing-domains" target="_blank" rel="noopener">Gestionar dominios</a>.
+    </li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/dominios-shopify.JPG" alt="Pantalla de Dominios en Shopify (agregar, conectar, transferir y elegir dominio principal)">
+    <figcaption class="meta">Configuración -> Dominios: Gestión de Dominios en Shopify.</figcaption>
+  </figure>
+</li>
+
+
+<!-- Eventos de clientes -->
+<li class="step" id="eventos-clientes">
+  <h4>Eventos de clientes (Configuración → Eventos de cliente)</h4>
+  <p>
+    En <em>Configuración → Eventos de cliente</em> gestionas los <strong>píxeles</strong> que registran acciones del visitante
+    (ver página, ver producto, añadir al carrito, iniciar pago, compra, etc.). Puedes revisar <strong>píxeles de aplicación</strong>
+    (instalados por apps/canales) y añadir <strong>píxeles personalizados</strong> para enviar datos a tus herramientas de
+    analítica/ads cumpliendo la privacidad del cliente.
+    <a href="https://help.shopify.com/es/manual/promoting-marketing/pixels" target="_blank" rel="noopener">Guía de Píxeles y eventos</a>.
+  </p>
+
+  <h5>1) Privacidad y consentimiento</h5>
+  <ul class="list">
+    <li>Configura el <strong>banner de cookies</strong> y las preferencias en <em>Configuración → Privacidad del cliente</em> (política, banner y exclusión). Integra tu CMP si usas uno.</li>
+    <li>Si trabajas con Google (GCM v2), usa la <strong>Customer Privacy API</strong> o un píxel personalizado para pasar el consentimiento a Google.</li>
+  </ul>
+  <p class="meta">
+    <a href="https://help.shopify.com/es/manual/privacy-and-security/privacy/customer-privacy-settings" target="_blank" rel="noopener">Configurar privacidad del cliente</a> ·
+    <a href="https://help.shopify.com/es/manual/privacy-and-security/privacy/customer-privacy-settings/understanding-customer-privacy-settings" target="_blank" rel="noopener">Cómo funciona y GCM v2</a> ·
+    <a href="https://shopify.dev/docs/api/customer-privacy" target="_blank" rel="noopener">Customer Privacy API</a>.
+  </p>
+
+  <h5>2) Instalar y gestionar píxeles</h5>
+  <ul class="list">
+    <li><strong>Píxeles de aplicación</strong>: se añaden con apps/canales (Facebook, Google, etc.). Revísalos en la pestaña “Píxeles de aplicación” y consulta sus permisos.</li>
+    <li><strong>Píxeles personalizados</strong>: pulsa <em>Añadir píxel personalizado</em>, pega tu script, define permisos de datos y guarda. Úsalos para GTM, mediciones propias, etc.</li>
+  </ul>
+  <p class="meta">
+    <a href="https://help.shopify.com/es/manual/promoting-marketing/pixels/app-pixels" target="_blank" rel="noopener">Píxeles de aplicación</a> ·
+    <a href="https://help.shopify.com/es/manual/promoting-marketing/pixels/custom-pixels" target="_blank" rel="noopener">Píxeles personalizados</a> ·
+    <a href="https://help.shopify.com/es/manual/promoting-marketing/pixels/custom-pixels/manage" target="_blank" rel="noopener">Gestionar píxeles personalizados</a>.
+  </p>
+
+  <h5>3) Eventos estándar disponibles</h5>
+  <ul class="list">
+    <li><code>page_viewed</code>, <code>collection_viewed</code>, <code>product_viewed</code>, <code>search_submitted</code></li>
+    <li><code>product_added_to_cart</code>, <code>product_removed_from_cart</code></li>
+    <li><code>checkout_started</code>, <code>payment_info_submitted</code>, <code>purchase</code> (y otros en checkout/estado del pedido)</li>
+  </ul>
+  <p class="meta">
+    Lista y disponibilidad por superficie (tienda, checkout, estado de pedido, cuentas):
+    <a href="https://shopify.dev/docs/api/web-pixels-api/standard-events" target="_blank" rel="noopener">Eventos estándar</a>.
+  </p>
+
+  <h5>4) Probar y depurar</h5>
+  <ul class="list">
+    <li>Usa el <strong>Shopify Pixel Helper</strong> desde el propio admin (botón “Probar” del píxel) para ver eventos en tiempo real.</li>
+    <li>Comprueba también la consola/red del navegador o el ayudante del proveedor (por ej., GA4 DebugView).</li>
+  </ul>
+  <p class="meta">
+    <a href="https://help.shopify.com/es/manual/promoting-marketing/pixels/custom-pixels/testing" target="_blank" rel="noopener">Probar píxeles personalizados</a>.
+  </p>
+
+  <h5>5) Seguridad y buenas prácticas</h5>
+  <ul class="list">
+    <li>Los píxeles se ejecutan en un entorno controlado que aporta <strong>más seguridad</strong> y control de datos.</li>
+    <li>Evita scripts innecesarios; documenta qué datos envías y bajo qué base legal de consentimiento.</li>
+  </ul>
+  <p class="meta">
+    <a href="https://help.shopify.com/es/manual/promoting-marketing/pixels/overview" target="_blank" rel="noopener">Resumen y ventajas (seguridad/privacidad)</a>.
+  </p>
+
+  <figure class="guide-figure" style="margin-top:.6rem">
+    <img class="shot" src="img/eventos-clientes-shopify.JPG" alt="Eventos de cliente en Shopify: píxeles de aplicación, píxeles personalizados, pruebas y privacidad">
+    <figcaption class="meta">Configuración -> Eventos de clientes: gestión de píxeles, consentimiento y pruebas.</figcaption>
+  </figure>
+</li>
+
+<!-- Notificaciones -->
+<li class="step" id="notificaciones">
+  <h4>Notificaciones (Configuración → Notificaciones)</h4>
+
+  <p>
+    Desde <em>Configuración → Notificaciones</em> gestionas los avisos que se envían a <strong>clientes</strong> (por email y SMS) y a tu <strong>equipo</strong> (nuevo pedido, etc.). Las plantillas vienen listas y puedes personalizarlas con tu logo, colores y contenido. 
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/notifications" target="_blank" rel="noopener">Notificaciones de la tienda</a>.
+  </p>
+
+  <h5>1) Tipos principales</h5>
+  <ul class="list">
+    <li><strong>Clientes</strong>: confirmación de pedido, actualización de envío y tracking, entrega, reembolso, listos para retiro en tienda, etc. (email/SMS según datos del cliente).</li>
+    <li><strong>Equipo (staff)</strong>: avisa de <em>nuevo pedido</em> a correos que elijas.</li>
+  </ul>
+  <p class="meta">
+    Referencia general y secciones (configurar email/SMS, nuevo pedido, variables, etc.): 
+    <a href="https://help.shopify.com/en/manual/fulfillment/setup/notifications" target="_blank" rel="noopener">Store notifications</a>.
+  </p>
+
+  <h5>2) Añadir destinatarios (equipo) para “Nuevo pedido”</h5>
+  <ol>
+    <li>Ve a <em>Configuración → Notificaciones</em> → <strong>Notificaciones de empleados</strong>.</li>
+    <li>En <em>Destinatarios</em>, pulsa <strong>Agregar destinatario</strong> y escribe el email a notificar.</li>
+  </ol>
+  <p class="meta">
+    Guía rápida: <a href="https://help.shopify.com/es/manual/fulfillment/setup/notifications/new-order-notifications" target="_blank" rel="noopener">Configurar notificación de nuevo pedido</a>.
+  </p>
+
+  <h5>3) SMS para clientes</h5>
+  <p>
+    Si el cliente deja <strong>teléfono</strong> en lugar de email y tu dirección comercial está en un país compatible, recibirá la confirmación por <strong>SMS</strong> (España, EE. UU., Reino Unido, Alemania, Italia, Francia, Canadá, Australia, Japón, Irlanda, Brasil y Nueva Zelanda, entre otros). 
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/notifications/sms-notifications" target="_blank" rel="noopener">SMS en Shopify</a>.
+  </p>
+
+  <h5>4) Personalizar plantillas (logo, colores, HTML/Liquid)</h5>
+  <ul class="list">
+    <li>En la parte superior de Notificaciones puedes aplicar <strong>logo</strong> y <strong>color de marca</strong> a todas las plantillas.</li>
+    <li>Abre cualquier plantilla (p. ej., “Confirmación de pedido”) y edita el <strong>asunto</strong> y el <strong>cuerpo</strong> (HTML con Liquid). Puedes <strong>previsualizar</strong> y <strong>enviar prueba</strong>.</li>
+    <li>Si cambias idioma del tema, ten en cuenta cómo afecta a las plantillas según lo que hayas modificado (solo asunto, solo cuerpo o ambos). Si vendes en varios idiomas, los clientes reciben las notificaciones en su idioma cuando está activado. 
+      <a href="https://help.shopify.com/es/manual/fulfillment/setup/notifications/customizing-notification-template" target="_blank" rel="noopener">Personalizar plantillas</a>.
+    </li>
+  </ul>
+
+  <h5>5) Variables disponibles (Liquid)</h5>
+  <p>
+    Usa variables Liquid para insertar datos (pedido, cliente, envío, etc.). Consulta la referencia para saber qué está disponible en cada notificación.
+    <a href="https://help.shopify.com/es/manual/fulfillment/setup/notifications/email-variables" target="_blank" rel="noopener">Variables de notificación</a>.
+  </p>
+
+  <h5>6) Buenas prácticas de entregabilidad</h5>
+  <ul class="list">
+    <li>Usa un <strong>remitente</strong> con dominio propio y <strong>autentícalo</strong> (SPF/DKIM) para reducir spam/bounces (se configura en Notificaciones/Correo del remitente y autenticación de dominio).</li>
+    <li>Mantén el HTML ligero y con <strong>texto alternativo</strong> en imágenes.</li>
+  </ul>
+  <p class="meta">
+    Cómo configurar el correo del remitente y autenticar el dominio: 
+    <a href="https://help.shopify.com/es/manual/intro-to-shopify/initial-setup/setup-your-email" target="_blank" rel="noopener">Configurar remitente</a>.
+  </p>
+
+  <h5>7) Notas sobre Inbox y otros canales</h5>
+  <p>
+    Para mensajes de <strong>Shopify Inbox</strong> (chat), activa las notificaciones de escritorio/móvil/email desde su propio panel. 
+    <a href="https://help.shopify.com/es/manual/inbox/configure-inbox/inbox-notifications" target="_blank" rel="noopener">Notificaciones de Inbox</a>.
+  </p>
+
+  <figure class="guide-figure" style="margin-top:.6rem">
+    <img class="shot" src="img/notificaciones-shopify.JPG" alt="Configuración de Notificaciones en Shopify: plantillas, SMS y destinatarios de nuevo pedido">
+    <figcaption class="meta">Configuración -> Notificaciones: personalización de plantillas, SMS y avisos al equipo.</figcaption>
+  </figure>
+</li>
+
+
+<!-- Metacampos y metaobjetos -->
+<li class="step" id="metacampos-metaobjetos">
+  <h4>Metacampos y Metaobjetos (Configuración → Datos personalizados)</h4>
+
+  <p>
+    Los <strong>metacampos</strong> añaden campos a recursos existentes (productos, variantes, colecciones, clientes, pedidos, etc.) y los <strong>metaobjetos</strong> te permiten crear <em>tipos de contenido</em> nuevos y reutilizables (p. ej., guías de tallas, especificaciones, perfiles de marca) que luego conectas con tu tienda. 
+    <a href="https://help.shopify.com/es/manual/custom-data/metafields" target="_blank" rel="noopener">Metacampos</a> · 
+    <a href="https://help.shopify.com/es/manual/custom-data/metaobjects" target="_blank" rel="noopener">Metaobjetos</a>.
+  </p>
+
+  <h5>1) Crear definiciones de metacampo</h5>
+  <ol>
+    <li>Ve a <em>Configuración → Datos personalizados</em> y elige el recurso (Producto, Colección, Cliente, Pedido…).</li>
+    <li>Pulsa <strong>Agregar definición</strong>, nombra <em>Espacio de nombres.clave</em>, elige el <strong>tipo</strong> (texto, número, color, archivo, referencia, lista…) y, si aplica, <strong>validaciones</strong>.</li>
+    <li>Guarda la definición y luego añade el valor desde la ficha del recurso (producto, colección, etc.).</li>
+  </ol>
+  <p class="meta">
+    Por qué usar definiciones (plantillas + validación) y cuándo usar definiciones <em>estándar</em> frente a <em>personalizadas</em>: 
+    <a href="https://help.shopify.com/es/manual/custom-data/metafields/metafield-definitions" target="_blank" rel="noopener">Definiciones de metacampo</a> · 
+    <a href="https://help.shopify.com/es/manual/custom-data/metafields/metafield-definitions/adding-standard-metafield-definitions" target="_blank" rel="noopener">Definiciones estándar</a>. 
+  </p>
+
+  <h5>2) Mostrar metacampos en la tienda</h5>
+  <ul class="list">
+    <li>Con temas OS 2.0, conecta metacampos como <strong>fuentes dinámicas</strong> desde el editor del tema (secciones/bloques → icono de base de datos → elige tu metacampo).</li>
+    <li>También puedes usarlos en Liquid si tu sección no admite fuente dinámica.</li>
+  </ul>
+
+  <p class="meta">
+    Conectar fuentes dinámicas en el editor · Compatibilidad por tipo de metacampo: 
+    <a href="https://shopify.dev/docs/storefronts/themes/architecture/settings/dynamic-sources" target="_blank" rel="noopener">Dynamic sources</a>.
+  </p>
+
+  <h5>3) Crear un metaobjeto (contenido estructurado reutilizable)</h5>
+  <ol>
+    <li>En <em>Configuración → Datos personalizados → Metaobjetos</em> crea una <strong>definición</strong> (p. ej., “Guía de tallas”) con sus <strong>campos</strong> (texto enriquecido, imagen, tabla, etc.).</li>
+    <li>Crea <strong>entradas</strong> de ese metaobjeto (cada talla/marca/colección puede tener su ficha).</li>
+    <li>Opcional: crea en “Producto” un <strong>metacampo de referencia a metaobjeto</strong> para vincular la entrada adecuada a cada producto.</li>
+    <li>Muéstralo en la tienda conectando la referencia como fuente dinámica o mediante Liquid.</li>
+  </ol>
+
+  </pre>
+  <p class="meta">
+    Tutorial para crear, vincular y publicar metaobjetos · Cómo conectarlos en la tienda: 
+    <a href="https://help.shopify.com/es/manual/custom-data/metaobjects/connecting-to-your-online-store/using-metaobjects" target="_blank" rel="noopener">Usar metaobjetos</a> · 
+    <a href="https://help.shopify.com/es/manual/custom-data/metaobjects/connecting-to-your-online-store" target="_blank" rel="noopener">Conectar y mostrar metaobjetos</a>. 
+  </p>
+
+  <h5>4) Casos útiles</h5>
+  <ul class="list">
+    <li><strong>Categorías de producto (atributos)</strong>: añade talla, material, color, etc., con metacampos de categoría estandarizados.</li>
+    <li><strong>Especificaciones técnicas/Manual</strong>: metacampos por producto o un metaobjeto “Ficha técnica”.</li>
+    <li><strong>FAQs por colección</strong>: metaobjeto “FAQ” + referencia desde colección.</li>
+    <li><strong>Perfiles de marca</strong>: metaobjeto con logo, descripción e imágenes y un listado en una página.</li>
+  </ul>
+  <p class="meta">
+    Metacampos de categoría (atributos estandarizados) · Metaobjetos (contenido estructurado): 
+    <a href="https://help.shopify.com/en/manual/custom-data/metafields/category-metafields" target="_blank" rel="noopener">Category metafields</a> ·
+    <a href="https://help.shopify.com/en/manual/custom-data/metaobjects" target="_blank" rel="noopener">Metaobjects overview</a>.
+  </p>
+
+  <figure class="guide-figure" style="margin-top:.6rem">
+    <img class="shot" src="img/metacampos-metaobjetos-shopify.JPG" alt="Datos personalizados en Shopify: creación de metacampos, definición de metaobjetos y conexión como fuente dinámica">
+    <figcaption class="meta">Configuración -> Metacampos y metaobjetos: Datos personalizados para metacampos (definiciones/valores) y metaobjetos (definiciones/entradas) conectados a secciones del tema.</figcaption>
+  </figure>
+</li>
+
+<!-- Idiomas -->
+<li class="step" id="idiomas">
+  <h4>Idiomas (Configuración → Idiomas · Markets → Idiomas y dominios)</h4>
+
+  <p>
+    Shopify permite vender en varios idiomas. Primero <strong>añade y publica</strong> idiomas desde
+    <em>Configuración → Idiomas</em>. Luego, en <em>Configuración → Markets</em>, puedes
+    <strong>asignar idiomas por mercado</strong> (y cambiar el idioma predeterminado si usas subcarpetas o dominios internacionales).
+    <a href="https://help.shopify.com/en/manual/international/localization-and-translation" target="_blank" rel="noopener">Resumen de localización y traducción</a> · 
+    <a href="https://help.shopify.com/en/manual/international/languages/manage-languages" target="_blank" rel="noopener">Gestionar idiomas</a>.
+  </p>
+
+  <h5>1) Añadir y publicar idiomas</h5>
+  <ol>
+    <li>Ve a <em>Configuración → Idiomas</em> y pulsa <strong>Añadir idioma</strong>. Cuando lo tengas listo, <strong>Publícalo</strong> para que sea visible en la tienda.</li>
+    <li>Opcional: en <em>Configuración → Markets → (tu mercado) → Idiomas y dominios</em> añade/quita idiomas para ese mercado o cambia su <strong>idioma predeterminado</strong> (requiere subcarpetas o dominios configurados).</li>
+  </ol>
+  <p class="meta">
+    Pasos y requisitos de publicación/mercados: 
+    <a href="https://help.shopify.com/en/manual/international/languages/manage-languages" target="_blank" rel="noopener">Managing languages</a>.
+  </p>
+
+  <h5>2) Traducir contenido</h5>
+  <ul class="list">
+    <li>Usa la app oficial <strong>Translate &amp; Adapt</strong> para traducir productos, colecciones, páginas, blogs, políticas y más. Permite traducción automática y edición manual por lenguaje/mercado.</li>
+    <li>También puedes traducir el <strong>tema</strong> (textos de interfaz) desde el editor de idioma del tema o con CSV.</li>
+  </ul>
+  <p class="meta">
+    Translate &amp; Adapt: 
+    <a href="https://help.shopify.com/es/manual/international/translate-adapt-app" target="_blank" rel="noopener">Guía oficial</a> · 
+    <a href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes/language/translate-theme" target="_blank" rel="noopener">Traducir el tema</a>.
+  </p>
+
+  <h5>3) Pantalla de pago (checkout) e idioma</h5>
+  <p>
+    El <strong>checkout</strong> se traduce desde <em>Configuración → Pantalla de pago → Idioma del checkout (Administrar)</em> y se muestra en el idioma activo del cliente si está publicado.
+  </p>
+  <p class="meta">
+    Cómo traducir el checkout: 
+    <a href="https://help.shopify.com/en/manual/checkout-settings/checkout-language" target="_blank" rel="noopener">Checkout language</a>.
+  </p>
+
+  <h5>4) Selector de idioma y recomendaciones</h5>
+  <ul class="list">
+    <li>Activa el <strong>selector de idioma</strong> en tu tema (cabecera o pie) para que el cliente cambie de idioma.</li>
+    <li>La app <strong>Geolocation</strong> de Shopify puede recomendar idioma según ubicación/preferencias del navegador.</li>
+  </ul>
+  <p class="meta">
+    Selector y recomendaciones: 
+    <a href="https://help.shopify.com/en/manual/international/managing#managing-languages-for-markets" target="_blank" rel="noopener">Markets &amp; idiomas</a> · 
+    <a href="https://help.shopify.com/es/manual/international/geolocation" target="_blank" rel="noopener">App Geolocation</a>.
+  </p>
+
+  <h5>5) SEO internacional (URLs y <code>hreflang</code>)</h5>
+  <ul class="list">
+    <li>Con <strong>subcarpetas o dominios</strong> por mercado/idioma, Shopify genera automáticamente etiquetas <code>hreflang</code> y las incluye en el sitemap para ayudar a los buscadores.</li>
+  </ul>
+  <p class="meta">
+    <code>hreflang</code> automático y sitemaps multilingües: 
+    <a href="https://help.shopify.com/en/manual/markets/international-domains/setting-up-unique-urls/hreflang-tags" target="_blank" rel="noopener">Hreflang en Markets</a>.
+  </p>
+
+  <h5>6) Buenas prácticas</h5>
+  <ul class="list">
+    <li>Publica solo idiomas con traducciones completas (evita “mezclas”).</li>
+    <li>Centraliza traducciones en Translate &amp; Adapt y <strong>sincroniza</strong> tras cambios de producto/tema.</li>
+    <li>Si vendes por <strong>Markets</strong>, usa subcarpetas o dominios y verifica que el selector de idioma funcione en todas las plantillas.</li>
+  </ul>
+
+  <figure class="guide-figure" style="margin-top:.6rem">
+    <img class="shot" src="img/idiomas-shopify.JPG" alt="Idiomas en Shopify: añadir y publicar idiomas, Translate & Adapt, selector y SEO con hreflang">
+    <figcaption class="meta">Configuración -> Idiomas: alta/publicación, traducciones (tema y contenido), selector y SEO internacional.</figcaption>
+  </figure>
+</li>
+
+<!-- Privacidad del cliente -->
+<li class="step" id="privacidad-cliente">
+  <h4>Privacidad del cliente (Configuración → Privacidad del cliente)</h4>
+
+  <p>
+    En <em>Configuración → Privacidad del cliente</em> configuras tu <strong>política de privacidad</strong>, el <strong>banner de cookies</strong>, la <strong>página de exclusión de uso compartido de datos</strong> y controles por región. Es el panel central para cumplir normativas y reflejar las preferencias de consentimiento del usuario en toda la tienda. 
+    <a href="https://help.shopify.com/es/manual/privacy-and-security/privacy/customer-privacy-settings/privacy-settings" target="_blank" rel="noopener">Establecer privacidad del cliente</a>.
+  </p>
+
+  <h5>1) Banner de cookies y páginas legales</h5>
+  <ul class="list">
+    <li>Activa el <strong>banner de cookies</strong> y enlaza tu <em>Política de privacidad</em>. Si operas en varias regiones, ajusta el comportamiento por país/mercado.</li>
+    <li>Habilita (si procede) la <strong>página de exclusión</strong> de “venta/compartición” de datos para marcos legales que lo exigen.</li>
+  </ul>
+  <p class="meta">
+    Dónde activar banner y exclusión · opciones por región: 
+    <a href="https://help.shopify.com/es/manual/privacy-and-security/privacy/customer-privacy-settings/privacy-settings" target="_blank" rel="noopener">Guía</a> · 
+    <a href="https://help.shopify.com/es/manual/privacy-and-security/privacy/customer-privacy-settings/understanding-customer-privacy-settings" target="_blank" rel="noopener">Cómo funcionan los ajustes</a>.
+  </p>
+
+  <h5>2) Consentimiento y APIs de privacidad</h5>
+  <p>
+    Shopify expone la <strong>Customer Privacy API</strong> (frontend) y APIs en Checkout para que tu banner/CMP establezca y consulte el consentimiento (marketing/analítica/preferencias), afectando píxeles, audiencias y checkout.
+  </p>
+  <p class="meta">
+    Customer Privacy API (storefront) · Privacy API en Checkout: 
+    <a href="https://shopify.dev/docs/api/customer-privacy" target="_blank" rel="noopener">Docs</a> · 
+    <a href="https://shopify.dev/docs/api/checkout-ui-extensions/2024-10/apis/customer-privacy" target="_blank" rel="noopener">Checkout UI Extensions</a>.
+  </p>
+
+  <h5>3) Google Consent Mode v2 (opcional)</h5>
+  <p>
+    Si usas Google Ads/GA4, implementa <strong>Consent Mode v2</strong> mediante tu CMP o un píxel personalizado y propaga las señales de consentimiento a Google.
+  </p>
+  <p class="meta">
+    Cómo configurarlo en Shopify con CMP / señales de consentimiento: 
+    <a href="https://support.google.com/google-ads/answer/14563069?hl=en" target="_blank" rel="noopener">Guía de Google Ads</a> · 
+    <a href="https://shopify.dev/docs/api/customer-privacy" target="_blank" rel="noopener">Customer Privacy API</a>.
+  </p>
+
+  <h5>4) GDPR/CCPA: solicitudes de datos del cliente</h5>
+  <ul class="list">
+    <li>Acceso/portabilidad: desde <em>Clientes</em>, abre el perfil y exporta/entrega los datos solicitados.</li>
+    <li>Supresión/redacción: <em>Clientes → perfil → Más acciones → Borrar datos personales</em>. Shopify redacta datos personales y mantiene datos no personales (líneas de pedido, importes) por requisitos contables; si hay pagos preautorizados/suscripciones, lee los avisos antes de borrar.</li>
+    <li>Debes <strong>contactar a terceros</strong> con los que compartiste datos fuera de Shopify.</li>
+  </ul>
+  <p class="meta">
+    Procesar solicitudes de datos (acceso/borrado) · detalles y cautelas: 
+    <a href="https://help.shopify.com/es/manual/privacy-and-security/privacy/processing-customer-data-requests" target="_blank" rel="noopener">Ayuda Shopify</a> · 
+    <a href="https://help.shopify.com/en/manual/privacy-and-security/privacy/gdpr/comply-with-gdpr" target="_blank" rel="noopener">GDPR en Shopify</a>.
+  </p>
+
+  <h5>5) Apps y redacciones (webhooks)</h5>
+  <p>
+    Cuando tramitas una solicitud, las <strong>apps</strong> que acceden a datos reciben <em>webhooks</em> de <em>data request/redact</em> para que también borren/entreguen datos; revisa la documentación si usas integraciones.
+  </p>
+  <p class="meta">
+    Privacidad para apps (cumplimiento y webhooks): 
+    <a href="https://shopify.dev/docs/apps/build/compliance/privacy-law-compliance" target="_blank" rel="noopener">Privacy law compliance</a>.
+  </p>
+
+  <h5>6) Buenas prácticas</h5>
+  <ul class="list">
+    <li>Publica políticas claras (privacidad/cookies) y limita scripts a lo necesario.</li>
+    <li>Centraliza consentimiento con tu CMP o el banner nativo y <strong>pruébalo</strong> en navegación/checkout.</li>
+    <li>Audita apps y su acceso a datos periódicamente.</li>
+  </ul>
+  <p class="meta">
+    Panel unificado y controles por región: 
+    <a href="https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings" target="_blank" rel="noopener">Managing customer privacy settings</a>.
+  </p>
+
+  <figure class="guide-figure" style="margin-top:.6rem">
+    <img class="shot" src="img/privacidad-cliente-shopify.JPG" alt="Privacidad del cliente en Shopify: banner de cookies, exclusión de uso compartido, regiones y APIs de consentimiento">
+    <figcaption class="meta">Configuración -> Privacidad del cliente: banner de cookies, ajustes por región y propagación del consentimiento a píxeles/checkout.</figcaption>
+  </figure>
+</li>
+
+<!-- Políticas -->
+<li class="step" id="politicas">
+  <h4>Políticas (Configuración → Políticas)</h4>
+
+  <p>
+    En <em>Configuración → Políticas</em> puedes crear o generar las páginas legales de tu tienda:
+    <strong>Política de devoluciones</strong>, <strong>Política de privacidad</strong>, <strong>Términos del servicio</strong>, 
+    <strong>Política de envíos</strong>, <strong>Aviso legal</strong> y, si usas suscripciones, <strong>Política de suscripciones</strong>. 
+    Shopify ofrece plantillas; revísalas y adáptalas a tu negocio antes de publicarlas. 
+    <a href="https://help.shopify.com/es/manual/checkout-settings/refund-privacy-tos" target="_blank" rel="noopener">Agregar políticas de tienda</a>. 
+  </p>
+
+  <h5>1) Crear/editar tus políticas</h5>
+  <ol>
+    <li>Ve a <em>Configuración → Políticas</em>.</li>
+    <li>En “Políticas por escrito”, elige la política que quieras completar.</li>
+    <li>Redacta tu texto o pulsa <em>Insertar plantilla</em> y edítala con el <strong>editor de texto enriquecido</strong> (puedes añadir enlaces e imágenes).</li>
+    <li>Guarda para publicar.</li>
+  </ol>
+  <p class="meta">
+    Las políticas se pueden redactar con HTML y se publican desde el panel. Aunque existan plantillas, tú eres responsable de lo que publiques. 
+    <a href="https://help.shopify.com/es/manual/checkout-settings/refund-privacy-tos" target="_blank" rel="noopener">Guía paso a paso</a>. 
+  </p>
+
+  <h5>2) Contenido sugerido por política (resumen práctico)</h5>
+  <ul class="list">
+    <li><strong>Devoluciones</strong>: plazo, condiciones del artículo, exclusiones (“venta final”), quién paga el envío de devolución, cargo por reposición si aplica, pasos del proceso.</li>
+    <li><strong>Privacidad</strong>: qué datos recoges, base legal/consentimiento, uso compartido con terceros, derechos del usuario (acceso/supresión), contacto DPO/soporte.</li>
+    <li><strong>Términos</strong>: condiciones de compra, precios/impuestos, limitaciones, propiedad intelectual, jurisdicción.</li>
+    <li><strong>Envíos</strong>: zonas, tiempos estimados, tarifas, transportistas, incidencias y aduanas.</li>
+    <li><strong>Aviso legal</strong>: datos de la empresa (razón social, domicilio fiscal, NIF-IVA, contacto), especialmente útil en la UE.</li>
+    <li><strong>Suscripciones</strong> (si procede): ciclo de facturación, cancelación, reembolsos parciales, renovaciones.</li>
+  </ul>
+
+  <h5>3) Reglas de devolución (automatiza tu política)</h5>
+  <p>
+    Además del texto legal, define <strong>Reglas de devolución</strong> (plazo, coste de envío de devolución, cargo por reposición y excepciones de “venta final”). 
+    Puedes activar las <strong>devoluciones por autoservicio</strong> para que el cliente solicite la devolución desde su cuenta y vea la estimación del reembolso según tus reglas. 
+    <a href="https://help.shopify.com/es/manual/fulfillment/managing-orders/returns/return-rules" target="_blank" rel="noopener">Configurar reglas y política de devoluciones</a>. 
+  </p>
+
+  <h5>4) Dónde se muestran y cómo enlazarlas</h5>
+  <ul class="list">
+    <li>Al agregarlas, Shopify las enlaza automáticamente en el <strong>pie del checkout</strong> y, según el tema, en páginas de producto (política de envíos) y revisión del pedido (devoluciones).</li>
+    <li>También puedes añadirlas al <strong>menú del pie/cabecera</strong> desde <em>Contenido → Menús</em>.</li>
+    <li>Enlaces directos: <code>/policies/refund-policy</code>, <code>/policies/privacy-policy</code>, <code>/policies/terms-of-service</code>, <code>/policies/shipping-policy</code>, <code>/policies/subscription-policy</code>.</li>
+  </ul>
+  <p class="meta">
+    Ubicación automática y cómo añadirlas al menú o enlazarlas por URL. 
+    <a href="https://help.shopify.com/es/manual/checkout-settings/refund-privacy-tos" target="_blank" rel="noopener">Mostrar y enlazar políticas</a>. 
+  </p>
+
+  <h5>5) Idioma y actualizaciones automáticas de privacidad</h5>
+  <p>
+    Algunas plantillas pueden generarse en <strong>inglés</strong> y en ciertos casos en <strong>francés, italiano y español</strong>. 
+    Además, Shopify ofrece <strong>configuración de privacidad automatizada</strong> (banner de cookies, exclusión) que puede mantener tu tienda alineada cuando cambias ciertos ajustes.
+    <a href="https://help.shopify.com/es/manual/checkout-settings/refund-privacy-tos" target="_blank" rel="noopener">Idiomas y privacidad automatizada</a>.
+  </p>
+
+  <h5>6) Cumplimiento (UE y otros marcos)</h5>
+  <p>
+    Verifica con tu asesor legal que tus políticas cumplan normativa local (p. ej., RGPD en la UE) y que tu banner de cookies/consentimiento esté correctamente configurado. 
+    <a href="https://help.shopify.com/es/manual/privacy-and-security/privacy/gdpr" target="_blank" rel="noopener">RGPD en Shopify</a>.
+  </p>
+
+  <figure class="guide-figure" style="margin-top:.6rem">
+    <img class="shot" src="img/politicas-shopify.JPG" alt="Sección Políticas en Shopify: creación de devoluciones, privacidad, términos, envíos y aviso legal, con reglas de devolución y enlaces automáticos">
+    <figcaption class="meta">Configuración -> Políticas: texto legal + reglas de devolución; se enlazan en checkout y puedes añadirlas a los menús.</figcaption>
+  </figure>
+</li>
+
+<!-- Contacto y soporte -->
+<li class="step" id="contacto-soporte">
+  <h4>Contacto y soporte técnico</h4>
+  <p>
+    Para profundizar en el tema de Shopify, diríjase a la documentación correspondiente y a los recursos informativos asociados.
+  </p>
+
+  <div class="contact-actions">
+    <a class="btn" href="https://help.shopify.com">Centro de ayuda de Shopify</a>
+    <a class="btn" href="https://community.shopify.com">Comunidad Shopify</a>
+    <a class="btn" href="https://www.shopifystatus.com/">Estado de la plataforma</a>
+  </div>
+</li>
+
+        </ol>
+        <a class="btn" href="shopify.html">Volver</a>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Dreamlove. Página de ayuda para clientes.</small>
+      <small><a href="#" style="color: var(--brand); text-decoration: none;">Volver arriba</a></small>
+    </div>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>
