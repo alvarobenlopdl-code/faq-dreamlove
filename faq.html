@@ -5,30 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Preguntas frecuentes · Dreamlove</title>
   <meta name="description" content="FAQ sobre Dreamlove: planes, pedidos, integraciones y soporte." />
-   <link rel="icon" href="img/icono.ico" type="image/x-icon">
-   <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+  <link rel="icon" href="img/icono.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <a class="sr-only" href="#contenido">Saltar al contenido</a>
   <div class="topbar" role="banner">
-  <div class="container topbar-inner">
-    <div class="brand">
-      
-      <a href="faq.html" aria-label="Inicio" class="brand-mark">
-        <img src="img/dreamlove_logomenu.png" alt="Dreamlove · Centro de ayuda">
-      </a>
+    <div class="container topbar-inner">
+      <div class="brand">
+        <a href="faq.html" aria-label="Inicio" class="brand-mark">
+          <img src="img/dreamlove_logomenu.png" alt="Dreamlove · Centro de ayuda">
+        </a>
+      </div>
     </div>
   </div>
-</div>
   <nav class="primary" aria-label="Navegación principal">
     <div class="container nav-inner">
       <a href="faq.html" aria-current="page">Preguntas frecuentes</a>
       <a href="precios.html">Planes y precios</a>
-       <a href="plantillas.html">Plantillas Shopify</a>
+      <a href="plantillas.html">Plantillas Shopify</a>
       <a href="sincronizacion.html">Sincronización</a>
       <a href="shopify.html">Manual Shopify</a>
       <a href="contacto.html">Contacto</a>
+
+      <span style="flex:1"></span>
+
+      <div class="lang-switch">
+        <label for="lang" class="sr-only">Idioma</label>
+        <select id="lang" name="lang" aria-label="Idioma">
+          <option value="es" selected>Español</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+
     </div>
   </nav>
 
@@ -48,52 +58,73 @@
 
     <section class="card" aria-label="Listado de preguntas">
       <div class="bd" id="faqList">
+
         <details class="faq" data-tags="general dreamlove" id="faq-que-es">
           <summary>¿Qué es Dreamlove? <span class="tag">General</span></summary>
           <div class="answer">
-            Dreamlove es un mayorista y distribuidor de productos eróticos que ofrece catálogo, logística y herramientas para tiendas online y físicas. Trabajamos con integración técnica para sincronizar productos, stock y pedidos.
+            <p>Dreamlove es un mayorista y distribuidor de productos eróticos que ofrece catálogo, logística y herramientas para tiendas online y físicas. Trabajamos con integración técnica para sincronizar productos, stock y pedidos.</p>
           </div>
         </details>
+
         <details class="faq" data-tags="precios planes tarifas" id="faq-planes">
           <summary>¿Qué planes de precio tenéis? <span class="tag">Precios</span></summary>
-          <div class="answer">Disponemos de planes pensados para diferentes plataformas. Consulta detalles en <a href="precios.html">Planes y precios</a>.</div>
+          <div class="answer">
+            <p>Disponemos de planes pensados para diferentes plataformas (Shopify, Woocommerce, Prestashop).</p>
+            <a class="btn" href="precios.html" target="_blank" rel="noopener" aria-label="Abrir página de Planes y precios (se abre en nueva pestaña)">Planes y precios</a>
+          </div>
         </details>
+
         <details class="faq" data-tags="pedidos envios logistica tracking" id="faq-pedidos">
           <summary>¿Cómo gestiono mis pedidos y el seguimiento? <span class="tag">Pedidos</span></summary>
-          <div class="answer">Si tienes la integración, los pedidos se crean y procesan automáticamente. Recibirás número de seguimiento al despachar. Mira <a href="pedidos.html">Pedidos</a> para el flujo.</div>
+          <div class="answer">
+            <p>Si tienes la integración, los pedidos se crean y procesan automáticamente. Recibirás número de seguimiento al despachar. Mira la sección de Pedidos para ver el flujo completo.</p>
+            <a class="btn" href="sincronizacion_plugin.html#pedidos-auto" target="_blank" rel="noopener" aria-label="Abrir guía de Pedidos (se abre en nueva pestaña)">Pedidos</a>
+          </div>
         </details>
+
         <details class="faq" data-tags="shopify integracion productos sincronizacion" id="faq-shopify">
           <summary>¿Cómo conecto mi tienda de Shopify con Dreamlove? <span class="tag">Shopify</span></summary>
-          <div class="answer">Sigue los pasos de la <a href="sincronizacion.html">sincronización de Shopify</a> para importar productos, sincronizar stock y automatizar pedidos.</div>
+          <div class="answer">
+            <p>Sigue los pasos de la sincronización de Shopify para importar productos, sincronizar stock y automatizar pedidos.</p>
+            <a class="btn" href="sincronizacion.html" target="_blank" rel="noopener" aria-label="Abrir guía de sincronización de Shopify (se abre en nueva pestaña)">Sincronización de Shopify</a>
+          </div>
         </details>
+
         <details class="faq" data-tags="devoluciones rma postventa garantia" id="faq-rma">
           <summary>¿Cómo funcionan las devoluciones y garantías? <span class="tag">Postventa</span></summary>
-          <div class="answer">Ofrecemos proceso de RMA para incidencias y devoluciones según condiciones del producto. Contacta con soporte <a href="mailto:rma@dreamlove.eu">rma@dreamlove.eu</a><br> indicando número de pedido y evidencias fotográficas.</div>
+          <div class="answer">
+            <p>Ofrecemos proceso de RMA para incidencias y devoluciones según condiciones del producto. Contacta con nuestro departamento de RMA indicando número de pedido y evidencias fotográficas.</p>
+            <a class="btn" href="https://store.dreamlove.es/gestionar-una-devolucion/" target="_blank" rel="noopener" aria-label="Gestión RMA">Gestión RMA</a>
+            <a class="btn" href="mailto:rma@dreamlove.eu" target="_blank" rel="noopener" aria-label="Gestión RMA">Contacto RMA</a>
+
+
+          </div>
         </details>
-         <details class="faq" data-tags="facturacion factura impuestos iva" id="faq-facturas">
-          <summary>Branding <span class="tag">Envíos</span></summary>
-          <div class="answer">Los envíos se realizan con paquete anónimo y no es posible personalizar el embalaje.</div>
-        </details>
+
         <details class="faq" data-tags="facturacion factura impuestos iva" id="faq-facturas">
           <summary>¿Cuándo se emite la factura de mis pedidos? <span class="tag">Facturación</span></summary>
-          <div class="answer">La factura se emite al confirmar el envío. Puedes descargarla desde tu área de cliente o recibirla por email.</div>
+          <div class="answer">
+            <p>La factura se emite al confirmar el envío. Puedes descargarla desde tu área de cliente o recibirla por email.</p>
+          </div>
         </details>
+
         <!-- Actualización de productos -->
         <details class="faq" data-tags="productos sincronización stock precios actualización" id="faq-actualizacion-productos">
           <summary>Actualización de productos <span class="tag">Catálogo</span></summary>
           <div class="answer">
-            La sincronización de datos relacionados con el stock y los precios se realiza <strong>cada 12 horas</strong> de forma automática. 
-            Así, tu tienda refleja regularmente los cambios que se producen en Dreamlove.
+            <p>La sincronización de datos relacionados con el stock y los precios se realiza <strong>cada 12 horas</strong> de forma automática. Así, tu tienda refleja regularmente los cambios que se producen en Dreamlove.</p>
           </div>
         </details>
 
         <!-- Alta distribuidora -->
-        <details class="faq" data-tags="alta distribuidor cuenta internacional iberia email" id="faq-alta-distribuidora">
+        <details class="faq" data-tags="alta registro distribuidor cuenta internacional iberia" id="faq-alta-distribuidora">
           <summary>Alta distribuidora <span class="tag">Cuenta</span></summary>
           <div class="answer">
-            Escríbenos según el mercado:<br>
-            • Internacional: <a href="mailto:international@dreamlove.eu">international@dreamlove.eu</a><br>
-            • España/Portugal: <a href="mailto:iberia@dreamlove.eu">iberia@dreamlove.eu</a>
+            <p>
+              Para abrir tu cuenta de distribuidor en Dreamlove, completa el formulario oficial.
+              Es rápido y seguro; nuestro equipo validará tus datos y te enviará acceso al área de cliente.
+            </p>
+            <a class="btn" href="https://www.dreamlove.eu/formulario-registro/" target="_blank" rel="noopener" aria-label="Abrir formulario de alta de distribuidora (se abre en nueva pestaña)">Alta Distribuidora</a>
           </div>
         </details>
 
@@ -101,7 +132,7 @@
         <details class="faq" data-tags="branding dropshipping embalaje anónimo personalización" id="faq-branding">
           <summary>Branding y embalaje <span class="tag">Envíos</span></summary>
           <div class="answer">
-            Los envíos se realizan con <strong>paquete anónimo</strong> y <strong>no es posible personalizar</strong> el embalaje.
+            <p>Los envíos se realizan con <strong>paquete anónimo</strong> y <strong>no es posible personalizar</strong> el embalaje.</p>
           </div>
         </details>
 
@@ -109,9 +140,7 @@
         <details class="faq" data-tags="iva impuestos facturación márgenes precios" id="faq-calculo-iva">
           <summary>Cálculo del IVA <span class="tag">Facturación</span></summary>
           <div class="answer">
-            Vendemos aplicando el <strong>IVA correspondiente a cada país</strong> y nos ocupamos de estas diferencias para nuestros clientes.
-            Definimos precios de forma que puedas mantener márgenes adecuados según el IVA local. 
-            Además, los precios de venta en tu tienda son <strong>totalmente modificables</strong> y puedes ajustarlos según tus necesidades.
+            <p>Vendemos aplicando el <strong>IVA correspondiente a cada país</strong> y nos ocupamos de estas diferencias para nuestros clientes. Definimos precios de forma que puedas mantener márgenes adecuados según el IVA local. Además, los precios de venta en tu tienda son <strong>totalmente modificables</strong> y puedes ajustarlos según tus necesidades.</p>
           </div>
         </details>
 
@@ -119,9 +148,7 @@
         <details class="faq" data-tags="shopify tracking seguimiento pedido fulfill entregar" id="faq-tracking-shopify">
           <summary>Número de seguimiento en Shopify <span class="tag">Shopify</span></summary>
           <div class="answer">
-            Ruta en Shopify: <em>Administrador</em> → <strong>Pedidos</strong> → elige el pedido → sección <strong>Entrega / Cumplimiento</strong> → 
-            <strong>Añadir número de seguimiento</strong> (introduce transportista y código).<br>
-            Este paso se hace <strong>manualmente</strong> en Shopify. 
+            <p>Ruta en Shopify: <em>Administrador</em> → <strong>Pedidos</strong> → elige el pedido → sección <strong>Entrega / Cumplimiento</strong> → <strong>Añadir número de seguimiento</strong> (introduce transportista y código).</p>
           </div>
         </details>
 
@@ -129,27 +156,8 @@
         <details class="faq" data-tags="shopify precios planes suscripción coste" id="faq-coste-shopify">
           <summary>Coste de Shopify <span class="tag">Shopify</span></summary>
           <div class="answer">
-            Consulta los <strong>planes y precios actualizados</strong> de Shopify (suelen incluir Basic, Shopify, Advanced y opciones para Plus) en su página oficial: 
-            <a href="https://www.shopify.com/es/precios" target="_blank" rel="noopener">shopify.com/es/precios</a>.
-          </div>
-        </details>
-
-        <!-- Devolución Pedido Cliente -->
-        <details class="faq" data-tags="devolución rma postventa logistica cliente" id="faq-devolucion-cliente">
-          <summary>Devolución de un pedido de tu cliente <span class="tag">Postventa</span></summary>
-          <div class="answer">
-            Si tu cliente quiere devolver un producto, <strong>envía la devolución directamente a Dreamlove</strong> tras solicitarla previamente desde tu cuenta.
-            Te facilitaremos las instrucciones para continuar. Más detalles en 
-            <a href="https://store.dreamlove.es/gestionar-una-devolucion/" target="_blank" rel="noopener">gestionar una devolución</a>.
-          </div>
-        </details>
-
-        <!-- Información Entrega Pedido -->
-        <details class="faq" data-tags="tracking entrega seguimiento estado pedido store" id="faq-informacion-entrega">
-          <summary>Información de entrega y seguimiento <span class="tag">Pedidos</span></summary>
-          <div class="answer">
-            Puedes consultar el <strong>número de seguimiento y el estado</strong> desde tu área de cliente en la Store de Dreamlove: 
-            <a href="https://store.dreamlove.es/" target="_blank" rel="noopener">store.dreamlove.es</a> → <em>Pedidos</em>.
+            <p>Consulta los <strong>planes y precios actualizados</strong> de Shopify (suelen incluir Basic, Shopify, Advanced y opciones para Plus) en su página oficial.</p>
+            <a class="btn" href="https://www.shopify.com/es/precios" target="_blank" rel="noopener" aria-label="Abrir página de precios de Shopify (se abre en nueva pestaña)">Precios Shopify</a>
           </div>
         </details>
 
@@ -157,10 +165,8 @@
         <details class="faq" data-tags="envio tarifas coste gastos excel descarga" id="faq-costes-envio">
           <summary>Costes de envío <span class="tag">Envíos</span></summary>
           <div class="answer">
-            Los <strong>precios de envío de Dreamlove son fijos</strong> para todos nuestros clientes. 
-            En tu tienda, puedes <strong>definir los gastos de envío</strong> para tus clientes como prefieras. 
-            Descarga la tabla de tarifas aquí: 
-            <a href="docs/tarifas-envio.xlsx" download>tarifas-envio.xlsx</a> (sustituye la URL si usas otra ruta).
+            <p>Los <strong>precios de envío de Dreamlove son fijos</strong> para todos nuestros clientes. En tu tienda, puedes <strong>definir los gastos de envío</strong> para tus clientes como prefieras. Descarga la tabla de tarifas aquí.</p>
+            <a class="btn" href="docs/tarifas-envio.xlsx" download aria-label="Descargar tabla de tarifas de envío">Descargar tarifas de envío</a>
           </div>
         </details>
 
@@ -168,8 +174,7 @@
         <details class="faq" data-tags="pagos monedero saldo automatización cobro" id="faq-pago-cliente">
           <summary>Pago del cliente y saldo monedero <span class="tag">Pagos</span></summary>
           <div class="answer">
-            Cuando un cliente paga en tu tienda, <strong>ese dinero va a tu cuenta bancaria</strong> y <strong>no</strong> se ingresa automáticamente en tu saldo monedero de Dreamlove. 
-            Si quieres que los pedidos se procesen de forma automática en nuestra plataforma, debes <strong>disponer de saldo monedero suficiente antes</strong> de que el cliente complete el pago.
+            <p>Cuando un cliente paga en tu tienda, <strong>ese dinero va a tu cuenta bancaria</strong> y <strong>no</strong> se ingresa automáticamente en tu saldo monedero de Dreamlove. Si quieres que los pedidos se procesen de forma automática en nuestra plataforma, debes <strong>disponer de saldo monedero suficiente antes</strong> de que el cliente complete el pago.</p>
           </div>
         </details>
 
@@ -177,173 +182,164 @@
         <details class="faq" data-tags="seo urls metadatos shopify posicionamiento" id="faq-seo">
           <summary>SEO y URLs de producto <span class="tag">SEO</span></summary>
           <div class="answer">
-            Nuestra sincronización <strong>no depende de las URLs públicas</strong>, sino del <strong>identificador interno</strong> del producto en Shopify. 
-            Esto te permite ajustar el <strong>SEO</strong> (títulos, descripciones, URLs, metacampos) según tus necesidades sin afectar a la integración.
+            <p>Nuestra sincronización <strong>no depende de las URLs públicas</strong>, sino del <strong>identificador interno</strong> del producto en Shopify. Esto te permite ajustar el <strong>SEO</strong> (títulos, descripciones, URLs, metacampos) según tus necesidades sin afectar a la integración. La gestión de SEO debe ser realizada por parte del cliente.</p>
           </div>
         </details>
 
         <!-- Saldo monedero -->
-<details class="faq" data-tags="monedero saldo pagos automático pedidos cuenta" id="faq-saldo-monedero">
-  <summary>¿Cómo puedo gestionar mi saldo monedero? <span class="tag">Pagos</span></summary>
+        <details class="faq" data-tags="monedero saldo pagos automático pedidos cuenta" id="faq-saldo-monedero">
+          <summary>¿Cómo puedo gestionar mi saldo monedero? <span class="tag">Pagos</span></summary>
+          <div class="answer">
+            <p>Gestiona tu saldo desde tu cuenta de Dreamlove. Es importante mantener <strong>saldo monedero suficiente</strong> para que los pedidos se procesen automáticamente.</p>
+            <a class="btn" href="https://store.dreamlove.es/ms-1-50-mis_saldos-0/" target="_blank" rel="noopener" aria-label="Abrir sección Mis saldos (se abre en nueva pestaña)">Mis saldos</a>
+          </div>
+        </details>
+
+        <!-- Exportador de catálogo -->
+        <details class="faq" data-tags="catálogo exportar csv xml json feed descargar" id="faq-exportador-catalogo">
+          <summary>¿Cómo puedo obtener el catálogo? <span class="tag">Catálogo</span></summary>
+          <div class="answer">
+            <p>Descarga el catálogo en distintos formatos desde el Exportador de catálogo.</p>
+            <a class="btn" href="https://store.dreamlove.es/exportador-de-catalogo/" target="_blank" rel="noopener" aria-label="Abrir Exportador de catálogo (se abre en nueva pestaña)">Exportador de catálogo</a>
+          </div>
+        </details>
+
+        <!-- Descarga de imágenes de producto -->
+        <details class="faq" data-tags="imágenes fotos producto galería descarga store" id="faq-descargar-imagenes-producto">
+          <summary>¿Cómo puedo descargar las imágenes de los productos? <span class="tag">Imágenes</span></summary>
+          <div class="answer">
+            <p>En la Store, abre la ficha del producto y, en la parte inferior de la galería de imágenes, encontrarás el botón <strong>Descargar imágenes</strong>.</p>
+          </div>
+        </details>
+
+        <!-- Recursos de marcas (imágenes y vídeos) -->
+        <details class="faq" data-tags="marcas logos imágenes vídeos recursos multimedia" id="faq-media-marcas">
+          <summary>¿Cómo puedo descargar imágenes de marcas y vídeos? <span class="tag">Multimedia</span></summary>
+          <div class="answer">
+            <p>Puedes descargar recursos multimedia desde el Centro de descargas.</p>
+            <a class="btn" href="https://store.dreamlove.es/download-center/" target="_blank" rel="noopener" aria-label="Abrir Centro de descargas (se abre en nueva pestaña)">Centro de descargas</a>
+          </div>
+        </details>
+
+        <!-- Planograma -->
+        <details class="faq" data-tags="planograma planogram merchandising expositor tienda" id="faq-planograma">
+          <summary>¿Cómo puedo visualizar el planograma? <span class="tag">Merchandising</span></summary>
+          <div class="answer">
+            <p>Consulta el planograma en el Centro de descargas.</p>
+            <a class="btn" href="https://store.dreamlove.es/download-center/" target="_blank" rel="noopener" aria-label="Abrir Centro de descargas para ver planograma (se abre en nueva pestaña)">Ver planograma</a>
+          </div>
+        </details>
+
+        <!-- Importación de productos -->
+        <details class="faq" data-tags="importación productos idioma catálogo restricciones marcas países novedades" id="faq-importacion-productos">
+          <summary>Importación de productos <span class="tag">Catálogo</span></summary>
+          <div class="answer">
+            <p>Los productos se importan de forma automática en el <strong>idioma solicitado</strong>. Es posible que no aparezcan determinados productos por <strong>política de marcas</strong>, <strong>restricciones por país</strong> o porque <strong>aún no están incluidos</strong> en el catálogo al ser novedades.</p>
+          </div>
+        </details>
+
+        <!-- Sin saldo -->
+        <details class="faq" data-tags="monedero saldo error pedidos" id="faq-sin-saldo">
+          <summary>¿Qué ocurre si me quedo sin saldo en el monedero? <span class="tag">Pagos</span></summary>
+          <div class="answer">
+            <p>El pedido quedará <strong>pendiente</strong> hasta que recargues crédito. Luego, notifícalo al equipo de soporte para que procese el pedido bloqueado. Se requerirá de horas de soporte adicional para el procesamiento de pedidos bloqueados por saldo monedero.</p>
+            <a class="btn" href="https://store.dreamlove.es/ms-1-50-mis_saldos-0/" target="_blank" rel="noopener" aria-label="Abrir sección Mis saldos (se abre en nueva pestaña)">Recargar saldo</a>
+          </div>
+        </details>
+
+        <!-- Configuración general (manual) -->
+        <details class="faq" data-tags="configuración dominios envíos impuestos cuentas" id="faq-manual-config">
+          <summary>¿Dónde puedo ver toda la configuración de Shopify (pagos, envíos, dominios)? <span class="tag">Configuración</span></summary>
+          <div class="answer">
+            <p>En el <strong>Manual de Configuración</strong> encontrarás guías sobre pagos, envío y entrega, dominios, etc.</p>
+            <a class="btn" href="shopify.html" target="_blank" rel="noopener" aria-label="Abrir Manual de Configuración de Shopify (se abre en nueva pestaña)">Manual de Configuración</a>
+          </div>
+        </details>
+
+        <details class="faq" data-tags="precios colecciones seo edición" id="faq-editar-precios-colecciones">
+          <summary>¿Puedo cambiar precios, colecciones o SEO tras la importación? <span class="tag">Catálogo</span></summary>
+          <div class="answer">
+            <p><strong>Precios:</strong> Sí, puedes modificarlos. Los productos llegan con un <strong>margen de beneficio recomendado</strong>, pero eres libre de ajustarlos. Puedes usar <em>aplicaciones de terceros</em> para cambios masivos; <strong>no ofrecemos soporte</strong> sobre dichas apps, por lo que recomendamos consultar su <em>documentación oficial</em> y <em>vídeos explicativos</em>.</p>
+            <p><strong>SEO:</strong> Puedes gestionar títulos, descripciones, metacampos y URLs en Shopify o con apps de terceros. <strong>No damos soporte</strong> en SEO; te sugerimos revisar la documentación oficial y recursos formativos. Ten en cuenta que nuestra sincronización <strong>no depende de la URL pública</strong>, sino del <strong>identificador interno</strong> del producto.</p>
+            <p><strong>Colecciones:</strong> Puedes <strong>agregar colecciones nuevas</strong> para tu estrategia (p. ej., “Novedades”). No modifiques las colecciones/base creadas por el plugin, <strong>salvo las imágenes</strong> si quieres personalizarlas.</p>
+          </div>
+        </details>
+
+        <!-- Duplicados al importar -->
+        <details class="faq" data-tags="importación duplicados limpieza catálogo csv" id="faq-duplicados">
+          <summary>Ya tengo productos de Dreamlove en mi tienda, ¿puede haber duplicados? <span class="tag">Catálogo</span></summary>
+          <div class="answer">
+            <p>Sí. Si mantienes productos previos, pueden aparecer <strong>duplicados</strong> o <strong>variantes huérfanas</strong>. Recomendamos <strong>eliminar</strong> los productos existentes relacionados con Dreamlove antes de realizar la importación.</p>
+          </div>
+        </details>
+
+        <!-- Sucursal Dreamlove -->
+        <details class="faq" data-tags="sucursal fulfillment logística preparación envíos" id="faq-sucursal">
+          <summary>¿Qué sucursal debo usar para preparar los pedidos? <span class="tag">Envíos</span></summary>
+          <div class="answer">
+            <p>Configura <strong>Dreamlove Fulfillment Service</strong> como sucursal principal en <em>Configuración → Envío y entrega</em>. Así los pedidos de productos sincronizados se preparan y actualizan automáticamente.</p>
+            <a class="btn" href="sincronizacion_plugin.html#sucursal" target="_blank" rel="noopener" aria-label="Abrir Implementación de Sucursal (se abre en nueva pestaña)">Implementación Sucursal</a>
+          </div>
+        </details>
+
+        <!-- Idioma coherente -->
+        <details class="faq" data-tags="idioma importación traducciones tienda translate adapt" id="faq-idioma-coherencia">
+          <summary>¿En qué idioma se importan los productos? <span class="tag">Catálogo</span></summary>
+          <div class="answer">
+            <p>Indica al equipo técnico el <strong>idioma de importación</strong> (ES, EN, PT, DE, FR, IT). Debe coincidir con el <strong>idioma predeterminado</strong> de tu tienda para evitar inconsistencias. Para vender en varios idiomas, usa <em>Translate &amp; Adapt</em> tras la importación base.</p>
+            <a class="btn" href="sincronizacion_plugin.html#idioma" target="_blank" rel="noopener" aria-label="Abrir Implementación de Sucursal para más información (se abre en nueva pestaña)">Más información</a>
+          </div>
+        </details>
+
+        <details class="faq" data-tags="idioma importación traducciones tienda translate adapt" id="faq-idioma-coherencia">
+  <summary>¿Cuántos idiomas puedo disponer mi tienda de Shopify? <span class="tag">Idioma</span></summary>
   <div class="answer">
-    Gestiona tu saldo desde tu cuenta de Dreamlove:
-    <a href="https://store.dreamlove.es/ms-1-50-mis_saldos-0/" target="_blank" rel="noopener">Mis saldos</a>.
-    Es importante mantener <strong>saldo monedero suficiente</strong> para que los pedidos se procesen automáticamente.
-  </div>
-</details>
-
-<!-- Exportador de catálogo -->
-<details class="faq" data-tags="catálogo exportar csv xml json feed descargar" id="faq-exportador-catalogo">
-  <summary>¿Cómo puedo obtener el catálogo? <span class="tag">Catálogo</span></summary>
-  <div class="answer">
-    Descarga el catálogo en distintos formatos desde el
-    <a href="https://store.dreamlove.es/exportador-de-catalogo/" target="_blank" rel="noopener">Exportador de catálogo</a>.
-  </div>
-</details>
-
-<!-- Descarga de imágenes de producto -->
-<details class="faq" data-tags="imágenes fotos producto galería descarga store" id="faq-descargar-imagenes-producto">
-  <summary>¿Cómo puedo descargar las imágenes de los productos? <span class="tag">Imágenes</span></summary>
-  <div class="answer">
-    En la Store, abre la ficha del producto y, en la parte inferior de la galería de imágenes,
-    encontrarás el botón <strong>Descargar imágenes</strong>.
-  </div>
-</details>
-
-<!-- Recursos de marcas (imágenes y vídeos) -->
-<details class="faq" data-tags="marcas logos imágenes vídeos recursos multimedia" id="faq-media-marcas">
-  <summary>¿Cómo puedo descargar imágenes de marcas y vídeos? <span class="tag">Multimedia</span></summary>
-  <div class="answer">
-    Descárgalos desde el
-    <a href="https://store.dreamlove.es/download-center/" target="_blank" rel="noopener">Centro de descargas</a>.
-  </div>
-</details>
-
-<!-- Planograma -->
-<details class="faq" data-tags="planograma planogram merchandising expositor tienda" id="faq-planograma">
-  <summary>¿Cómo puedo visualizar el planograma? <span class="tag">Merchandising</span></summary>
-  <div class="answer">
-    Consulta el planograma en el
-    <a href="https://store.dreamlove.es/download-center/" target="_blank" rel="noopener">Centro de descargas</a>.
-  </div>
-</details>
-
-<!-- Importación de productos -->
-<details class="faq" data-tags="importación productos idioma catálogo restricciones marcas países novedades" id="faq-importacion-productos">
-  <summary>Importación de productos <span class="tag">Catálogo</span></summary>
-  <div class="answer">
-    Los productos se importan de forma automática en el <strong>idioma solicitado</strong>. 
-    Es posible que no aparezcan determinados productos por <strong>política de marcas</strong>, 
-    <strong>restricciones por país</strong> o porque <strong>aún no están incluidos</strong> en el catálogo al ser novedades.
-  </div>
-</details>
-
-<!-- Sin saldo -->
-<details class="faq" data-tags="monedero saldo error pedidos" id="faq-sin-saldo">
-  <summary>¿Qué ocurre si me quedo sin saldo en el monedero? <span class="tag">Pagos</span></summary>
-  <div class="answer">
-    El pedido quedará <strong>pendiente</strong> hasta que recargues crédito. Luego, notificalo con el equipo de soporte para que procese el pedido bloqueado.
-    Gestiona tu saldo aquí: <a href="https://store.dreamlove.es/ms-1-50-mis_saldos-0/" target="_blank" rel="noopener">Mis saldos</a>.
-  </div>
-</details>
-
-<!-- Configuración general (manual) -->
-<details class="faq" data-tags="configuración dominios envíos impuestos cuentas" id="faq-manual-config">
-  <summary>¿Dónde puedo ver toda la configuración de Shopify (pagos, envíos, dominios)? <span class="tag">Configuración</span></summary>
-  <div class="answer">
-    En el <a href="shopify.html" target="_blank" rel="noopener"><strong>Manual de Configuración</strong></a> encontrarás guías sobre pagos, envío y entrega, dominios, etc.
-  </div>
-</details>
-
-<details class="faq" data-tags="precios colecciones seo edición" id="faq-editar-precios-colecciones">
-  <summary>¿Puedo cambiar precios, colecciones o SEO tras la importación? <span class="tag">Catálogo</span></summary>
-  <div class="answer">
-    <p><strong>Precios:</strong> Sí, puedes modificarlos. Los productos llegan con un <strong>margen de beneficio recomendado</strong>, pero eres libre de ajustarlos. Puedes usar <em>aplicaciones de terceros</em> para cambios masivos; <strong>no ofrecemos soporte</strong> sobre dichas apps, por lo que recomendamos consultar su <em>documentación oficial</em> y <em>vídeos explicativos</em>.</p>
-
-    <p><strong>SEO:</strong> Puedes gestionar títulos, descripciones, metacampos y URLs en Shopify o con apps de terceros. <strong>No damos soporte</strong> en SEO; te sugerimos revisar la documentación oficial y recursos formativos. Ten en cuenta que nuestra sincronización <strong>no depende de la URL pública</strong>, sino del <strong>identificador interno</strong> del producto.</p>
-
-    <p><strong>Colecciones:</strong> Puedes <strong>agregar colecciones nuevas</strong> para tu estrategia (p. ej., “Novedades”). No modifiques las colecciones/base creadas por el plugin, <strong>salvo las imágenes</strong> si quieres personalizarlas.</p>
-  </div>
-</details>
-
-<!-- Duplicados al importar -->
-<details class="faq" data-tags="importación duplicados limpieza catálogo csv" id="faq-duplicados">
-  <summary>Ya tengo productos de Dreamlove en mi tienda, ¿puede haber duplicados? <span class="tag">Catálogo</span></summary>
-  <div class="answer">
-    Sí. Si mantienes productos previos, pueden aparecer <strong>duplicados</strong> o <strong>variantes huérfanas</strong>.
-    Recomendamos <strong>eliminar</strong> los productos existentes relacionados con Dreamlove antes de realizar la importación.
-  </div>
-</details>
-
-<!-- Sucursal Dreamlove -->
-<details class="faq" data-tags="sucursal fulfillment logística preparación envíos" id="faq-sucursal">
-  <summary>¿Qué sucursal debo usar para preparar los pedidos? <span class="tag">Envíos</span></summary>
-  <div class="answer">
-    Configura <strong>Dreamlove Fulfillment Service</strong> como sucursal principal en <em>Configuración → Envío y entrega</em>. Así los pedidos de productos sincronizados se preparan y actualizan automáticamente.
-    Más información: <a href="sincronizacion_plugin.html#sucursal" target="_blank" rel="noopener">Implementación Sucursal</a>.
-  </div>
-</details>
-
-<!-- Idioma coherente -->
-<details class="faq" data-tags="idioma importación traducciones tienda translate adapt" id="faq-idioma-coherencia">
-  <summary>¿En qué idioma se importan los productos? <span class="tag">Catálogo</span></summary>
-  <div class="answer">
-    Indica al equipo técnico el <strong>idioma de importación</strong> (ES, EN, PT, DE, FR, IT). Debe coincidir con el <strong>idioma predeterminado</strong> de tu tienda para evitar inconsistencias.
-    Para vender en varios idiomas, usa <em>Translate &amp; Adapt</em> tras la importación base.
-    Más información: <a href="sincronizacion_plugin.html#sucursal" target="_blank" rel="noopener">Implementación Sucursal</a>.
-  </div>
-</details>
-
-<!-- Métodos de pago en Shopify -->
-<details class="faq" data-tags="pagos checkout shopify payments paypal configuración" id="faq-metodos-pago">
-  <summary>¿Debo configurar métodos de pago en Shopify para que se procesen los pedidos? <span class="tag">Pagos</span></summary>
-  <div class="answer">
-    Sí, usted debe activar al menos un proveedor de pago (Shopify Payments, PayPal u otros) para que los pedidos queden <strong>pagados</strong> y puedan enviarse automáticamente.
-    Guía: <a href="manual_configuracion.html#pagos" target="_blank" rel="noopener">configurar pagos</a>.
-  </div>
-</details>
-
-<!-- Políticas legales y devoluciones -->
-<details class="faq" data-tags="políticas legales devoluciones privacidad" id="faq-politicas">
-  <summary>¿Cómo gestiono las políticas legales y la política de devoluciones en mi tienda? <span class="tag">Políticas</span></summary>
-  <div class="answer">
-    Sí, puedes añadir y editar contenido legal directamente desde tu panel de administración de Shopify:
-    <ol>
-      <li><strong>Políticas legales</strong>: ve a <em>Configuración → Políticas</em> para configurar la política de privacidad, devoluciones, términos y condiciones, etc.</li>
-      <li><strong>Páginas adicionales</strong>: desde <em>Tienda Online → Páginas</em> puedes crear secciones como <em>“Quiénes somos”</em>, <em>“Preguntas frecuentes”</em> o <em>“Aviso legal”</em>.</li>
-    </ol>
-    <p>
-      En cuanto a la <strong>política de devoluciones</strong>, puedes tomar como referencia la que aplicamos en nuestra tienda, pero debes adaptarla a tu propio criterio, decidiendo si ofrecer más o menos garantías.
-    </p>
-    <p>
-      Es importante que la política final de tu tienda explique claramente el <strong>procedimiento que debe seguir un cliente</strong> para devolver un pedido, sin incluir referencias internas a Dreamlove. 
-      Solo deberás comunicar datos específicos al cliente una vez que el proceso de devolución haya sido aprobado.
-    </p>
-    <p> Más información: <a href="manual_configuracion.html#politicas" target="_blank" rel="noopener">Políticas</a>.</p>
-  </div>
-</details>
-
-<!-- Cambios en datos de facturación y contacto -->
-<details class="faq" data-tags="facturación datos contacto administración comercial" id="faq-cambios-datos">
-  <summary>¿Cómo gestiono cambios en mis datos de facturación o contacto? <span class="tag">Facturación</span></summary>
-  <div class="answer">
-    Para realizar modificaciones en tus datos, debes dirigirte al departamento correspondiente:
-    <ul>
-      <li><strong>Cambios de dirección, NIF/CIF o nombre de la empresa:</strong> envía la solicitud a <em>Administración</em>.</li>
-      <li><strong>Cambios de teléfono o correo electrónico de contacto:</strong> envía la solicitud al departamento <em>Comercial</em>.</li>
-    </ul>
-    <p>
-      Correos de contacto:
-    </p>
-    <ul>
-      <li><strong>Administración:</strong> <a href="mailto:administracion@dreamlove.eu">administracion@dreamlove.eu</a></li>
-      <li><strong>Comercial Nacional:</strong> <a href="mailto:iberia@dreamlove.eu">iberia@dreamlove.eu</a></li>
-      <li><strong>Comercial Internacional:</strong> <a href="mailto:international@dreamlove.eu">international@dreamlove.eu</a></li>
-    </ul>
+    <p>De forma gratuita, Shopify permite tener hasta <strong>3 idiomas</strong> mediante la app <em>Translate &amp; Adapt</em>: un <strong>idioma principal</strong> (debe coincidir con el <strong>idioma de importación</strong> de los productos) y <strong>dos idiomas adicionales</strong> con <strong>traducción automática</strong>. Si deseas disponer de más idiomas, puedes usar <em>aplicaciones de terceros</em> del marketplace de Shopify; ten en cuenta que <strong>no damos soporte</strong> sobre aplicaciones de terceros.</p>
+    <a class="btn" href="sincronizacion_plugin.html#idioma" target="_blank" rel="noopener" aria-label="Abrir información sobre idiomas (se abre en nueva pestaña)">Más información</a>
   </div>
 </details>
 
 
+
+        <!-- Métodos de pago en Shopify -->
+        <details class="faq" data-tags="pagos checkout shopify payments paypal configuración" id="faq-metodos-pago">
+          <summary>¿Debo configurar métodos de pago en Shopify para que se procesen los pedidos? <span class="tag">Pagos</span></summary>
+          <div class="answer">
+            <p>Sí, debes activar al menos un proveedor de pago (Shopify Payments, PayPal u otros) para que los pedidos queden <strong>pagados</strong> y puedan enviarse automáticamente.</p>
+            <a class="btn" href="manual_configuracion.html#pagos" target="_blank" rel="noopener" aria-label="Abrir guía para configurar pagos (se abre en nueva pestaña)">Configurar pagos</a>
+          </div>
+        </details>
+
+        <!-- Políticas legales y devoluciones -->
+        <details class="faq" data-tags="políticas legales devoluciones privacidad" id="faq-politicas">
+          <summary>¿Cómo gestiono las políticas legales y la política de devoluciones en mi tienda? <span class="tag">Políticas</span></summary>
+          <div class="answer">
+            <p>Sí, puedes añadir y editar contenido legal directamente desde tu panel de administración de Shopify:</p>
+            <ol>
+              <li><strong>Políticas legales</strong>: ve a <em>Configuración → Políticas</em> para configurar la política de privacidad, devoluciones, términos y condiciones, etc.</li>
+              <li><strong>Páginas adicionales</strong>: desde <em>Tienda Online → Páginas</em> puedes crear secciones como <em>“Quiénes somos”</em>, <em>“Preguntas frecuentes”</em> o <em>“Aviso legal”</em>.</li>
+            </ol>
+            <p>En cuanto a la <strong>política de devoluciones</strong>, puedes tomar como referencia la que aplicamos en nuestra tienda, pero debes adaptarla a tu propio criterio, decidiendo si ofrecer más o menos garantías.</p>
+            <p>Es importante que la política final de tu tienda explique claramente el <strong>procedimiento que debe seguir un cliente</strong> para devolver un pedido, sin incluir referencias internas a Dreamlove. Solo deberás comunicar datos específicos al cliente una vez que el proceso de devolución haya sido aprobado.</p>
+            <p>Más información en la guía de políticas.</p>
+            <a class="btn" href="manual_configuracion.html#politicas" target="_blank" rel="noopener" aria-label="Abrir guía de Políticas (se abre en nueva pestaña)">Políticas</a>
+          </div>
+        </details>
+
+        <!-- Cambios en datos de facturación y contacto -->
+        <details class="faq" data-tags="facturación datos contacto administración comercial" id="faq-cambios-datos">
+          <summary>¿Cómo gestiono cambios en mis datos de facturación o contacto? <span class="tag">Facturación</span></summary>
+          <div class="answer">
+            <p>Para realizar modificaciones en tus datos, debes dirigirte al departamento correspondiente:</p>
+            <ul>
+              <li><strong>Cambios de dirección, NIF/CIF o nombre de la empresa:</strong> envía la solicitud a <em>Administración</em>.</li>
+              <li><strong>Cambios de teléfono o correo electrónico de contacto:</strong> envía la solicitud al departamento <em>Comercial</em>.</li>
+            </ul>
+                        <a class="btn" href="mailto:administracion@dreamlove.eu" target="_blank" rel="noopener" aria-label="Contacto Administración">Contacto Administración</a>
+            <a class="btn" href="mailto:iberia@dreamlove.eu" target="_blank" rel="noopener" aria-label="Contacto Comercial Iberia">Contacto Comercial Iberia</a>
+            <a class="btn" href="mailto:international@dreamlove.eu" target="_blank" rel="noopener" aria-label="Contacto Comercial Internacional">Contacto Comercial Internacional</a>
+          </div>
+        </details>
 
       </div>
     </section>
