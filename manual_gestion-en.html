@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shopify Manual · Dreamlove</title>
+  <meta name="description" content="Shopify management manual: Home, Orders, Products, Customers, Marketing, Discounts, Content, Markets, Finances, Reports, Sales Channels, Apps, and Settings." />
+  <link rel="icon" href="img/icono.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="sr-only" href="#contenido">Skip to content</a>
+
+  <!-- Topbar -->
+  <div class="topbar" role="banner">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <a href="faq.html" aria-label="Home" class="brand-mark">
+          <img src="img/dreamlove_logomenu.png" alt="Dreamlove · Help Center">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="primary" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="faq.html">Frequently Asked Questions</a>
+      <a href="precios.html">Plans and Pricing</a>
+      <a href="plantillas.html">Shopify Templates</a>
+      <a href="sincronizacion.html">Synchronization</a>
+      <a href="shopify.html" aria-current="page">Shopify Manual</a>
+      <a href="contacto.html">Contact</a>
+
+      <span style="flex:1"></span>
+
+      <div class="lang-switch">
+        <label for="lang" class="sr-only">Language</label>
+        <select id="lang" name="lang" aria-label="Language">
+          <option value="es">Español</option>
+          <option value="en" selected>English</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido" class="container">
+    <section class="card" aria-labelledby="gestion-title">
+      <div class="hd">
+        <h1 id="gestion-title" class="section-title">Shopify × Dreamlove Management Manual</h1>
+        <p class="pill">Daily operations: orders, customers, marketing, reports, and more</p>
+      </div>
+      <div class="bd">
+        <!-- Index -->
+        <h2 class="mini-title">Table of Contents</h2>
+        <hr class="separator" aria-hidden="true">
+        <nav class="toc" aria-label="Manual index">
+          <a href="#inicio">1. Home</a>
+          <a href="#pedidos">2. Orders</a>
+          <a href="#productos">3. Products</a>
+          <a href="#clientes">4. Customers</a>
+          <a href="#marketing">5. Marketing</a>
+          <a href="#descuentos">6. Discounts</a>
+          <a href="#contenido">7. Content</a>
+          <a href="#markets">8. Markets</a>
+          <a href="#finanzas">9. Finances</a>
+          <a href="#informes">10. Reports & Analytics</a>
+          <a href="#canales">11. Sales Channels</a>
+          <a href="#apps">12. Apps</a>
+          <a href="#configuracion">13. Settings</a>
+          <a href="#contacto-soporte">14. Contact & Technical Support</a>
+        </nav>
+
+        <ol class="steps" id="guia-gestion">
+
+          <!-- 1. Home -->
+<li class="step" id="inicio">
+  <h4>Home (dashboard)</h4>
+
+  <p>
+    The <strong>Home</strong> page of the admin shows, at a glance, your store status and shortcuts to common tasks.
+    For in-depth performance, use <em>Reports & Analytics</em> and <em>Live View</em>.
+  </p>
+
+  <h5>1) What you’ll see on Home</h5>
+  <ul class="list">
+    <li><strong>Quick summary</strong> of recent activity and alerts (e.g., orders to review or suggested tasks).</li>
+    <li><strong>Shortcuts</strong> to create discounts, campaigns, or review products (depending on installed apps and channels).</li>
+    <li><strong>Global search</strong> in the top bar to find orders, products, customers, apps, channels, or settings.</li>
+  </ul>
+
+  <h5>2) Metrics & analysis (Analytics → Reports & Analytics)</h5>
+  <ul class="list">
+    <li>Open <em>Analytics → Reports & Analytics</em> to see cards for <strong>sales, orders, visitors, conversion</strong>, and more.</li>
+    <li>You can <strong>customize</strong> sections and cards: add, resize, reorder, or remove to focus on what matters.</li>
+    <li>Dig deeper with <strong>Reports</strong> and filter/segment by date, channel, collection, customer, etc. Export if you need spreadsheets.</li>
+  </ul>
+
+  <h5>3) Live View (Analytics → Live View)</h5>
+  <ul class="list">
+    <li>Monitor <strong>real-time</strong> activity across channels: visitors, sessions, checkouts, and confirmed orders.</li>
+    <li>Includes a <strong>2D map/3D globe</strong> to view where activity comes from and key live metrics.</li>
+  </ul>
+
+  <h5>4) Productivity tips</h5>
+  <ul class="list">
+    <li><strong>Slash shortcut</strong>: press <kbd>/</kbd> to open search and type “discounts”, “customers”, “shipping”…</li>
+    <li><strong>Saved views & filters</strong> in lists (Orders, Products, Customers): save views with filters/sorting for your routine.</li>
+    <li><strong>Live View</strong> during campaigns/peaks: confirm if visits progress to checkout or if there are drop-offs at a step.</li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/inicio-shopify-en.JPG" alt="Home dashboard with cards and key indicators">
+    <figcaption class="meta">Home: access to metrics, search, and frequent tasks. For deeper analysis, use Reports and Live View.</figcaption>
+  </figure>
+
+  <p class="meta">
+    Related official docs: 
+    <a href="https://help.shopify.com/es/manual/reports-and-analytics/shopify-reports/overview-dashboard" target="_blank" rel="noopener">Overview dashboard</a> ·
+    <a href="https://help.shopify.com/es/manual/reports-and-analytics/shopify-reports/live-view" target="_blank" rel="noopener">Live View</a> ·
+    <a href="https://help.shopify.com/es/manual/shopify-admin/admin-search" target="_blank" rel="noopener">Admin search</a> ·
+    <a href="https://help.shopify.com/es/manual/reports-and-analytics/shopify-reports" target="_blank" rel="noopener">Analytics (general)</a> ·
+    <a href="https://help.shopify.com/es/manual/shopify-admin/productivity-tools/searching-filtering-views" target="_blank" rel="noopener">List views & filters</a>.
+  </p>
+</li>
+
+
+          <!-- 2. Orders -->
+<li class="step" id="pedidos">
+  <h4>Orders</h4>
+  <p>Manage the full cycle: list & filters, drafts, editing, charges/capture, fulfillment & tracking, cancellations, refunds, and returns/exchanges.</p>
+
+  <h5>1) List, views & filters</h5>
+  <ul class="list">
+    <li>Go to <em>Orders</em> to see all orders. Create <strong>saved views</strong> with filters (status, payment, channel, tags, dates) and custom columns for your daily operations. <a href="https://help.shopify.com/es/manual/fulfillment/managing-orders" target="_blank" rel="noopener">General guide</a> · <a href="https://help.shopify.com/en/manual/fulfillment/managing-orders/viewing-orders/searching-orders" target="_blank" rel="noopener">Search & view orders</a>.</li>
+  </ul>
+
+  <h5>2) Order statuses</h5>
+  <ul class="list">
+    <li>Understand <strong>order status</strong>, <strong>payment status</strong> (e.g., Authorized, Paid), and <strong>fulfillment status</strong> (Unfulfilled, Fulfilled, Partial), plus <strong>return status</strong>. Use them to prioritize and create views. <a href="https://help.shopify.com/en/manual/fulfillment/managing-orders/order-status" target="_blank" rel="noopener">Order statuses</a>.</li>
+    <li>On the order detail, check the <strong>timeline</strong>, tags, notes, payment history, and contact the customer. <a href="https://help.shopify.com/en/manual/fulfillment/managing-orders/managing-order-details" target="_blank" rel="noopener">Manage order details</a>.</li>
+  </ul>
+
+  <h5>3) Drafts (manual orders)</h5>
+  <ul class="list">
+    <li>Create a <strong>draft order</strong> with products, customer, discounts, and taxes; email an invoice or charge on the spot (depending on active methods). When paid, it becomes a regular order. <a href="https://help.shopify.com/en/manual/fulfillment/managing-orders/create-orders" target="_blank" rel="noopener">Drafts & invoices</a> · <a href="https://help.shopify.com/en/manual/fulfillment/managing-orders/create-orders/create-draft" target="_blank" rel="noopener">Create draft</a>.</li>
+    <li>Optional B2B: drafts for companies and payment (also Tap to Pay in app, depending on availability). <a href="https://help.shopify.com/en/manual/fulfillment/managing-orders/create-orders/get-paid" target="_blank" rel="noopener">Get paid for drafts</a>.</li>
+  </ul>
+
+  <h5>4) Edit orders</h5>
+  <ul class="list">
+    <li>You can <strong>add or remove products</strong>, adjust quantities, <strong>edit shipping charges</strong>, and <strong>apply discounts</strong> (subject to limitations if items are already fulfilled). <a href="https://help.shopify.com/es/manual/fulfillment/managing-orders/editing-orders" target="_blank" rel="noopener">Edit orders</a> · <a href="https://help.shopify.com/es/manual/fulfillment/managing-orders/editing-orders/products" target="_blank" rel="noopener">Edit products</a> · <a href="https://help.shopify.com/es/manual/fulfillment/managing-orders/editing-orders/shipping-fees" target="_blank" rel="noopener">Edit shipping</a> · <a href="https://help.shopify.com/en/manual/fulfillment/managing-orders/editing-orders/considerations" target="_blank" rel="noopener">Considerations</a>.</li>
+  </ul>
+
+  <h5>5) Charges: authorization & capture</h5>
+  <ul class="list">
+    <li>With <strong>automatic capture</strong>, Shopify charges on authorization. With <strong>manual capture</strong>, the payment is “Authorized” until you capture it (partial or full) before it expires. <a href="https://help.shopify.com/en/manual/payments/payment-authorization" target="_blank" rel="noopener">Authorization & capture</a>.</li>
+  </ul>
+
+  <h5>6) Fulfillment & tracking</h5>
+  <ul class="list">
+    <li>On the order, mark as <strong>Fulfilled</strong>, set the carrier, and add <strong>tracking number(s)</strong>; the customer will see the status and can track the shipment on the order status page. <a href="https://help.shopify.com/es/manual/fulfillment/fulfilling-orders/adding-tracking-numbers" target="_blank" rel="noopener">Add tracking</a> · <a href="https://help.shopify.com/es/manual/fulfillment/setup/order-status-page/understanding-order-status-pages" target="_blank" rel="noopener">Order status page</a>.</li>
+  </ul>
+
+  <h5>7) Cancellations & refunds</h5>
+  <ul class="list">
+    <li><strong>Cancel</strong> stops processing (useful on customer request, unavailable stock, or suspected fraud). Decide whether to refund now or later and whether to restock. <a href="https://help.shopify.com/es/manual/fulfillment/managing-orders/canceling-orders" target="_blank" rel="noopener">Cancel orders</a>.</li>
+    <li><strong>Refund</strong> fully or partially (and optionally restock). <a href="https://help.shopify.com/es/manual/fulfillment/managing-orders/refunding-orders" target="_blank" rel="noopener">Refund orders</a>.</li>
+    <li><em>New</em>: you can refund to <strong>store credit</strong> when processing a return/exchange (check availability/country). <a href="https://changelog.shopify.com/posts/refund-to-store-credit-when-processing-a-return" target="_blank" rel="noopener">Store credit on returns (news)</a>.</li>
+  </ul>
+
+  <h5>8) Returns & exchanges</h5>
+  <ul class="list">
+    <li>Create and manage <strong>returns</strong>; send instructions or a return label and add <strong>exchange items</strong> if needed. <a href="https://help.shopify.com/es/manual/fulfillment/managing-orders/returns" target="_blank" rel="noopener">Returns & exchanges</a> · <a href="https://help.shopify.com/es/manual/fulfillment/managing-orders/returns/creating-returns" target="_blank" rel="noopener">Create and process returns</a>.</li>
+    <li>Define <strong>return rules</strong> (especially if you use POS) for eligibility and fees. <a href="https://help.shopify.com/en/manual/sell-in-person/shopify-pos/order-management/return-rules" target="_blank" rel="noopener">Return rules</a>.</li>
+  </ul>
+
+  <h5>9) Fraud prevention</h5>
+  <ul class="list">
+    <li>Review the <strong>fraud analysis</strong> and automate with Flow to flag/hold high-risk orders. <a href="https://help.shopify.com/es/manual/fulfillment/managing-orders/protecting-orders/fraud-analysis" target="_blank" rel="noopener">Fraud analysis</a> · <a href="https://help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders" target="_blank" rel="noopener">Protect orders</a>.</li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/pedidos-shopify-en.JPG" alt="Order list with filters, views, and actions">
+    <figcaption class="meta">Orders: views & filters, drafts, editing, capture, fulfillment, and returns.</figcaption>
+  </figure>
+</li>
+<!-- 3. Products -->
+<li class="step" id="productos">
+  <h4>Products</h4>
+  <p>Create/edit, variants, inventory by location, collections, custom data, and channel publishing.</p>
+
+  <h5>1) Create and edit products</h5>
+  <ul class="list">
+    <li><em>Products → Add product</em>: title, description (rich text editor), media (images/video/3D), price and compare-at price, cost, taxes, weight/shipping, SKU, barcode, category and product type, vendor (brand), and tags. <a href="https://help.shopify.com/es/manual/products" target="_blank" rel="noopener">Products guide</a></li>
+    <li><strong>Status</strong> (draft/active/archived), <strong>schedule</strong>, and <strong>channel availability</strong> control where/when it’s published.</li>
+  </ul>
+
+  <h5>2) Variants and options</h5>
+  <ul class="list">
+    <li>Up to <strong>3 options</strong> (e.g., Size/Color) and up to <strong>100 variants</strong> per product. Each variant has its own price, SKU, barcode, cost, weight, image, and stock. <a href="https://help.shopify.com/es/manual/products/variants" target="_blank" rel="noopener">Variants</a></li>
+  </ul>
+
+  <h5>3) Product media</h5>
+  <ul class="list">
+    <li>Upload images, add video and 3D models; the first item is the “featured” one. Use alt text for accessibility/SEO. <a href="https://help.shopify.com/es/manual/products/product-media/add-media" target="_blank" rel="noopener">Product media</a></li>
+  </ul>
+
+  <h5>4) Inventory and locations</h5>
+  <ul class="list">
+    <li>Enable <em>Track quantity</em> and manage stock by <strong>location</strong> (warehouses/stores). Adjustments, transfers, and partial fulfillment if needed. <a href="https://help.shopify.com/es/manual/fulfillment/setup/locations" target="_blank" rel="noopener">Locations</a> · <a href="https://help.shopify.com/es/manual/fulfillment/inventory" target="_blank" rel="noopener">Inventory</a></li>
+  </ul>
+
+  <h5>5) Collections</h5>
+  <ul class="list">
+    <li><strong>Automated</strong> (by rules: tags, type, price, availability) and <strong>Manual</strong> (curated). Sort by sales, date, price, or manual. Publish collections to the channels you want. 
+      <a href="https://help.shopify.com/es/manual/products/collections/automated-collections" target="_blank" rel="noopener">Automated</a> · 
+      <a href="https://help.shopify.com/es/manual/products/collections/manual-shopify-collection" target="_blank" rel="noopener">Manual</a> ·
+      <a href="https://help.shopify.com/es/manual/products/collections/make-collections-available" target="_blank" rel="noopener">Availability</a>
+    </li>
+  </ul>
+
+  <h5>6) Bulk editor and CSV</h5>
+  <ul class="list">
+    <li><strong>Bulk editor</strong>: select products/variants and edit in a table (price, stock, tags, etc.). <a href="https://help.shopify.com/es/manual/shopify-admin/productivity-tools/bulk-editing" target="_blank" rel="noopener">Bulk editing</a></li>
+    <li><strong>Import/Export CSV</strong>: use the official template; you can load images by URL. <a href="https://help.shopify.com/es/manual/products/import-export/using-csv" target="_blank" rel="noopener">Product CSV</a></li>
+  </ul>
+
+  <h5>7) Custom data: Metafields and Metaobjects</h5>
+  <ul class="list">
+    <li>Extend the data model with <strong>metafields</strong> (e.g., materials, care, spec sheets) and <strong>metaobjects</strong> (reusable structures, e.g., “Size guide”). 
+      <a href="https://help.shopify.com/es/manual/custom-data/metafields" target="_blank" rel="noopener">Metafields</a> · 
+      <a href="https://help.shopify.com/es/manual/custom-data/metaobjects" target="_blank" rel="noopener">Metaobjects</a>
+    </li>
+  </ul>
+
+  <h5>8) SEO and channels</h5>
+  <ul class="list">
+    <li>Edit <strong>Title/Meta description</strong> and URL (handle redirects if you change the handle). Alt text on images. <a href="https://help.shopify.com/es/manual/promoting-marketing/seo" target="_blank" rel="noopener">SEO in Shopify</a></li>
+    <li>Set <strong>availability</strong> for Online Store, Shop, Google & YouTube, etc. <a href="https://help.shopify.com/es/manual/online-sales-channels" target="_blank" rel="noopener">Sales channels</a></li>
+  </ul>
+
+  <h5>9) Shipping, duties, and taxes (per product)</h5>
+  <ul class="list">
+    <li>Weight for shipping rates, HS code and country of origin for cross-border duties; mark if the product requires shipping. <a href="https://help.shopify.com/es/manual/shipping/understanding-shipping/shipping-rates" target="_blank" rel="noopener">Shipping rates</a> · <a href="https://help.shopify.com/es/manual/taxes" target="_blank" rel="noopener">Taxes</a></li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/productos-shopify-en.JPG" alt="Products screen with bulk editor and inventory">
+    <figcaption class="meta">Products: variants, inventory, collections, and attributes.</figcaption>
+  </figure>
+</li>
+
+
+<!-- 4. Customers -->
+<li class="step" id="clientes">
+  <h4>Customers</h4>
+  <p>Manage profiles, segment your base, communicate with consent, and comply with privacy. From <em>Customers</em> you can see all profiles, create segments, import/export, and work with notes/tags.</p>
+
+  <h5>1) List, views, and segments</h5>
+  <ul class="list">
+    <li><strong>List and filters</strong>: search by name, email, tags, marketing status, spend, orders, date, etc. Save <strong>views</strong> for daily work. <a href="https://help.shopify.com/es/manual/customers" target="_blank" rel="noopener">Customers in Shopify</a>.</li>
+    <li><strong>Segments</strong> (dynamic by rules): build segments with the editor (ShopifyQL + filters) and reuse them for email, discounts, or automations. <a href="https://help.shopify.com/es/manual/customers/customer-segmentation" target="_blank" rel="noopener">Segmentation</a> · <a href="https://help.shopify.com/es/manual/customers/customer-segmentation/create-customer-segments" target="_blank" rel="noopener">Create segments</a> · <a href="https://help.shopify.com/es/manual/customers/customer-segmentation/reference-guide" target="_blank" rel="noopener">Filter reference</a>.</li>
+    <li><strong>Using segments</strong>: send campaigns or create targeted discounts from the segment itself. <a href="https://help.shopify.com/es/manual/customers/customer-segmentation/manage-customer-segments" target="_blank" rel="noopener">Manage segments</a>.</li>
+  </ul>
+
+  <h5>2) Customer profiles: data, notes, and tags</h5>
+  <ul class="list">
+    <li>Open a profile to see contact data, addresses, spend, orders, marketing, and the <strong>timeline</strong> (history with internal notes, not visible to the customer). <a href="https://help.shopify.com/es/manual/shopify-admin/productivity-tools/timeline" target="_blank" rel="noopener">Timeline</a> · <a href="https://help.shopify.com/es/manual/customers/manage-customers" target="_blank" rel="noopener">Manage customers</a>.</li>
+    <li>Use <strong>tags</strong> to classify (VIP, risk, B2B…) and combine with segments/automations. <a href="https://help.shopify.com/en/manual/shopify-admin/productivity-tools/using-tags" target="_blank" rel="noopener">Tags</a>.</li>
+  </ul>
+
+  <h5>3) Import/Export customers (CSV)</h5>
+  <ul class="list">
+    <li>Export your list or import new signups/updates with the official CSV template. <a href="https://help.shopify.com/es/manual/customers/import-export-customers" target="_blank" rel="noopener">Import/Export customers</a> · <a href="https://help.shopify.com/es/manual/shopify-admin/productivity-tools/csv-files" target="_blank" rel="noopener">CSV in Shopify</a>.</li>
+    <li><strong>Duplicates</strong>: if there are repeated emails/phones, Shopify skips records per its rules; review before importing.</li>
+  </ul>
+
+  <h5>4) Marketing and consent</h5>
+  <ul class="list">
+    <li>Manage <strong>email subscription</strong> status and apply <strong>double opt-in</strong> per your region. <a href="https://help.shopify.com/es/manual/promoting-marketing/create-marketing/shopify-email/email-subscriber-list-management" target="_blank" rel="noopener">Subscriber list</a> · <a href="https://help.shopify.com/es/manual/privacy-and-security/privacy/customer-privacy-settings/understanding-customer-privacy-settings" target="_blank" rel="noopener">Customer privacy</a> · <a href="https://help.shopify.com/es/manual/promoting-marketing/create-marketing/customer-contact-information" target="_blank" rel="noopener">Collect contact info</a>.</li>
+  </ul>
+
+  <h5>5) Privacy and data requests (GDPR, etc.)</h5>
+  <ul class="list">
+    <li>Process <strong>access/deletion requests</strong> from the profile: <em>More actions → Erase personal data</em>. <a href="https://help.shopify.com/es/manual/privacy-and-security/privacy/processing-customer-data-requests" target="_blank" rel="noopener">Data requests</a> · <a href="https://help.shopify.com/es/manual/privacy-and-security/privacy/gdpr" target="_blank" rel="noopener">GDPR</a> · <a href="https://help.shopify.com/es/manual/privacy-and-security/privacy/gdpr/comply-with-gdpr" target="_blank" rel="noopener">Comply with GDPR</a>.</li>
+  </ul>
+
+  <h5>6) Communication and interaction</h5>
+  <ul class="list">
+    <li>Send emails to individual customers from the admin or use <strong>Shopify Inbox</strong> for chat (you can share products and discounts). <a href="https://help.shopify.com/es/manual/customers/manage-customers" target="_blank" rel="noopener">Email from admin</a> · <a href="https://help.shopify.com/es/manual/inbox/conversations" target="_blank" rel="noopener">Inbox conversations</a>.</li>
+  </ul>
+
+  <h5>7) Customer accounts (login)</h5>
+  <ul class="list">
+    <li>Enable the <strong>new customer accounts</strong> (passwordless login, B2B, etc.) at <em>Settings → Customer accounts</em>. <a href="https://help.shopify.com/es/manual/customers/customer-accounts/new-customer-accounts" target="_blank" rel="noopener">Customer accounts</a>.</li>
+  </ul>
+
+  <h5>8) B2B (optional)</h5>
+  <ul class="list">
+    <li>Migrate customers to B2B companies and manage blended stores (D2C + B2B) if applicable. <a href="https://help.shopify.com/es/manual/b2b/getting-started/migrating-customers" target="_blank" rel="noopener">Migrate customers to B2B</a> · <a href="https://help.shopify.com/es/manual/b2b/getting-started/blended-store-checklist" target="_blank" rel="noopener">Blended store checklist</a>.</li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/clientes-shopify-en.JPG" alt="Customer list, segments, and profile with notes">
+    <figcaption class="meta">Customers: segments, data, notes/tags, marketing, and privacy.</figcaption>
+  </figure>
+</li>
+
+
+<!-- 5. Marketing -->
+<li class="step" id="marketing">
+  <h4>Marketing</h4>
+  <p>From <em>Marketing</em> you create <strong>campaigns</strong> (multichannel) and <strong>automations</strong> (email/SMS/push), and review their performance. <a href="https://help.shopify.com/es/manual/promoting-marketing/create-marketing" target="_blank" rel="noopener">Set up marketing</a>.</p>
+
+  <h5>1) Campaigns (multichannel)</h5>
+  <ul class="list">
+    <li>Create a campaign and group activities (emails, social, ads). Shopify generates a full link with <strong>tracking</strong>, a short link, and a <strong>QR code</strong> to measure traffic and sales. <a href="https://help.shopify.com/es/manual/promoting-marketing/create-marketing/campaigns/creating-campaigns" target="_blank" rel="noopener">Create campaigns</a> · <a href="https://help.shopify.com/es/manual/promoting-marketing/create-marketing/campaigns" target="_blank" rel="noopener">Campaigns features</a>.</li>
+    <li>Measure performance: summary, attributed sessions/sales, and “Top channel performance”. <a href="https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/marketing-performance" target="_blank" rel="noopener">Marketing performance</a> · <a href="https://help.shopify.com/es/manual/reports-and-analytics/shopify-reports/report-types/default-reports/marketing-reports" target="_blank" rel="noopener">Marketing reports</a>.</li>
+  </ul>
+
+  <h5>2) Automations</h5>
+  <ul class="list">
+    <li>Templates for <strong>welcome</strong>, <strong>abandoned cart/checkout</strong>, <strong>winback</strong>, and <strong>post-purchase</strong> with Shopify Email or apps/Flow. <a href="https://help.shopify.com/es/manual/promoting-marketing/create-marketing/marketing-automations" target="_blank" rel="noopener">Automations</a> · <a href="https://help.shopify.com/en/manual/promoting-marketing/create-marketing/marketing-automations/types" target="_blank" rel="noopener">Types</a>.</li>
+    <li><strong>Abandoned checkout</strong> is now managed from Marketing (more control over sending, segmentation, and design). <a href="https://help.shopify.com/es/manual/promoting-marketing/create-marketing/migrate-abandoned-checkout" target="_blank" rel="noopener">New abandoned checkout automation</a> · <a href="https://help.shopify.com/en/manual/promoting-marketing/create-marketing/abandoned-checkouts" target="_blank" rel="noopener">Recover checkouts</a>.</li>
+  </ul>
+
+  <h5>3) Shopify Email (newsletters and flows)</h5>
+  <ul class="list">
+    <li>Create and send emails from the admin with templates and your branding. <a href="https://help.shopify.com/en/manual/promoting-marketing/create-marketing/shopify-email" target="_blank" rel="noopener">Shopify Email</a> · <a href="https://help.shopify.com/es/manual/promoting-marketing/create-marketing/shopify-email/create-email/templates" target="_blank" rel="noopener">Templates</a>.</li>
+    <li><strong>Pricing:</strong> 10,000 emails free/month; then charges apply (volume-based). <em>Abandoned checkout</em> automations don’t consume those credits. <a href="https://help.shopify.com/en/manual/promoting-marketing/create-marketing/shopify-email/shopify-email-cost" target="_blank" rel="noopener">Pricing (EN)</a> · <a href="https://help.shopify.com/es/manual/promoting-marketing/create-marketing/shopify-email/shopify-email-cost" target="_blank" rel="noopener">Pricing (ES)</a> · <a href="https://help.shopify.com/en/manual/promoting-marketing/create-marketing/marketing-automations/types" target="_blank" rel="noopener">Accounting</a>.</li>
+    <li>Ensure deliverability: set sender email and authenticate domain (SPF/DKIM). <a href="https://help.shopify.com/es/manual/intro-to-shopify/initial-setup/setup-your-email" target="_blank" rel="noopener">Set up sender email</a>.</li>
+    <li>Capture subscribers with the theme’s <em>newsletter</em> block or apps. <a href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes/common-customizations/add-newsletter" target="_blank" rel="noopener">Newsletter form</a>.</li>
+  </ul>
+
+  <h5>4) Ads and audiences</h5>
+  <ul class="list">
+    <li>Sync with apps/channels (Google & YouTube, Meta, etc.) and share event data for attribution. <a href="https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/app-data-sharing" target="_blank" rel="noopener">Marketing app data sharing</a>.</li>
+    <li><strong>Shopify Audiences</strong> (eligibility required): build audience lists for ad platforms (US/Canada). <a href="https://help.shopify.com/en/manual/promoting-marketing/shopify-audiences" target="_blank" rel="noopener">Audiences (EN)</a> · <a href="https://help.shopify.com/en/manual/promoting-marketing/shopify-audiences/setting-up-shopify-audiences" target="_blank" rel="noopener">Set up</a> · <a href="https://help.shopify.com/en/manual/promoting-marketing/shopify-audiences/using-audience-lists" target="_blank" rel="noopener">Use audiences</a>.</li>
+  </ul>
+
+  <h5>5) Measurement and attribution</h5>
+  <ul class="list">
+    <li>Check the <strong>marketing summary</strong> and reports (sessions, conversion rate, attributed sales, performance by channel). <a href="https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/marketing-performance" target="_blank" rel="noopener">Marketing performance</a> · <a href="https://help.shopify.com/es/manual/reports-and-analytics/shopify-reports/report-types/default-reports/marketing-reports" target="_blank" rel="noopener">Marketing reports</a>.</li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/marketing-shopify-en.JPG" alt="Campaigns and automations dashboard">
+    <figcaption class="meta">Marketing: multichannel campaigns, automated flows, and measurement.</figcaption>
+  </figure>
+</li>
+
+
+<!-- 6. Discounts -->
+<li class="step" id="descuentos">
+  <h4>Discounts</h4>
+  <p>Manage <strong>codes</strong> and <strong>automatic discounts</strong>, combine them per rules, schedule dates, and limit usage. Discounts apply to the <em>subtotal before taxes</em>; taxes are calculated afterward. <a href="https://help.shopify.com/es/manual/discounts" target="_blank" rel="noopener">General guide</a></p>
+
+  <h5>1) Methods</h5>
+  <ul class="list">
+    <li><strong>Discount codes</strong>: the customer enters a code at checkout. Useful for campaigns, influencers, or segments. <a href="https://help.shopify.com/es/manual/discounts/discount-methods/discount-codes" target="_blank" rel="noopener">Codes</a></li>
+    <li><strong>Automatic discounts</strong>: applied automatically when the cart meets conditions (amounts, quantities, collections…). <a href="https://help.shopify.com/es/manual/discounts/discount-methods/automatic-discounts" target="_blank" rel="noopener">Automatic</a></li>
+  </ul>
+
+  <h5>2) Most common types</h5>
+  <ul class="list">
+    <li><strong>% or fixed amount</strong> on products/collections or order.</li>
+    <li><strong>Free shipping</strong> with threshold or conditions.</li>
+    <li><strong>Buy X, get Y (BOGO)</strong>: by quantity or by spend; Y can be free or with %/amount off. <a href="https://help.shopify.com/es/manual/discounts/discount-types/buy-x-get-y" target="_blank" rel="noopener">Buy X get Y</a></li>
+    <li>More types and considerations: <a href="https://help.shopify.com/es/manual/discounts/discount-types" target="_blank" rel="noopener">Discount types</a></li>
+  </ul>
+
+  <h5>3) Rules and eligibility</h5>
+  <ul class="list">
+    <li><strong>Conditions</strong>: specific products/collections, tags, minimum purchase, item quantity, first order, etc.</li>
+    <li><strong>Audience</strong>: all customers or specific segments (e.g., “VIP” or “No purchases in last 90 days”).</li>
+    <li><strong>Limits</strong>: start/end date and time, total usage cap, per-customer cap.</li>
+  </ul>
+
+  <h5>4) Discount combinations</h5>
+  <ul class="list">
+    <li>Enable <strong>combinations</strong> to allow one code to coexist with other discounts (e.g., free shipping + % off product), per allowed combinations. <a href="https://help.shopify.com/en/manual/discounts/discount-combinations" target="_blank" rel="noopener">Combine discounts</a></li>
+    <li>If multiple promotions are eligible, Shopify applies the <strong>best possible benefit</strong> per the active rules.</li>
+  </ul>
+
+  <h5>5) Checkout considerations</h5>
+  <ul class="list">
+    <li>Discounts created in the admin <strong>don’t apply</strong> on the post-purchase page. <a href="https://help.shopify.com/en/manual/discounts/discount-methods/discount-codes" target="_blank" rel="noopener">Codes</a> · <a href="https://help.shopify.com/en/manual/discounts/discount-methods/automatic-discounts" target="_blank" rel="noopener">Automatic</a></li>
+    <li>On Shopify POS there are specific rules/limitations for discount types and combinations.</li>
+  </ul>
+
+  <h5>6) Best practices</h5>
+  <ul class="list">
+    <li>Use <strong>clear names/codes</strong> and document conditions in the description.</li>
+    <li>Schedule ahead (Black Friday, sales) and <strong>test</strong> the checkout flow before going live.</li>
+    <li>Control cannibalization: limit per-customer usage and define compatibility with free shipping.</li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/descuentos-shopify-en.JPG" alt="Discount creation with conditions and scheduling">
+    <figcaption class="meta">Discounts: codes, automatic, combination, and scheduling.</figcaption>
+  </figure>
+</li>
+
+
+<!-- 7. Content -->
+<li class="step" id="contenido">
+  <h4>Content</h4>
+  <p>Manage <strong>pages</strong>, <strong>blogs</strong>, <strong>files</strong> (media), and <strong>navigation</strong>. Publish and schedule content, add SEO/ACCESSIBILITY, and organize via your menus.</p>
+
+  <h5>1) Pages (Online Store → Pages)</h5>
+  <ul class="list">
+    <li>Create/edit pages like <em>About us</em> or <em>Contact</em>, control <strong>visibility</strong> (show/hide) and <strong>publishing schedule</strong>. <a href="https://help.shopify.com/en/manual/online-store/add-edit-pages" target="_blank" rel="noopener">Create and edit pages</a>.</li>
+    <li>Select a <strong>page template</strong> (depends on the theme) and complete <strong>Title/Description</strong> for SEO from the page settings.</li>
+  </ul>
+
+  <h5>2) Blogs and posts</h5>
+  <ul class="list">
+    <li>Create one or more <strong>blogs</strong> (e.g., “News”, “Guides”) and write <strong>posts</strong> with text, images, or video; publish now or <strong>schedule</strong>. <a href="https://help.shopify.com/en/manual/online-store/blogs/writing-blogs" target="_blank" rel="noopener">Write posts</a> · <a href="https://help.shopify.com/en/manual/online-store/blogs/writing-blogs/working-with-blog-posts" target="_blank" rel="noopener">Manage posts</a>.</li>
+    <li>Optional: enable comments (theme-dependent) and set author, tags, and excerpt for SEO/UX.</li>
+  </ul>
+
+  <h5>3) Files (Content → Files)</h5>
+  <ul class="list">
+    <li>Upload images, PDFs, videos, or logos from <em>Content → Files</em> and reuse them across pages, products, themes, or metaobjects. <a href="https://help.shopify.com/es/manual/shopify-admin/productivity-tools/file-uploads" target="_blank" rel="noopener">Upload and manage files</a>.</li>
+    <li>You can upload up to 20 at a time; then copy the file URL to insert into your content.</li>
+  </ul>
+
+  <h5>4) Menus and navigation (Content → Navigation)</h5>
+  <ul class="list">
+    <li>Edit the <strong>Main menu</strong> and <strong>Footer menu</strong>; add links to products, collections, pages, posts, or external URLs. <a href="https://help.shopify.com/en/manual/online-store/menus-and-links" target="_blank" rel="noopener">Menus & links</a> · <a href="https://help.shopify.com/es/manual/online-store/menus-and-links/understanding-navigation" target="_blank" rel="noopener">Default menus</a>.</li>
+    <li>The exact placement depends on the <strong>theme</strong> (adjust it in the theme editor).</li>
+  </ul>
+
+  <h5>5) Theme and sections (Online Store → Themes → Customize)</h5>
+  <ul class="list">
+    <li>Customize design with the <strong>theme editor</strong> (colors, typography, sections and blocks); change homepage content and other theme templates. <a href="https://help.shopify.com/es/manual/online-store/themes/customizing-themes/edit/theme-editor" target="_blank" rel="noopener">Theme editor</a>.</li>
+    <li>With Online Store 2.0 you can have <strong>sections on almost any page</strong> (JSON templates) and connect <em>dynamic sources</em> (metafields/metaobjects) to blocks. <a href="https://shopify.dev/docs/storefronts/themes/os20" target="_blank" rel="noopener">OS 2.0 (sections & dynamic sources)</a>.</li>
+    <li>If you prefer, start with our <a href="plantillas.html">recommended templates</a>.</li>
+  </ul>
+
+  <h5>6) Content SEO and accessibility</h5>
+  <ul class="list">
+    <li>Edit <strong>title</strong>, <strong>meta description</strong>, and URL on pages/posts; add <strong>alt text</strong> to images for SEO/ACCESSIBILITY. <a href="https://help.shopify.com/es/manual/promoting-marketing/seo" target="_blank" rel="noopener">SEO in Shopify (help)</a>.</li>
+    <li>A good starting point: Shopify’s blog practical guide (updated). <a href="https://www.shopify.com/blog/shopify-seo" target="_blank" rel="noopener">SEO: how to generate more traffic</a>.</li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/contenido-shopify-en.JPG" alt="Managing pages, blogs, files, and menus in Shopify">
+    <figcaption class="meta">Site content: pages, posts, files, and navigation. Adjust the design from the theme editor.</figcaption>
+  </figure>
+</li>
+
+
+<!-- 8. Markets -->
+<li class="step" id="markets">
+  <h4>Markets</h4>
+  <p>Centralize international selling by <strong>markets</strong> (countries/regions or customer groups) and customize catalog, domains/URLs, language, currency, and pricing per market.</p>
+
+  <h5>1) Create and organize markets</h5>
+  <ul class="list">
+    <li>Go to <em>Settings → Markets</em>. Create <strong>markets</strong> and, if needed, <strong>sub-markets</strong> that inherit settings from the main one (catalog, currency, theme, etc.). <a href="https://help.shopify.com/es/manual/markets-new" target="_blank" rel="noopener">What is Markets</a> · <a href="https://help.shopify.com/es/manual/markets-new/manage" target="_blank" rel="noopener">Create and manage markets</a>.</li>
+    <li>You can <strong>preview</strong> a market experience (and associated languages) from the admin. <a href="https://help.shopify.com/es/manual/international/managing" target="_blank" rel="noopener">Preview markets</a>.</li>
+  </ul>
+
+  <h5>2) Domains and URL structure</h5>
+  <ul class="list">
+    <li>Assign each market a localized <strong>domain</strong> or <strong>subfolder</strong> (recommended for simplicity and SEO). <a href="https://help.shopify.com/en/manual/international/managing-international-domains" target="_blank" rel="noopener">International domains</a> · <a href="https://help.shopify.com/es/manual/markets/international-domains/setting-up-unique-urls/set-up-urls" target="_blank" rel="noopener">Unique URLs per market</a>.</li>
+    <li>Example: <code>/es/</code> for Spain, <code>/fr/</code> for France, or subdomains like <code>fr.yourstore.com</code>. <a href="https://help.shopify.com/es/manual/international/managing-international-domains" target="_blank" rel="noopener">Guide (ES)</a>.</li>
+  </ul>
+
+  <h5>3) Languages and translations</h5>
+  <ul class="list">
+    <li>Enable languages per market and translate with the official <strong>Translate &amp; Adapt</strong> app (auto-translation for 2 languages free and side-by-side editor). <a href="https://help.shopify.com/en/manual/international/translate-adapt-app" target="_blank" rel="noopener">How to use Translate & Adapt</a> · <a href="https://apps.shopify.com/translate-and-adapt" target="_blank" rel="noopener">App in App Store</a>.</li>
+    <li>Review limitations of supported content/languages. <a href="https://help.shopify.com/es/manual/international/translate-adapt-app" target="_blank" rel="noopener">Limitations</a>.</li>
+  </ul>
+
+  <h5>4) Currencies and pricing per market</h5>
+  <ul class="list">
+    <li>Set the <strong>market currency</strong> and enable <strong>local currencies</strong> when the market includes several countries; you can use <em>automatic exchange rates</em> or set <em>manual rates</em>. <a href="https://help.shopify.com/es/manual/international/pricing/set-up-local-currencies" target="_blank" rel="noopener">Set up local currencies (ES)</a> · <a href="https://help/shopify.com/en/manual/international/pricing" target="_blank" rel="noopener">Local currency pricing</a>.</li>
+    <li><strong>Shipping rates</strong> can be shown in local currency if the zone is a single country (or several sharing the same currency). <a href="https://help.shopify.com/en/manual/international/shipping/set-shipping-rates-in-local-currencies" target="_blank" rel="noopener">Shipping in local currency</a>.</li>
+  </ul>
+
+  <h5>5) Catalog and theme per market</h5>
+  <ul class="list">
+    <li>Restrict/allow products per market and adjust the visible <strong>catalog</strong> when needed (B2C/B2B, compliance, brands). <a href="https://help.shopify.com/en/manual/markets-new/manage" target="_blank" rel="noopener">Per-market customizations</a>.</li>
+    <li>Customize the <strong>theme per market</strong> (section copies, specific texts and images) from the editor with the “Market” selector. <a href="https://help.shopify.com/es/manual/online-store/themes/customizing-themes/store-contextualization/create-and-manage-overrides" target="_blank" rel="noopener">Theme overrides per market</a> · <a href="https://help/shopify.com/es/manual/online-store/themes/customizing-themes/store-contextualization/understanding-markets-and-overrides" target="_blank" rel="noopener">How they work</a>.</li>
+  </ul>
+
+  <h5>6) Duties and import taxes</h5>
+  <ul class="list">
+    <li>You can <strong>calculate and charge duties/taxes</strong> at checkout (avoid COD surprises). Review requirements and Incoterms (DDP recommended for total price). <a href="https://help.shopify.com/en/manual/taxes/charging-international-duties" target="_blank" rel="noopener">Charge duties at checkout</a> · <a href="https://help.shopify.com/es/manual/international/duties-and-import-taxes" target="_blank" rel="noopener">Duties & import taxes (ES)</a>.</li>
+    <li>Optional: <strong>Managed Markets</strong> simplifies cross-border (payments, taxes, logistics, and localization). <a href="https://help.shopify.com/es/manual/international/managed-markets/overview" target="_blank" rel="noopener">Overview</a> · <a href="https://help.shopify.com/es/manual/international/managed-markets/setting-up" target="_blank" rel="noopener">Set up</a>.</li>
+  </ul>
+
+  <h5>7) Best practices</h5>
+  <ul class="list">
+    <li>Use <strong>subfolders</strong> for markets for simplicity and SEO benefits; enable correct language, currency, and catalog. <a href="https://help.shopify.com/en/manual/international/managing-international-domains" target="_blank" rel="noopener">International domains</a>.</li>
+    <li>Test each market (checkout, pricing, shipping, translations) with the <strong>market preview</strong> before going live. <a href="https://help.shopify.com/en/manual/international/managing" target="_blank" rel="noopener">Manage/preview markets</a>.</li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/markets-shopify-en.JPG" alt="Shopify Markets screen with markets, catalogs, languages, currencies, and per-market prices">
+    <figcaption class="meta">Markets: languages, currencies, catalog, and localized prices by country/region.</figcaption>
+  </figure>
+</li>
+
+
+<!-- 9. Finances -->
+<li class="step" id="finanzas">
+  <h4>Finances</h4>
+  <p>Control <strong>Shopify billing</strong> (plans, apps, charges), <strong>payouts received</strong>, and <strong>financial reports</strong> for reconciliation.</p>
+
+  <h5>1) Shopify billing (Settings → Billing)</h5>
+  <ul class="list">
+    <li><strong>View/Export invoices</strong> (upcoming and past) and <em>Charge status</em> (last 90 days). <a href="https://help.shopify.com/en/manual/your-account/manage-billing/managing-your-bills/viewing-your-bills" target="_blank" rel="noopener">Viewing your bills</a> · <a href="https://help.shopify.com/en/manual/your-account/manage-billing/billing-information/view-bills" target="_blank" rel="noopener">View or export bills</a>.</li>
+    <li><strong>Billing cycles and thresholds</strong> (why a bill may be brought forward). <a href="https://help.shopify.com/es/manual/your-account/manage-billing/managing-your-bills/viewing-your-bills/billing-cycles-thresholds" target="_blank" rel="noopener">Cycles and thresholds (ES)</a>.</li>
+    <li><strong>App charges</strong>: subscriptions, usage, proration, and plan changes. <a href="https://help.shopify.com/es/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges" target="_blank" rel="noopener">App charges (ES)</a>.</li>
+    <li>General page to <strong>manage bills</strong>. <a href="https://help.shopify.com/en/manual/your-account/manage-billing/managing-your-bills" target="_blank" rel="noopener">Managing your bills</a>.</li>
+  </ul>
+
+  <h5>2) Payouts received (Shopify Payments → Payouts)</h5>
+  <ul class="list">
+    <li><strong>View/Export payouts</strong>, payout schedule, and fees. <a href="https://help.shopify.com/es/manual/payments/shopify-payments/payouts" target="_blank" rel="noopener">Payouts (ES)</a> · <a href="https://help.shopify.com/en/manual/payments/shopify-payments/payouts" target="_blank" rel="noopener">Payouts (EN)</a>.</li>
+    <li>Resolve <strong>missing or lower payouts</strong> and understand <strong>delays</strong>. <a href="https://help.shopify.com/es/manual/payments/shopify-payments/payouts/lower-or-missing-payouts" target="_blank" rel="noopener">Lower/missing payouts (ES)</a> · <a href="https://help.shopify.com/en/manual/payments/shopify-payments/payouts/understanding-payout-delays" target="_blank" rel="noopener">Payout delays (EN)</a>.</li>
+    <li>If you use another provider, review <strong>how and when you get paid</strong>. <a href="https://help.shopify.com/es/manual/payments/getting-paid" target="_blank" rel="noopener">Get paid (ES)</a>.</li>
+  </ul>
+
+  <h5>3) Reports and reconciliation</h5>
+  <ul class="list">
+    <li><em>Analytics → Reports</em> → <strong>Finances</strong> category (Financial summary, Taxes, Sales vs Payments, etc.). <a href="https://help.shopify.com/es/manual/reports-and-analytics/shopify-reports/report-types/default-reports/finances-report" target="_blank" rel="noopener">Finance reports (ES)</a> · <a href="https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types" target="_blank" rel="noopener">Report types (EN)</a>.</li>
+    <li><strong>Suggested reconciliation</strong>: export payout CSV and cross-check with captured orders (dates, fees, refunds, and net).</li>
+  </ul>
+
+  <h5>4) Subscriptions and charges</h5>
+  <ul class="list">
+    <li>Review your <strong>paid subscriptions</strong> (plan and apps) in Billing. <a href="https://help.shopify.com/en/manual/your-account/manage-billing/your-invoice/charges" target="_blank" rel="noopener">Charges (EN)</a> · <a href="https://help.shopify.com/en/manual/your-account/manage-billing/faq?lang=es" target="_blank" rel="noopener">Billing FAQ</a>.</li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/finanzas-shopify-en.JPG" alt="Financial overview: invoices, payouts, and reports">
+    <figcaption class="meta">Finances: billing, payouts received, and reconciliation.</figcaption>
+  </figure>
+</li>
+
+          <!-- 10. Reports -->
+<li class="step" id="informes">
+  <h4>Reports and Statistics</h4>
+  <p>Analyze sales, customers, marketing, and inventory (availability of some reports depends on your plan).</p>
+
+  <h5>1) Overview dashboard</h5>
+  <ul class="list">
+    <li><em>Analytics → Overview</em>: key cards and charts (sales, AOV, sessions, conversion, channels). You can <strong>customize</strong> sections and metrics. 
+      <a href="https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/overview-dashboard" target="_blank" rel="noopener">Set up the Overview</a>
+    </li>
+  </ul>
+
+  <h5>2) Live View (real time)</h5>
+  <ul class="list">
+    <li>Map/globe with sessions, carts, checkouts, and purchases “live”. 
+      <a href="https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/live-view" target="_blank" rel="noopener">Live View</a>
+    </li>
+  </ul>
+
+  <h5>3) Default reports</h5>
+  <ul class="list">
+    <li>Categories: Acquisition, Behavior, Customers, Finances, Inventory, Marketing, Orders, Sales, etc. 
+      <a href="https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports" target="_blank" rel="noopener">Default reports</a>
+    </li>
+  </ul>
+
+  <h5>4) Exporting and saving</h5>
+  <ul class="list">
+    <li>Export reports to <strong>CSV, XML, JSONL or Parquet</strong> (for PDF, print / “Save as PDF”). 
+      <a href="https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/custom-reports/export-reports" target="_blank" rel="noopener">Export reports</a>
+    </li>
+  </ul>
+
+  <h5>5) Cohorts and funnels</h5>
+  <ul class="list">
+    <li><strong>Customer cohort</strong>: retention and repeat purchases by first order month. 
+      <a href="https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/customers-reports" target="_blank" rel="noopener">Customer cohort analysis</a>
+    </li>
+    <li><strong>Conversion summary (per order)</strong> and order analytics: 
+      <a href="https://help.shopify.com/en/manual/fulfillment/managing-orders/analytics/conversion-summary" target="_blank" rel="noopener">Conversion summary</a> ·
+      <a href="https://help.shopify.com/en/manual/fulfillment/managing-orders/analytics" target="_blank" rel="noopener">Order analytics</a>
+    </li>
+  </ul>
+
+  <h5>6) Custom reports and advanced analysis</h5>
+  <ul class="list">
+    <li><em>Analytics → Reports</em>: tweak columns, filters, and save views. 
+      <a href="https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types" target="_blank" rel="noopener">Reports</a>
+    </li>
+    <li><strong>ShopifyQL Notebooks</strong>: queries and visualizations with ShopifyQL. 
+      <a href="https://help.shopify.com/en/manual/reports-and-analytics/shopifyql-notebooks?lang=es" target="_blank" rel="noopener">ShopifyQL Notebooks</a>
+    </li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/informes-estadisticas-shopify-en.JPG" alt="Reports and analytics dashboard">
+    <figcaption class="meta">Reports and analytics by area.</figcaption>
+  </figure>
+</li>
+
+
+
+          <!-- 11. Sales channels -->
+<li class="step" id="canales">
+  <h4>Sales Channels</h4>
+  <p>Connect platforms (Shop, Google & YouTube, Facebook & Instagram, marketplaces, etc.) to sell beyond your online store and manage everything from Shopify (products, orders, customers). <a href="https://help.shopify.com/en/manual/online-sales-channels" target="_blank" rel="noopener">What sales channels are</a>.</p>
+
+  <h5>1) Add / manage channels</h5>
+  <ul class="list">
+    <li>Go to <em>Settings → Apps and sales channels</em> → <strong>Visit Shopify App Store</strong> → search the channel → <strong>Add channel</strong>. Guide: 
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/manage" target="_blank" rel="noopener">Manage sales channels</a>.
+    </li>
+    <li>When you <strong>add a channel</strong>, your “active” products are available there by default; you can adjust <strong>channel availability</strong> from each product/collection. Guides:
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/manage" target="_blank" rel="noopener">Channel availability</a> · 
+      <a href="https://help.shopify.com/en/manual/products/collections/make-collections-available" target="_blank" rel="noopener">Collections availability</a>.
+    </li>
+    <li>Each channel shows its <strong>performance dashboard</strong> (sales and traffic) on the admin home page: 
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/manage" target="_blank" rel="noopener">View dashboards by channel</a>.
+    </li>
+  </ul>
+
+  <h5>2) Main channels</h5>
+  <ul class="list">
+    <li><strong>Shop (Shop app)</strong>: add the channel and customize your Shop storefront (assets, collections, URL, banner). 
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/shop/setup" target="_blank" rel="noopener">Set up Shop</a> · 
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/shop/manage-shop-store/customize" target="_blank" rel="noopener">Customize your Shop store</a> · 
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/shop/manage-shop-store/products-and-collections" target="_blank" rel="noopener">Products and collections in Shop</a>.
+    </li>
+
+    <li><strong>Google & YouTube</strong>: install the channel, connect <em>Google Merchant Center</em>, sync products and resolve disapprovals. 
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/google" target="_blank" rel="noopener">Google & YouTube channel</a> · 
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/google/getting-setup" target="_blank" rel="noopener">Getting started</a>.
+    </li>
+
+    <li><strong>Facebook & Instagram by Meta</strong>: set up the unified catalog for Facebook Shop, Instagram Shopping, and campaigns. 
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta" target="_blank" rel="noopener">Overview</a> · 
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta/setup" target="_blank" rel="noopener">Setup</a>.
+    </li>
+
+    <li><strong>Marketplaces (Amazon, eBay, Walmart, Target Plus)</strong> via <em>Shopify Marketplace Connect</em>:
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/marketplace-connect" target="_blank" rel="noopener">Guide</a> ·
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/marketplace-connect/setup" target="_blank" rel="noopener">Set up</a> ·
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/marketplace-connect/products" target="_blank" rel="noopener">Publish/manage products</a> · 
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/marketplace-connect/manage-orders" target="_blank" rel="noopener">Manage orders</a> ·
+      <a href="https://apps.shopify.com/marketplace-connect" target="_blank" rel="noopener">App on Shopify App Store</a>.
+    </li>
+  </ul>
+
+  <h5>3) Best practices</h5>
+  <ul class="list">
+    <li>Review <strong>policies and requirements</strong> for each channel (mandatory attributes, categories, SLAs, etc.). 
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/manage" target="_blank" rel="noopener">Management and requirements by channel</a>.
+    </li>
+    <li>Check the list of <strong>supported channels</strong> and choose the ones that fit your strategy:
+      <a href="https://help.shopify.com/en/manual/online-sales-channels/supported-sales-channels" target="_blank" rel="noopener">Available channels</a>.
+    </li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/canales-ventas-shopify-en.JPG" alt="Sales channels list">
+    <figcaption class="meta">Channels: catalog, metrics, and requirements.</figcaption>
+  </figure>
+</li>
+
+
+          <!-- 12. Apps -->
+<li class="step" id="apps">
+  <h4>Apps</h4>
+  <p>Installation, permissions, and app blocks (Online Store 2.0). Review performance and clean up periodically.</p>
+
+  <h5>1) Install apps</h5>
+  <ul class="list">
+    <li><strong>Shopify App Store</strong>: find the app → <em>Install</em> → authorize permissions. 
+      <a href="https://help.shopify.com/en/manual/apps/installing-apps" target="_blank" rel="noopener">Install apps</a>.
+    </li>
+    <li><strong>External link</strong> (direct install from the provider). 
+      <a href="https://help.shopify.com/en/manual/apps/installing-apps" target="_blank" rel="noopener">Install via link</a>.
+    </li>
+    <li><strong>Custom apps</strong>:
+      <em>Settings → Apps and sales channels → Develop apps</em> → enable development → create and install selecting <em>scopes</em> (API permissions).
+      <a href="https://help.shopify.com/en/manual/apps/app-types/custom-apps" target="_blank" rel="noopener">Custom apps</a>.
+    </li>
+  </ul>
+
+  <h5>2) Manage apps and channels</h5>
+  <ul class="list">
+    <li><em>Settings → Apps and sales channels</em>: open, pin, search, and manage. 
+      <a href="https://help.shopify.com/en/manual/apps/working-with-apps" target="_blank" rel="noopener">Manage apps</a>.
+    </li>
+  </ul>
+
+  <h5>3) Permissions and privacy</h5>
+  <ul class="list">
+    <li>The install screen shows the <strong>requested permissions</strong>. Review the developer’s <strong>privacy policy</strong> and how they handle personal data.
+      <a href="https://help.shopify.com/en/manual/apps/app-personal-information" target="_blank" rel="noopener">App permissions & personal data</a>.
+    </li>
+  </ul>
+
+  <h5>4) App blocks and app embeds (OS 2.0)</h5>
+  <ul class="list">
+    <li>Many apps add <strong>app blocks</strong> (sections/blocks you can place anywhere) or <strong>app embeds</strong> (elements toggled from the theme editor).
+      <a href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes/apps" target="_blank" rel="noopener">Extend your theme with apps</a> · 
+      <a href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes/theme-editor" target="_blank" rel="noopener">Theme editor</a>.
+    </li>
+    <li>For advanced behavior (developers): <em>theme app extensions</em>.
+      <a href="https://shopify.dev/docs/apps/build/online-store/theme-app-extensions/configuration" target="_blank" rel="noopener">Configure theme app extensions (Dev)</a>.
+    </li>
+  </ul>
+
+  <h5>5) Checkout apps</h5>
+  <ul class="list">
+    <li><em>Settings → Checkout</em> → <strong>Customize</strong> → configure checkout apps (blocking, express payments, etc.). 
+      <a href="https://help.shopify.com/en/manual/checkout-settings/customize-checkout-configurations/checkout-apps" target="_blank" rel="noopener">Checkout apps</a>.
+    </li>
+  </ul>
+
+  <h5>6) Uninstall and clean up</h5>
+  <ul class="list">
+    <li>Uninstall from <em>Settings → Apps and sales channels</em>. 
+      <a href="https://help.shopify.com/en/manual/apps/uninstalling-apps" target="_blank" rel="noopener">Uninstall apps</a>.
+    </li>
+    <li>If the app used <em>app blocks/embeds</em>, uninstalling usually removes them from the theme; if leftovers remain, check the theme editor or contact the developer.
+      <a href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes/apps" target="_blank" rel="noopener">Manage app blocks/embeds</a>.
+    </li>
+  </ul>
+
+  <h5>7) App billing</h5>
+  <ul class="list">
+    <li>Subscriptions, usage, proration, and app billing cycles (they may differ from your plan’s cycle). 
+      <a href="https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/app-charges" target="_blank" rel="noopener">App charges</a> ·
+      <a href="https://help.shopify.com/en/manual/your-account/manage-billing/billing-charges" target="_blank" rel="noopener">Charges on your bills</a>.
+    </li>
+  </ul>
+
+  <h5>8) Support</h5>
+  <ul class="list">
+    <li>For third-party app assistance, use <em>Get support</em> on the app’s page or contact the developer from its App Store listing.
+      <a href="https://help.shopify.com/en/manual/apps/getting-support" target="_blank" rel="noopener">Get help with apps</a>.
+    </li>
+  </ul>
+
+  <figure class="guide-figure">
+    <img class="shot" src="img/apps-shopify-en.JPG" alt="App management and blocks in theme">
+    <figcaption class="meta">Apps: installation, permissions, and theme blocks.</figcaption>
+  </figure>
+</li>
+
+<li class="step" id="configuracion">
+  <h4>Settings</h4>
+  <p>
+    To learn all Shopify settings in detail (domain, payments, shipping, etc.),
+    check our <strong>Configuration Manual</strong>.
+  </p>
+
+  <div class="guide-cta">
+    <a class="btn" href="manual_configuracion.html" target="_blank" rel="noopener">
+      Open Configuration Manual
+    </a>
+  </div>
+</li>
+
+
+
+          <li class="step" id="contacto-soporte">
+  <h4>Contact and Technical Support</h4>
+  <p>
+    To dive deeper into Shopify topics, refer to the relevant documentation and associated learning resources.
+  </p>
+
+  <div class="contact-actions">
+    <a class="btn" href="https://help.shopify.com">Shopify Help Center</a>
+    <a class="btn" href="https://community.shopify.com">Shopify Community</a>
+  </div>
+</li>
+
+        </ol>
+        <a class="btn" href="shopify.html">Back</a>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Dreamlove. Help page for customers.</small>
+      <small><a href="#" style="color: var(--brand); text-decoration: none;">Back to top</a></small>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+
+</body>
+</html>

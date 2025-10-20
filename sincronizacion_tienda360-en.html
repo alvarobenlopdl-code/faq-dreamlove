@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Synchronization · Shopify Plugin · Dreamlove</title>
+  <meta name="description" content="Complete guide to sync your Shopify store with Dreamlove using the Plugin: purchase, installation, import, language, collaborator, product information, and automatic orders.">
+  <link rel="icon" href="img/icono.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="sr-only" href="#contenido">Skip to content</a>
+
+  <!-- Topbar -->
+  <div class="topbar" role="banner">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <a href="faq.html" aria-label="Home" class="brand-mark">
+          <img src="img/dreamlove_logomenu.png" alt="Dreamlove · Help Center">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="primary" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="faq.html">Frequently Asked Questions</a>
+      <a href="precios.html">Plans and Pricing</a>
+      <a href="plantillas.html">Shopify Templates</a>
+      <a href="sincronizacion.html" aria-current="page">Synchronization</a>
+      <a href="shopify.html">Shopify Manual</a>
+      <a href="contacto.html">Contact</a>
+
+      <span style="flex:1"></span>
+
+      <div class="lang-switch">
+        <label for="lang" class="sr-only">Language</label>
+        <select id="lang" name="lang" aria-label="Language">
+          <option value="es">Español</option> 
+          <option value="en" selected>English</option> 
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido" class="container">
+    <section class="card" aria-labelledby="sync-title">
+      <div class="hd">
+        <h1 id="sync-title" class="section-title">Shopify Synchronization · Dreamlove Plugin</h1>
+        <p class="pill">Step-by-step guide to connect your store and sync the catalog</p>
+        <hr class="separator" aria-hidden="true">
+      </div>
+
+      <div class="bd">
+        <!-- Index -->
+        <h2 class="mini-title">Table of Contents</h2>
+        <nav class="toc" aria-label="Manual index">
+          <a href="#adquisicion">1. Plugin Purchase</a>
+          <a href="#instalacion">2. App Installation</a>
+          <a href="#sucursal">3. Location Implementation</a>
+          <a href="#idioma">4. Language and Store Consistency</a>
+          <a href="#colaborador">5. Collaborator Request</a>
+          <a href="#productos-info">6. Product Structure and Information</a>
+          <a href="#pedidos-auto">7. Automatic Orders and Wallet</a>
+          <a href="#plantilla">8. Template Selection</a>
+          <a href="#informacion-contacto">9. Contact Information</a>
+        </nav>
+
+        <ol class="steps" id="guia-sync">
+
+          <!-- 1) Purchase -->
+          <li class="step" id="adquisicion">
+            <h4>Plugin Purchase</h4>
+            <p>
+              The <strong>Dreamlove Shopify Plugin</strong> imports and synchronizes
+              <em>products, descriptions, images, prices, and stock</em> in your store.
+            </p>
+
+            <h5>Purchase options</h5>
+            <ul class="list">
+              <li><strong>Website</strong>: on our website you can purchase our plugin. You must accept the terms and conditions of use.</li>
+              <li><strong>Billing</strong>: you can contact our Administration department to issue the plugin invoice directly.</li>
+            </ul>
+            <figure class="guide-figure" style="margin-top:.6rem">
+              <img class="shot" src="img/plugin-shopify-360-en.JPG" alt="Shopify Plugin Purchase">
+              <figcaption class="meta">Shopify Plugin Purchase</figcaption>
+            </figure>
+           
+            <div class="guide-cta">
+              <a class="btn" href="https://www.dreamlove.eu/tiendaonline/">Buy</a>
+              <a class="btn" href="mailto:administracion@dreamlove.eu">Administration Contact</a>
+            </div>
+          </li>
+          
+
+          <!-- 2) Installation and permissions -->
+          <li class="step" id="instalacion">
+            <h4>App Installation</h4>
+            <p>Once you have purchased the plugin, you must install the Dreamlove app in your Shopify store.</p>
+            <h5>Installation steps</h5>
+            <ol>
+              <li>Access the <strong>Shopify admin</strong> with a user who has permissions to install apps.</li>
+              <li>Open the <strong>installation link</strong> or the <strong>App Store listing</strong>.</li>
+              <li>Review the <strong>permissions</strong> and click <em>Install app</em>.</li>
+              <li>You will be redirected to the plugin panel. The technical team will perform the initial configuration to activate the app.</li>
+            </ol>
+            <p>During installation Shopify will show you the <strong>permissions</strong> the plugin needs to operate:</p>
+            <ul class="list">
+              <li><strong>Products Read/Write</strong> (products, variants, images, collections).</li>
+              <li><strong>Orders Read</strong> (to link incidents and automated flows).</li>
+              <li><strong>Inventory</strong> and <strong>locations</strong> read access.</li>
+              <li><strong>Webhooks management</strong> (to keep stock and prices up to date).</li>
+            </ul>
+            <br>
+            <figure class="guide-figure" style="margin-top:.6rem">
+              <img class="shot" src="img/app-dreamlove-en.JPG" alt="Dreamlove App Installation">
+              <figcaption class="meta">Dreamlove App Installation</figcaption>
+            </figure>
+            <div class="guide-cta">
+              <a class="btn" href="https://apps.shopify.com/dreamlove-1">Install</a>
+            </div>
+          </li>
+
+          <!-- 3) Location implementation -->
+          <li class="step" id="sucursal">
+            <h4>Location Implementation</h4>
+            <p>
+              Once the catalog has been imported, you must define in Shopify the <strong>order fulfillment location</strong>.
+              This location indicates where products are managed and shipped to your customers from.
+            </p>
+
+            <h5>Recommended configuration</h5>
+            <ul class="list">
+              <li>Go to <em>Settings → Shipping and delivery</em> in your Shopify admin.</li>
+              <li>In the <strong>Order fulfillment locations</strong> section, <em>Dreamlove Fulfillment Service</em> should appear as the main option.</li>
+              <li>Verify that your <em>Shop location</em> is correctly configured (for example, “Spain”).</li>
+              <li>If you need to manage additional shipping zones, use the <strong>Add shipping zone</strong> option.</li>
+              <li>
+                Need more details about <strong>rates and shipping zones</strong>? 
+                See the guide in 
+                <a href="http://127.0.0.1:5500/manual_configuracion.html#envio-entrega" target="_blank" rel="noopener">
+                  this section of the configuration manual
+                </a>.
+              </li>
+            </ul>
+
+            <h5>Importance of the location</h5>
+            <p>
+              By linking <em>Dreamlove Fulfillment Service</em> as the location, all orders for synchronized products 
+              will be shipped directly through our logistics service. This ensures that stock, preparation, 
+              and tracking are updated automatically in your store.
+            </p>
+
+            <figure class="guide-figure" style="margin-top:.6rem">
+              <img class="shot" src="img/sucursal-dreamlove-en.JPG" alt="Location configuration in Shopify">
+              <figcaption class="meta">Implementing the Dreamlove Fulfillment Service location in Shopify</figcaption>
+            </figure>
+          </li>
+
+          <!-- 4) Language and consistency -->
+          <li class="step" id="idioma">
+            <h4>Language and Store Consistency</h4>
+            <p>
+              The <strong>import language</strong> must match your store’s <strong>default language</strong>.
+              Keeping this consistency prevents content mismatches.
+            </p>
+            <ul class="list">
+              <li>In Shopify, check <em>Settings → Store language</em> and verify it matches.</li>
+              <li>If you want to sell in multiple languages, set up translations with <em>Translate &amp; Adapt</em> after the base import.</li>
+               <li>If you want to have more languages than the application allows <em>Translate &amp; Adapt</em> in your store, you will need to purchase a third-party application.</li>
+              <li>Please note that we do not offer technical support for third-party applications. We recommend reviewing the official documentation.</li>
+            </ul>
+            <figure class="guide-figure" style="margin-top:.6rem">
+              <img class="shot" src="img/idiomas-shopify-en.JPG" alt="Language settings">
+              <figcaption class="meta">Language settings</figcaption>
+            </figure>
+          </li>
+
+          <!-- 5) Collaborator request -->
+          <li class="step" id="colaborador">
+            <h4>Collaborator Request</h4>
+            <p>
+              To assist you, we need <strong>collaborator</strong> access. Please provide the
+              <strong>domain of your store that ends in <code>myshopify.com</code></strong>.
+            </p>
+
+            <h5>Where can I see my <code>myshopify.com</code> domain?</h5>
+            <ol>
+              <li>In the Shopify admin, at the top left, click your <strong>store name</strong>.</li>
+              <li>In the menu, go to <em>Settings</em>. In the header or in <em>Domains</em> you will see the identifier <code>yourstore.myshopify.com</code>.</li>
+              <li>Send us exactly that domain so we can send the collaboration request.</li>
+            </ol>
+
+            <figure class="guide-figure" style="margin-top:.6rem">
+              <img class="shot" src="img/dominios-shopify-en.JPG" alt="Domains settings">
+              <figcaption class="meta">Domains settings</figcaption>
+            </figure>
+          </li>
+
+          <!-- 6) Product structure and information -->
+          <li class="step" id="productos-info">
+            <h4>Product Structure and Information</h4>
+            <p>
+              The plugin brings the essential information to sell and keep items up to date.
+              Keep the following in mind:
+            </p>
+
+            <h5>Product import</h5>
+            <ul class="list">
+              <li><strong>Recommended retail price (RRP)</strong> visible to the end customer.</li>
+              <li><strong>SKU</strong> and variant data (size/color, etc.).</li>
+              <li><strong>Stock</strong> and inventory by location (according to configuration).</li>
+              <li><strong>Images</strong> and <strong>product marketing descriptions</strong>.</li>
+              <li><strong>Base categories/collections</strong> for initial organization.</li>
+            </ul>
+
+            <h5>SEO</h5>
+            <p>
+              The plugin’s focus is <strong>operational</strong>; it does not perform advanced SEO optimization. You can complement later
+              with apps or theme adjustments (titles/meta, rich snippets, etc.). SEO management must be handled by the client.
+            </p>
+
+            <h5>Categories and collections</h5>
+            <ul class="list">
+              <li>The <strong>base categories</strong> are created/updated to organize the catalog.</li>
+              <li>You can <strong>add new collections</strong> tailored to your strategy (e.g., “New Arrivals”, “Trends”).</li>
+              <li><strong>Do not modify</strong> the base structure generated by the plugin, so as not to break future synchronizations.</li>
+            </ul>
+            <figure class="guide-figure" style="margin-top:.6rem">
+              <img class="shot" src="img/productos-info-shopify-en.JPG" alt="Product Information">
+              <figcaption class="meta">Product Information</figcaption>
+            </figure>
+          </li>
+
+          <!-- 7) Automatic orders and wallet -->
+          <li class="step" id="pedidos-auto">
+            <h4>Automatic Orders and Wallet</h4>
+            <p>
+              For orders to be <strong>processed automatically</strong> from your store to Dreamlove,
+              you need to have <strong>sufficient balance in your wallet</strong>.
+            </p>
+
+            <h5>Requirements</h5>
+            <ul class="list">
+              <li>Plugin installed and configured.</li>
+              <li><strong>Automatic orders</strong> enabled in the plugin panel.</li>
+              <li><strong>Wallet balance</strong> with enough credit to cover the order amount and shipping.</li>
+              <li><strong>Available products</strong> with stock and in the catalog.</li>
+              <li><strong>Online Store Channel</strong>, orders placed through the Online Store channel. <br>We strongly recommend that you do not install third-party applications that manage, modify, or interfere with the order flow, as they could disrupt the proper functioning of the plugin.</li>
+            </ul>
+
+            <h5>How to top up the wallet</h5>
+            <ol>
+              <li>Access your Dreamlove customer area or the link provided by support.</li>
+              <li>Open the <strong>Express order / Wallet balance</strong> section.</li>
+              <li>Add sufficient credit.</li>
+            </ol>
+
+            <h5>Flow when an order comes in</h5>
+            <ol>
+              <li>The customer buys in your store and the order is created in Shopify.</li>
+              <li>The plugin detects it and sends it to Dreamlove if there is <strong>sufficient balance</strong> and the configuration is correct.</li>
+              <li>Stock is reserved; when it is prepared, it is updated and set to the “Prepared” status.</li>
+              <li>Once the order has the “Prepared” status, the tracking number is added to the order.</li>
+              <li>The customer receives status and tracking updates.</li>
+            </ol>
+
+            <p>If the order has been <strong>blocked due to insufficient wallet balance</strong>, <strong>additional support hours</strong> will be required if the client wants us to process the order.  
+            If you do not want us to process the order blocked due to wallet balance, you can manage it <strong>manually</strong> from our Store.</p>
+
+            <div class="alert warning">
+              <strong>No balance:</strong> if there isn’t enough credit, the order will remain <em>pending</em>. Top up your wallet balance and contact the technical team to process the order.
+              If the wallet balance increases, blocked orders will not be processed automatically; the technical team must review and process them manually, and additional support hours will be required.
+            </div>
+
+            <h5>Payment methods in Shopify</h5>
+            <p>
+              In addition, you must <strong>configure payment methods</strong> in your Shopify so orders are properly confirmed
+              (Shopify Payments, PayPal, or other providers). Without an active payment method, orders may remain
+              <em>unpaid</em> or pending and will not be shipped automatically.
+            </p>
+
+            <figure class="guide-figure" style="margin-top:.6rem">
+              <img class="shot" src="img/pedidos-shopify-en.JPG" alt="Automatic Orders">
+              <figcaption class="meta">Orders Configuration</figcaption>
+            </figure>
+            
+            <div class="guide-cta">
+              <a class="btn" href="https://store.dreamlove.es/ms-1-50-mis_saldos-0/">Manage Wallet Balance</a>
+              <a class="btn" href="http://127.0.0.1:5500/manual_configuracion.html#pagos" target="_blank" rel="noopener">
+                Configure payment methods
+              </a>
+              <a class="btn" href="https://store.dreamlove.es/mp-1-50-mis_pedidos/" target="_blank" rel="noopener">View registered orders</a>
+            </div>
+          </li>
+
+          <li class="step" id="plantilla">
+            <h4>Template Selection</h4>
+            <p>
+              For web development we use a set of preconfigured <strong>Shopify templates</strong>
+              (structure, styles, and sections) that you can review and choose according to your needs.
+            </p>
+
+            <h5>Check available templates</h5>
+            <p>
+              Access the template catalog and review the available demos.
+            </p>
+
+            <div class="alert info" role="note" aria-label="Access password">
+              <strong>Access password:</strong> <code>Dreamlove</code>
+            </div>
+            <h5>Details</h5>
+
+            <ul class="list">
+              <li>Select the template that best fits your brand and catalog.</li>
+              <li>Templates are customizable: you can personalize colors, typography, and blocks from the theme editor.</li>
+              <li>If you have questions, tell us which demo you like and we’ll adapt it into the main design.</li>
+              <li>Certain sections you see in our store cannot be replicated exactly
+              because they are implemented in a <strong>different environment</strong> (our own apps/resources/infrastructure).</li>
+              <li>In your store, <strong>the main template build is implemented</strong> and from there
+              you can <strong>freely modify it</strong>, add or remove sections, and customize it as you wish.</li>
+            </ul>
+            <br>
+
+            <figure class="guide-figure" style="margin-top:.6rem">
+              <img class="shot" src="img/eleccion-plantilla.JPG" alt="Example view of a template">
+              <figcaption class="meta">Example layout you can achieve with the recommended templates.</figcaption>
+            </figure>
+            <div class="guide-cta">
+              <a class="btn" href="http://127.0.0.1:5500/plantillas.html" target="_blank" rel="noopener">Open template catalog</a>
+            </div>
+          </li>
+
+          <li class="step" id="informacion-contacto">
+            <h4>Contact Information</h4>
+            <p>
+              To complete your store setup, we need you to provide the following contact and brand identity details.
+              These elements will be used in the site build and customer service sections.
+            </p>
+
+            <h5>Required data</h5>
+            <ul class="list">
+              <li><strong>Physical store address</strong> (if applicable).</li>
+              <li><strong>Customer support email</strong>.</li>
+              <li><strong>Customer support phone</strong>.</li>
+              <li><strong>Customer support hours</strong>.</li>
+              <li><strong>Social media</strong> (URL for each official profile: Facebook, Instagram, TikTok, etc.).</li>
+              <li><strong>Store logo</strong> in good quality (preferably .PNG or .SVG with transparent background).</li>
+            </ul>
+
+            <div class="alert info" role="note">
+              <strong>Note:</strong> This information will be used to personalize the template and
+              show your business details on the website (footer).
+            </div>
+
+            <figure class="guide-figure" style="margin-top:.6rem">
+              <img class="shot" src="img/informacion-contacto.JPG" alt="Example of contact personalization in a template">
+              <figcaption class="meta">Example of how contact details are applied in the store layout.</figcaption>
+            </figure>
+          </li>
+
+        </ol>
+
+        <nav class="page-links">
+          <a class="btn" href="sincronizacion.html">Back</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Dreamlove. Help page for customers.</small>
+      <small><a href="#" style="color: var(--brand); text-decoration: none;">Back to top</a></small>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
